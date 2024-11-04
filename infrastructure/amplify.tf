@@ -57,6 +57,6 @@ resource "aws_amplify_domain_association" "domain_association" {
 
   sub_domain {
     branch_name = aws_amplify_branch.branch.branch_name
-    prefix      = "gift"
+    prefix      = "demo-dapp-starknet"
   }
 }
