@@ -1,0 +1,62 @@
+pipeline {
+    agent {
+        docker {
+            image 'hashicorp/terraform:1.9'
+            args '--entrypoint=""'
+        }
+    }
+
+    parameters {
+        credentials(
+            name: 'AWS_CREDENTIALS',
+            credentialType: 'com.cloudbees.jenkins.plugins.awscredentials.AWSCredentialsImpl',
+            description: 'AWS Credentials',
+            required: true
+        )
+
+        choice(name: 'TYPE', choices: ['plan', 'apply'], description: 'Plan or Apply')
+    }
+
+    stages {
+        stage('Execute Terraform') {
+            steps {
+                dir("infrastructure/") {
+                    withFolderProperties {
+                        withCredentials([string(credentialsId: "webwallet-github-token", variable: 'WEBWALLET_GITHUB_TOKEN'),
+                                         string(credentialsId: "gsap-npm-token", variable: 'GSAP_NPM_TOKEN')]) {
+                            withAWS(region: "eu-west-1", credentials: '${AWS_CREDENTIALS}', role: "${AWS_INFRA_DEPLOY_ROLE}", roleAccount: "${AWS_INFRA_ACCOUNT_ID}") {
+                                ansiColor('xterm') {
+                                    sh "rm -rf .terraform/"
+                                    sh "terraform init"
+                                    sh "terraform workspace select ${ENVIRONMENT}"
+                                    sh "terraform init"
+                                    script{
+
+                                        if (params.TYPE == 'plan') {
+                                            echo "You selected plan!"
+                                            sh """
+                                                terraform plan \
+                                                    -var-file=config/${ENVIRONMENT}.tfvars \
+                                                    -var 'github_token=$WEBWALLET_GITHUB_TOKEN' \
+                                                    -var 'gsap_npm_token=$GSAP_NPM_TOKEN'
+                                            """
+                                        }
+                                        if (params.TYPE == 'apply') {
+                                            echo "You selected apply!"
+                                            sh """
+                                                terraform apply -auto-approve \
+                                                    -var-file=config/${ENVIRONMENT}.tfvars \
+                                                    -var 'github_token=$WEBWALLET_GITHUB_TOKEN' \
+                                                    -var 'gsap_npm_token=$GSAP_NPM_TOKEN'
+                                            """
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
