@@ -8,6 +8,8 @@ import { mainnet, sepolia } from "@starknet-react/chains"
 import { publicProvider, StarknetConfig } from "@starknet-react/core"
 import { constants } from "starknet"
 
+/* TODO: update ui */
+
 export default function Home() {
   const chains = [
     CHAIN_ID === constants.NetworkName.SN_MAIN ? mainnet : sepolia,
