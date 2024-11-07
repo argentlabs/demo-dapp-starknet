@@ -1,0 +1,125 @@
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.full {
+  width: 100%;
+}
+
+/* Accordion */
+
+.accordion-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  padding: 16px 0;
+}
+
+.accordion-button-with-border {
+  padding: 8px;
+}
+
+.accordion-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.accordion-title-with-border {
+  font-size: 1em;
+}
+
+.accordion-icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s;
+}
+
+.accordion-icon-open {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  max-height: 0;
+}
+
+.accordion-content-open {
+  max-height: 500px;
+}
+
+/* Button  */
+button {
+  border: 1px solid #c8c8c8;
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  gap: 4px;
+  font-weight: bold;
+}
+
+.chevron-right {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s;
+  transform: rotate(-90deg);
+}
+
+input,
+textarea {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #c8c8c8;
+}
+
+button[type="submit"] {
+  background-color: #cefff3;
+}
+
+.demo-dapp-container {
+  padding: 40px 0;
+}
+
+/* Small screens (smartphones) - Portrait and Landscape */
+@media only screen and (max-width: 767px) {
+  .demo-dapp-container {
+    padding: 20px;
+  }
+  /* Your mobile styles here */
+}
+
+/* Extra small screens (smaller smartphones) */
+@media only screen and (max-width: 480px) {
+  /* Your styles for very small devices */
+  .demo-dapp-container {
+    padding: 16px;
+  }
+}

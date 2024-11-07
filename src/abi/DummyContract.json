@@ -1,0 +1,99 @@
+[
+  {
+    "type": "impl",
+    "name": "MockDappImpl",
+    "interface_name": "argent::mocks::mock_dapp::IMockDapp"
+  },
+  {
+    "type": "interface",
+    "name": "argent::mocks::mock_dapp::IMockDapp",
+    "items": [
+      {
+        "type": "function",
+        "name": "set_number",
+        "inputs": [
+          {
+            "name": "number",
+            "type": "core::felt252"
+          }
+        ],
+        "outputs": [],
+        "state_mutability": "external"
+      },
+      {
+        "type": "function",
+        "name": "set_number_double",
+        "inputs": [
+          {
+            "name": "number",
+            "type": "core::felt252"
+          }
+        ],
+        "outputs": [],
+        "state_mutability": "external"
+      },
+      {
+        "type": "function",
+        "name": "set_number_times3",
+        "inputs": [
+          {
+            "name": "number",
+            "type": "core::felt252"
+          }
+        ],
+        "outputs": [],
+        "state_mutability": "external"
+      },
+      {
+        "type": "function",
+        "name": "increase_number",
+        "inputs": [
+          {
+            "name": "number",
+            "type": "core::felt252"
+          }
+        ],
+        "outputs": [
+          {
+            "type": "core::felt252"
+          }
+        ],
+        "state_mutability": "external"
+      },
+      {
+        "type": "function",
+        "name": "throw_error",
+        "inputs": [
+          {
+            "name": "number",
+            "type": "core::felt252"
+          }
+        ],
+        "outputs": [],
+        "state_mutability": "external"
+      },
+      {
+        "type": "function",
+        "name": "get_number",
+        "inputs": [
+          {
+            "name": "user",
+            "type": "core::starknet::contract_address::ContractAddress"
+          }
+        ],
+        "outputs": [
+          {
+            "type": "core::felt252"
+          }
+        ],
+        "state_mutability": "view"
+      }
+    ]
+  },
+  {
+    "type": "event",
+    "name": "argent::mocks::mock_dapp::MockDapp::Event",
+    "kind": "enum",
+    "variants": []
+  }
+]
