@@ -3,14 +3,14 @@ import {
   isInArgentMobileAppBrowser,
   ArgentMobileConnector,
 } from "starknetkit/argentMobile"
-import {
+/* import {
   BraavosMobileConnector,
   isInBraavosMobileAppBrowser,
-} from "starknetkit/braavosMobile"
+} from "starknetkit/braavosMobile" */
 import { InjectedConnector } from "starknetkit/injected"
 import { WebWalletConnector } from "starknetkit/webwallet"
 
-const isMobileDevice = () => {
+/* const isMobileDevice = () => {
   if (typeof window === "undefined") {
     return false
   }
@@ -27,7 +27,7 @@ const isMobileDevice = () => {
 
   // Combine checks: Must match user agent AND (touch support OR small screen)
   return isMobileUA && (hasTouchSupport || isSmallScreen)
-}
+} */
 
 export const availableConnectors = () => {
   if (isInArgentMobileAppBrowser()) {
@@ -42,9 +42,9 @@ export const availableConnectors = () => {
     ]
   }
 
-  if (isInBraavosMobileAppBrowser()) {
+  /* if (isInBraavosMobileAppBrowser()) {
     return [BraavosMobileConnector.init({})]
-  }
+  } */
 
   return [
     new InjectedConnector({ options: { id: "argentX" } }),
@@ -56,7 +56,7 @@ export const availableConnectors = () => {
         chainId: CHAIN_ID,
       },
     }),
-    isMobileDevice() ? BraavosMobileConnector.init({}) : null,
+    /*  isMobileDevice() ? BraavosMobileConnector.init({}) : null, */
     new WebWalletConnector({ url: ARGENT_WEBWALLET_URL }),
   ].filter((connector) => connector !== null)
 }
