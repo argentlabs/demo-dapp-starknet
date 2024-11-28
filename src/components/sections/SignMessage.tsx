@@ -1,19 +1,17 @@
-import { Flex } from "@/components/ui/Flex"
+import { toHexChainid } from "@/helpers/chainId"
 import { useAccount, useSignTypedData } from "@starknet-react/core"
 import { useState } from "react"
-import { constants, num, stark } from "starknet"
+import { constants, stark } from "starknet"
 import { Button } from "../ui/Button"
-import { Accordion } from "../ui/Accordion"
+import { SectionLayout } from "./SectionLayout"
+import { SigningIcon } from "../icons/SigningIcon"
 
 const SignMessage = () => {
   const { account, address, chainId } = useAccount()
   const [shortText, setShortText] = useState("")
   const [lastSig, setLastSig] = useState<string[]>([])
 
-  const hexChainId =
-    typeof chainId === "bigint"
-      ? (num.toHex(chainId ?? 0) as constants.StarknetChainId)
-      : null
+  const hexChainId = toHexChainid(chainId)
 
   const { signTypedDataAsync } = useSignTypedData({
     params: {
@@ -54,141 +52,140 @@ const SignMessage = () => {
   }
 
   return (
-    <>
-      <Accordion
-        items={[
-          {
-            title: "Sign Message",
-            content: (
-              <>
-                <Flex flex={1} width="100%" marginBottom="16px">
-                  <form
-                    className="full"
-                    onSubmit={(e) => {
-                      e.preventDefault()
-                      handleSignSubmit()
-                    }}
-                  >
-                    <Flex
-                      flexDirection="column"
-                      flex={1}
-                      padding="4"
-                      gap="12px"
-                      width="100%"
-                    >
-                      <input
-                        type="text"
-                        id="short-text"
-                        name="short-text"
-                        placeholder="Short text"
-                        className="full"
-                        value={shortText}
-                        onChange={(e) => setShortText(e.target.value)}
-                      />
+    <SectionLayout sectionTitle="Signing" icon={<SigningIcon />}>
+      <div className="flex flex-1 w-full bg-raisin-black rounded-lg p-3">
+        <form
+          className="flex flex-1 flex-col w-full gap-4"
+          onSubmit={(e) => {
+            e.preventDefault()
+            handleSignSubmit()
+          }}
+        >
+          <span className="text-base font-medium leading-6">Sign message</span>
+          <textarea
+            id="short-text"
+            name="short-text"
+            placeholder="Message"
+            className="w-full outline-none focus:border-white focus:text-white"
+            value={shortText}
+            style={{ height: "160px" }}
+            onChange={(e) => setShortText(e.target.value)}
+          />
 
-                      <Button type="submit" style={{ maxWidth: "100px" }}>
-                        Sign
-                      </Button>
-                    </Flex>
-                  </form>
-                </Flex>
-                <Flex flexDirection="column" flex={1} padding="4" gap="12px">
-                  {lastSig && lastSig.length > 0 && (
-                    <>
-                      {lastSig.length % 2 === 0 ? (
-                        <>
-                          <textarea
-                            id="r"
-                            name="r"
-                            placeholder="r"
-                            value={lastSig[0]}
-                            readOnly
-                          />
-                          <textarea
-                            id="s"
-                            name="s"
-                            placeholder="s"
-                            value={lastSig[1]}
-                            readOnly
-                          />
-                        </>
-                      ) : (
-                        <>
-                          <Flex flexDirection="column" gap="4px">
-                            <h4>Signer</h4>
-                            <textarea
-                              id="signer"
-                              name="signer"
-                              placeholder="signer"
-                              value={lastSig[2]}
-                              readOnly
-                            />
-                          </Flex>
-                          <Flex flexDirection="column" gap="4px">
-                            <h4>r</h4>
-                            <textarea
-                              id="r"
-                              name="r"
-                              placeholder="r"
-                              value={lastSig[3]}
-                              readOnly
-                            />
-                          </Flex>
-                          <Flex flexDirection="column" gap="4px">
-                            <h4>s</h4>
-                            <textarea
-                              id="s"
-                              name="s"
-                              placeholder="s"
-                              value={lastSig[4]}
-                              readOnly
-                            />
-                          </Flex>
-                          {lastSig.length > 5 && (
-                            <>
-                              <Flex flexDirection="column" gap="4px">
-                                <h4>Cosigner</h4>
-                                <textarea
-                                  id="signer"
-                                  name="signer"
-                                  placeholder="signer"
-                                  value={lastSig[6]}
-                                  readOnly
-                                />
-                              </Flex>
-                              <Flex flexDirection="column" gap="4px">
-                                <h4>r</h4>
-                                <textarea
-                                  id="r"
-                                  name="r"
-                                  placeholder="r"
-                                  value={lastSig[7]}
-                                  readOnly
-                                />
-                              </Flex>
-                              <Flex flexDirection="column" gap="4px">
-                                <h4>s</h4>
-                                <textarea
-                                  id="s"
-                                  name="s"
-                                  placeholder="s"
-                                  value={lastSig[8]}
-                                  readOnly
-                                />
-                              </Flex>
-                            </>
-                          )}
-                        </>
-                      )}
-                    </>
-                  )}
-                </Flex>
+          <div className="flex justify-end">
+            <Button
+              type="submit"
+              style={{
+                fontSize: "14px",
+                alignItems: "center",
+                justifyContent: "center",
+                display: "flex",
+                lineHeight: "16px",
+                height: "36px",
+                maxWidth: "175px",
+                textAlign: "center",
+                width: "100%",
+              }}
+              disabled={!shortText}
+              hideChevron
+            >
+              Submit
+            </Button>
+          </div>
+        </form>
+      </div>
+      <div className="flex column p-1 gap-3" style={{ flex: "1" }}>
+        {lastSig && lastSig.length > 0 && (
+          <>
+            {lastSig.length % 2 === 0 ? (
+              <>
+                <textarea
+                  id="r"
+                  name="r"
+                  placeholder="r"
+                  value={lastSig[0]}
+                  readOnly
+                />
+                <textarea
+                  id="s"
+                  name="s"
+                  placeholder="s"
+                  value={lastSig[1]}
+                  readOnly
+                />
               </>
-            ),
-          },
-        ]}
-      />
-    </>
+            ) : (
+              <>
+                <div className="flex column gap-1">
+                  <h4>Signer</h4>
+                  <textarea
+                    id="signer"
+                    name="signer"
+                    placeholder="signer"
+                    value={lastSig[2]}
+                    readOnly
+                  />
+                </div>
+                <div className="flex column gap-1">
+                  <h4>r</h4>
+                  <textarea
+                    id="r"
+                    name="r"
+                    placeholder="r"
+                    value={lastSig[3]}
+                    readOnly
+                  />
+                </div>
+                <div className="flex column gap-1">
+                  <h4>s</h4>
+                  <textarea
+                    id="s"
+                    name="s"
+                    placeholder="s"
+                    value={lastSig[4]}
+                    readOnly
+                  />
+                </div>
+                {lastSig.length > 5 && (
+                  <>
+                    <div className="flex column gap-1">
+                      <h4>Cosigner</h4>
+                      <textarea
+                        id="signer"
+                        name="signer"
+                        placeholder="signer"
+                        value={lastSig[6]}
+                        readOnly
+                      />
+                    </div>
+                    <div className="flex column gap-1">
+                      <h4>r</h4>
+                      <textarea
+                        id="r"
+                        name="r"
+                        placeholder="r"
+                        value={lastSig[7]}
+                        readOnly
+                      />
+                    </div>
+                    <div className="flex column gap-1">
+                      <h4>s</h4>
+                      <textarea
+                        id="s"
+                        name="s"
+                        placeholder="s"
+                        value={lastSig[8]}
+                        readOnly
+                      />
+                    </div>
+                  </>
+                )}
+              </>
+            )}
+          </>
+        )}
+      </div>
+    </SectionLayout>
   )
 }
 

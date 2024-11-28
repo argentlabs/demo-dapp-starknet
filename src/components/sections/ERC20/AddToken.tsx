@@ -1,7 +1,7 @@
-import { Accordion } from "@/components/ui/Accordion"
 import { Button } from "@/components/ui/Button"
-import { Flex } from "@/components/ui/Flex"
 import { useAccount, useWalletRequest } from "@starknet-react/core"
+import { SectionLayout } from "../SectionLayout"
+import { AddTokenIcon } from "@/components/icons/AddTokenIcon"
 
 const AddToken = () => {
   const { account, address } = useAccount()
@@ -25,31 +25,19 @@ const AddToken = () => {
   }
 
   return (
-    <Accordion
-      items={[
-        {
-          title: "Add Token",
-          content: (
-            <Flex
-              color="black"
-              borderWidth="0px"
-              borderRadius="8px"
-              justifyContent="flex-start"
-              width="50%"
-            >
-              <Button
-                className="full"
-                onClick={async () => {
-                  await walletRequest.requestAsync()
-                }}
-              >
-                Add Token
-              </Button>
-            </Flex>
-          ),
-        },
-      ]}
-    />
+    <SectionLayout sectionTitle="Add Token" icon={<AddTokenIcon />}>
+      <div className="flex w-1/2 justify-start">
+        <Button
+          className="w-full"
+          onClick={async () => {
+            await walletRequest.requestAsync()
+          }}
+          hideChevron
+        >
+          Add Token
+        </Button>
+      </div>
+    </SectionLayout>
   )
 }
 
