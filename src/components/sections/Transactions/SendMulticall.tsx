@@ -1,34 +1,14 @@
 // TokenOperations.tsx
-import { Flex } from "@/components/ui/Flex"
 import { ETHTokenAddress } from "@/constants"
 import { parseInputAmountToUint256 } from "@/helper/token"
 import {
-  Abi,
   useAccount,
   useContract,
   useSendTransaction,
 } from "@starknet-react/core"
 import { useState } from "react"
 import { Button } from "../../ui/Button"
-
-const abi = [
-  {
-    type: "function",
-    name: "transfer",
-    state_mutability: "external",
-    inputs: [
-      {
-        name: "recipient",
-        type: "core::starknet::contract_address::ContractAddress",
-      },
-      {
-        name: "amount",
-        type: "core::integer::u256",
-      },
-    ],
-    outputs: [],
-  },
-] as const satisfies Abi
+import { abi } from "./abi"
 
 const SendMulticall = () => {
   const { account } = useAccount()
@@ -74,11 +54,12 @@ const SendMulticall = () => {
   }
 
   return (
-    <Flex flexDirection="column" gap="8px">
+    <div className="flex w-full flex-col gap-2">
       <Button
-        className="full"
+        className="w-full"
         onClick={handleTransferSubmit}
         disabled={buttonsDisabled}
+        hideChevron
       >
         {lastTxStatus === "approve"
           ? "Waiting for transaction"
@@ -87,7 +68,7 @@ const SendMulticall = () => {
       {lastTxError ? (
         <span style={{ color: "red" }}>Error: {lastTxError}</span>
       ) : null}
-    </Flex>
+    </div>
   )
 }
 

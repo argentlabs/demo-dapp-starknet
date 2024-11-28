@@ -1,8 +1,8 @@
-import { Flex } from "@/components/ui/Flex"
+import { useAccount } from "@starknet-react/core"
+import { SectionLayout } from "../SectionLayout"
 import { AddNetwork } from "./AddNetwork"
 import { ChangeNetwork } from "./ChangeNetwork"
-import { Accordion } from "@/components/ui/Accordion"
-import { useAccount } from "@starknet-react/core"
+import { NetworkIcon } from "@/components/icons/NetworkIcon"
 
 const Network = () => {
   const { account, address } = useAccount()
@@ -12,19 +12,12 @@ const Network = () => {
   }
 
   return (
-    <Accordion
-      items={[
-        {
-          title: "Network",
-          content: (
-            <Flex flex={1} width="100%" gap="12px">
-              <AddNetwork />
-              <ChangeNetwork />
-            </Flex>
-          ),
-        },
-      ]}
-    />
+    <SectionLayout sectionTitle="Network" icon={<NetworkIcon />}>
+      <div className="flex flex-1 w-full gap-3">
+        <AddNetwork />
+        <ChangeNetwork />
+      </div>
+    </SectionLayout>
   )
 }
 

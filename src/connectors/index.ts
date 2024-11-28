@@ -57,7 +57,7 @@ export const availableConnectors = () => {
       },
     }),
     isMobileDevice() ? BraavosMobileConnector.init({}) : null,
-    new WebWalletConnector({ url: ARGENT_WEBWALLET_URL }),
+    new WebWalletConnector({ url: ARGENT_WEBWALLET_URL, theme: "dark" }),
   ].filter((connector) => connector !== null)
 }
 
