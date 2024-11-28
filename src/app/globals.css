@@ -1,7 +1,14 @@
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  background-color: #000;
+  color: #fff;
 }
 
 body {
@@ -21,105 +28,90 @@ a {
   text-decoration: none;
 }
 
-.full {
-  width: 100%;
+.column {
+  flex-direction: column;
 }
 
-/* Accordion */
-
-.accordion-button {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.2s;
-  padding: 16px 0;
-}
-
-.accordion-button-with-border {
-  padding: 8px;
-}
-
-.accordion-title {
-  font-weight: bold;
-  font-size: 1.5em;
-}
-
-.accordion-title-with-border {
-  font-size: 1em;
-}
-
-.accordion-icon {
-  width: 16px;
-  height: 16px;
-  transition: transform 0.2s;
-}
-
-.accordion-icon-open {
-  transform: rotate(180deg);
-}
-
-.accordion-content {
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  max-height: 0;
-}
-
-.accordion-content-open {
-  max-height: 500px;
-}
-
-/* Button  */
 button {
-  border: 1px solid #c8c8c8;
-  background-color: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  border: none;
+  background-color: #262933;
+  color: #fff;
   border-radius: 8px;
-  padding: 8px;
+  padding: 12px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   cursor: pointer;
   gap: 4px;
-  font-weight: bold;
+  position: relative;
 }
 
-.chevron-right {
-  width: 16px;
-  height: 16px;
-  transition: transform 0.2s;
-  transform: rotate(-90deg);
+button.disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+button.selected {
+  border: solid 1px #aecbfc;
+  color: #aecbfc;
+  background-color: #262933;
+}
+
+button[type="submit"] {
+  border: solid 1px #85b6ff;
+  color: #85b6ff;
+  text-align: center;
 }
 
 input,
 textarea {
   padding: 8px;
   border-radius: 8px;
-  border: 1px solid #c8c8c8;
+  border: 1px solid #464c5e;
+  background-color: #14161c;
+  color: #a2a2a2;
 }
 
-button[type="submit"] {
-  background-color: #cefff3;
+.connector-icon {
+  height: 17px;
+  width: 17px;
 }
 
-.demo-dapp-container {
-  padding: 40px 0;
+.connector-icon > svg {
+  height: 17px;
+  width: 17px;
 }
 
-/* Small screens (smartphones) - Portrait and Landscape */
-@media only screen and (max-width: 767px) {
-  .demo-dapp-container {
-    padding: 20px;
-  }
-  /* Your mobile styles here */
+.get-started-title::before {
+  content: "Manage ";
 }
 
-/* Extra small screens (smaller smartphones) */
-@media only screen and (max-width: 480px) {
-  /* Your styles for very small devices */
-  .demo-dapp-container {
-    padding: 16px;
-  }
+.get-started-title::after {
+  content: " Starknet accounts";
+}
+
+.get-started-title {
+  font-size: 40px;
+  line-height: 42px;
+  color: #6f727c;
+}
+
+.get-started-title::before,
+.get-started-title::after {
+  color: #fff;
+}
+
+.truncate {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

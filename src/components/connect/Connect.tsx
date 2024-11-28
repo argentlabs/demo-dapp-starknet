@@ -1,15 +1,16 @@
-import { useAccount, useConnect } from "@starknet-react/core"
+import { useAccount, useConnect, useDisconnect } from "@starknet-react/core"
+import Image from "next/image"
 import { useEffect, useState } from "react"
-import { disconnect } from "starknetkit"
-import { Accordion } from "../ui/Accordion"
+import { SectionLayout } from "../sections/SectionLayout"
 import { Button } from "../ui/Button"
-import { Flex } from "../ui/Flex"
 import { ConnectorButton } from "./ConnectorButton"
 import { ConnectStarknetkitModal } from "./ConnectStarknetkitModal"
+import { DisconnectIcon } from "../icons/DisconnectIcon"
 
 const Connect = () => {
   const { isConnected } = useAccount()
   const { connectors } = useConnect()
+  const { disconnect } = useDisconnect({})
   const [isClient, setIsClient] = useState(false)
 
   useEffect(() => {
@@ -21,57 +22,59 @@ const Connect = () => {
   }
 
   return (
-    <Flex flexDirection="column" gap="12px">
-      <Accordion
-        isDefaultOpen
-        items={[
-          {
-            title: "Connection",
-            content: (
-              <Flex gap="12px">
-                <Flex flex={1} flexDirection="column" gap="12px">
-                  <ConnectStarknetkitModal />
-
-                  <Accordion
-                    withBorder
-                    items={[
-                      {
-                        title: "starknet-react connectors",
-                        content: (
-                          <Flex
-                            flex={1}
-                            flexDirection="column"
-                            gap="12px"
-                            padding="8px"
-                          >
-                            {connectors.map((connector) => (
-                              <ConnectorButton
-                                key={connector.id}
-                                connector={connector}
-                              />
-                            ))}
-                          </Flex>
-                        ),
-                      },
-                    ]}
-                  />
-                </Flex>
-
-                <Flex flex={1} height="fit-content">
-                  <Button
-                    className="full"
-                    onClick={() => disconnect()}
-                    disabled={!isConnected}
-                  >
-                    Disconnect
-                  </Button>
-                </Flex>
-              </Flex>
-            ),
-          },
-        ]}
-      />
-    </Flex>
+    <SectionLayout sectionTitle="Connection">
+      <div className="flex column gap-3">
+        <div className="flex flex-col md:flex-row gap-3">
+          <ConnectStarknetkitModal />
+          <Button
+            className={`w-full ${!isConnected ? "disabled" : ""} justify-start md:justify-center`}
+            onClick={() => disconnect()}
+            disabled={!isConnected}
+            hideChevron
+            leftIcon={<DisconnectIcon />}
+          >
+            Disconnect
+          </Button>
+        </div>
+        <div className="flex column w-full p-3 border border-solid border-raisin-black gap-5 rounded-xl">
+          <span className="text-base font-medium leading-6 text-left">
+            Starknet-react connectors
+          </span>
+          <div className="grid grid-cols-connectors-grid gap-4">
+            {connectors.map((connector) => {
+              const icon =
+                typeof connector.icon === "string"
+                  ? connector.icon
+                  : connector.icon.dark
+              const isSvg = icon?.startsWith("<svg")
+              return (
+                <ConnectorButton
+                  key={connector.id}
+                  connector={connector}
+                  icon={
+                    <>
+                      {isSvg ? (
+                        <div
+                          dangerouslySetInnerHTML={{ __html: icon }}
+                          className="connector-icon"
+                        />
+                      ) : (
+                        <Image
+                          alt={connector.name}
+                          src={icon}
+                          height={17}
+                          width={17}
+                        />
+                      )}
+                    </>
+                  }
+                />
+              )
+            })}
+          </div>
+        </div>
+      </div>
+    </SectionLayout>
   )
 }
 
