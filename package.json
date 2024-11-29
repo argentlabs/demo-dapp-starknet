@@ -2,7 +2,7 @@
   "name": "demo-dapp-starknet",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@9.1.0",
+  "packageManager": "pnpm@9.1.4",
   "engines": {
     "node": "20.x"
   },
@@ -11,7 +11,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "playwright test",
+    "test:argentx": "pnpm run --filter @demo-dapp-starket/e2e test:argentx",
+    "test:webwallet": "pnpm run --filter @demo-dapp-starket/e2e test:webwallet",
     "test:headed": "playwright test --headed",
     "test:ui": "playwright test --ui",
     "prepare": "husky"
@@ -34,7 +35,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.4.20",
-    "eslint": "^8",
+    "eslint": "^9.15.0",
     "eslint-config-next": "15.0.2",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
