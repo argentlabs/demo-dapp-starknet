@@ -9,12 +9,13 @@ import {
 } from "starknetkit/braavosMobile"
 import { InjectedConnector } from "starknetkit/injected"
 import { WebWalletConnector } from "starknetkit/webwallet"
+import { getStarknet } from "@starknet-io/get-starknet-core"
 
 const isMobileDevice = () => {
   if (typeof window === "undefined") {
     return false
   }
-
+  getStarknet()
   // Primary method: User Agent + Touch support check
   const userAgent = navigator.userAgent.toLowerCase()
   const isMobileUA =
@@ -49,6 +50,7 @@ export const availableConnectors = () => {
   return [
     new InjectedConnector({ options: { id: "argentX" } }),
     new InjectedConnector({ options: { id: "braavos" } }),
+    new InjectedConnector({ options: { id: "metamask" } }),
     ArgentMobileConnector.init({
       options: {
         url: typeof window !== "undefined" ? window.location.href : "",
