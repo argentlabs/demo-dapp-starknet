@@ -129,8 +129,8 @@ const SignMessage = () => {
                 <div className="flex column gap-1">
                   <h4>r</h4>
                   <textarea
-                    id="r"
-                    name="r"
+                    id="signer_r"
+                    name="signer_r"
                     placeholder="r"
                     value={lastSig[3]}
                     readOnly
@@ -139,8 +139,8 @@ const SignMessage = () => {
                 <div className="flex column gap-1">
                   <h4>s</h4>
                   <textarea
-                    id="s"
-                    name="s"
+                    id="signer_s"
+                    name="signer_s"
                     placeholder="s"
                     value={lastSig[4]}
                     readOnly
@@ -151,9 +151,9 @@ const SignMessage = () => {
                     <div className="flex column gap-1">
                       <h4>Cosigner</h4>
                       <textarea
-                        id="signer"
-                        name="signer"
-                        placeholder="signer"
+                        id="cosigner"
+                        name="cosigner"
+                        placeholder="cosigner"
                         value={lastSig[6]}
                         readOnly
                       />
@@ -161,8 +161,8 @@ const SignMessage = () => {
                     <div className="flex column gap-1">
                       <h4>r</h4>
                       <textarea
-                        id="r"
-                        name="r"
+                        id="cosigner_r"
+                        name="cosigner_r"
                         placeholder="r"
                         value={lastSig[7]}
                         readOnly
@@ -171,8 +171,8 @@ const SignMessage = () => {
                     <div className="flex column gap-1">
                       <h4>s</h4>
                       <textarea
-                        id="s"
-                        name="s"
+                        id="cosigner_s"
+                        name="cosigner_s"
                         placeholder="s"
                         value={lastSig[8]}
                         readOnly

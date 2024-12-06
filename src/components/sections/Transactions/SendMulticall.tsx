@@ -45,7 +45,9 @@ const SendMulticall = () => {
       e.preventDefault()
       setLastTxStatus("approve")
       const { transaction_hash } = await sendAsync()
-      alert(`Transaction sent: ${transaction_hash}`)
+      setTimeout(() => {
+        alert(`Transaction sent: ${transaction_hash}`)
+      })
     } catch (error) {
       setLastTxError((error as Error).message)
     } finally {
