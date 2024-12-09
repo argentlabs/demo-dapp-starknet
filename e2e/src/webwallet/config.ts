@@ -14,10 +14,14 @@ const config = {
     password: process.env.WW_LOGIN_PASSWORD!,
   },
   emailPassword: process.env.EMAIL_PASSWORD!,
-  acc_destination: commonConfig.destinationAddress! || '',
-  vw_acc_addr: process.env.VW_ACC_ADDR! || '',
+  acc_destination: commonConfig.destinationAddress! || "",
+  vw_acc_addr: process.env.VW_ACC_ADDR! || "",
   url: "https://web.argent.xyz",
-  ...commonConfig,
+  /* 
+    TODO: wait for sepolia in prod
+    process.env.ARGENT_X_ENVIRONMENT === "prod"
+      ? "https://web.argent.xyz" :
+      "" */ ...commonConfig,
 }
 
 // check that no value of config is undefined, otherwise throw error

@@ -34,7 +34,7 @@ const playwrightConfig: PlaywrightTestConfig = {
       outputDir: config.artifactsDir,
     },
   ],
-  workers: config.isCI ? 2 : 1,
+  workers: 1,
   fullyParallel: true,
   reportSlowTests: {
     threshold: 2 * 60e3, // 2 minutes

@@ -20,7 +20,7 @@ jobs:
       E2E_REPO_TOKEN: ${{ secrets.E2E_REPO_TOKEN }}
       E2E_REPO_OWNER: ${{ secrets.E2E_REPO_OWNER }}
       E2E_REPO_RELEASE_NAME: ${{ secrets.E2E_REPO_RELEASE_NAME }}
-      
+
       WW_EMAIL: ${{ secrets.WW_EMAIL }}
       WW_LOGIN_PASSWORD: ${{ secrets.WW_LOGIN_PASSWORD }}
       EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
@@ -36,11 +36,11 @@ jobs:
         with:
           run_install: false
           version: ${{ env.PNPM_VERSION }}
-      
+
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: "pnpm"    
+          cache: "pnpm"
 
       - name: Get pnpm store directory
         shell: bash
@@ -65,9 +65,8 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ./*
-          key: ${{ github.sha }}  
-      
-     
+          key: ${{ github.sha }}
+
   test-webwallet:
     runs-on: ubuntu-latest
     container:
@@ -75,7 +74,7 @@ jobs:
     needs: [build]
     env:
       ARGENT_X_ENVIRONMENT: "hydrogen"
-      
+
       WW_EMAIL: ${{ secrets.WW_EMAIL }}
       WW_LOGIN_PASSWORD: ${{ secrets.WW_LOGIN_PASSWORD }}
       EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
@@ -108,12 +107,12 @@ jobs:
         with:
           path: ./*
           key: ${{ github.sha }}
-      
+
       - name: Run e2e tests
         run: |
           pnpm run start & # Start the server in background
           echo "Waiting for server to be ready..."
-          for i in {1..30}; do
+          for i in $(seq 1 30); do
             if curl -s http://localhost:3000 > /dev/null; then
               echo "Server is ready!"
               break
@@ -126,7 +125,7 @@ jobs:
             sleep 1
           done
           xvfb-run --auto-servernum pnpm test:webwallet
-        
+
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         if: always()
@@ -136,7 +135,7 @@ jobs:
             e2e/artifacts/playwright/
             !e2e/artifacts/playwright/*.webm
           retention-days: 5
-          
+
   test-argentX:
     runs-on: ubuntu-latest
     container:
@@ -177,7 +176,7 @@ jobs:
         with:
           path: ./*
           key: ${{ github.sha }}
-      
+
       - name: Install libarchive-tools
         shell: bash
         run: |
@@ -188,8 +187,8 @@ jobs:
             dpkg --configure -a
             apt-get update && apt-get install -y libarchive-tools
           }
-  
-          for i in {1..3}; do
+
+          for i in $(seq 1 3); do
             echo "Attempt $i to install libarchive-tools"
             if try_apt; then
               echo "Successfully installed libarchive-tools"
@@ -206,7 +205,7 @@ jobs:
         run: |
           pnpm run start & # Start the server in background
           echo "Waiting for server to be ready..."
-          for i in {1..30}; do
+          for i in $(seq 1 30); do
             if curl -s http://localhost:3000 > /dev/null; then
               echo "Server is ready!"
               break
@@ -219,7 +218,7 @@ jobs:
             sleep 1
           done
           xvfb-run --auto-servernum pnpm test:argentx
-        
+
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         if: always()
@@ -229,4 +228,3 @@ jobs:
             e2e/artifacts/playwright/
             !e2e/artifacts/playwright/*.webm
           retention-days: 5
-       
