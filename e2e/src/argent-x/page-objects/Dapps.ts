@@ -2,13 +2,14 @@ import { ChromiumBrowserContext, Page, expect } from "@playwright/test"
 
 import { lang } from "../languages"
 import Navigation from "./Navigation"
-import config from "../../../config"
 
 const dappUrl = "http://localhost:3000"
-const dappName = 'localhost'
+const dappName = "localhost"
 export default class Dapps extends Navigation {
+  private dApp: Page
   constructor(page: Page) {
     super(page)
+    this.dApp = page
   }
 
   account(accountName: string) {
@@ -18,11 +19,11 @@ export default class Dapps extends Navigation {
   connectedDapps(accountName: string, nbrConnectedDapps: number) {
     return nbrConnectedDapps > 1
       ? this.page.locator(
-        `[data-testid="${accountName}"]:has-text("${nbrConnectedDapps} dapps connected")`,
-      )
+          `[data-testid="${accountName}"]:has-text("${nbrConnectedDapps} dapps connected")`,
+        )
       : this.page.locator(
-        `[data-testid="${accountName}"]:has-text("${nbrConnectedDapps} dapp connected")`,
-      )
+          `[data-testid="${accountName}"]:has-text("${nbrConnectedDapps} dapp connected")`,
+        )
   }
 
   get noConnectedDapps() {
@@ -59,99 +60,91 @@ export default class Dapps extends Navigation {
     )
   }
 
-  get knownDappButton() {
-    return this.page.locator('[data-testid="KnownDappButton"]')
-  }
-
-  async ensureKnowDappText() {
-    return Promise.all([
-      expect(this.page.locator('h4:text-is("Known Dapp")')).toBeVisible(),
-      expect(
-        this.page.locator('p:text-is("This dapp is listed on Dappland")'),
-      ).toBeVisible(),
-    ])
-  }
-  async requestConnectionFromDapp(
-    { browserContext,
-      useStarknetKitModal = false }:
-      {
-        browserContext: ChromiumBrowserContext,
-        useStarknetKitModal?: boolean
-      }
-  ) {
+  async requestConnectionFromDapp({
+    browserContext,
+    useStarknetKitModal = false,
+  }: {
+    browserContext: ChromiumBrowserContext
+    useStarknetKitModal?: boolean
+  }) {
     //open dapp page
-    const dapp = await browserContext.newPage()
-    await dapp.setViewportSize({ width: 1080, height: 720 })
-    await dapp.goto("chrome://inspect/#extensions")
-    await dapp.waitForTimeout(1000)
-    await dapp.goto(dappUrl)
+    this.dApp = await browserContext.newPage()
+    await this.dApp.setViewportSize({ width: 1080, height: 720 })
+    await this.dApp.goto("chrome://inspect/#extensions")
+    await this.dApp.waitForTimeout(1000)
+    await this.dApp.goto(dappUrl)
 
-    await dapp.getByRole('button', { name: 'Connection' }).click()
+    await this.dApp.getByRole("button", { name: "Connection" }).click()
     if (useStarknetKitModal) {
-      await dapp.getByRole('button', { name: 'Starknetkit Modal' }).click()
-      await dapp.locator('#starknetkit-modal-container').getByRole('button', { name: 'Argent X Argent X' }).click()
+      await this.dApp.getByRole("button", { name: "Starknetkit Modal" }).click()
+      await this.dApp
+        .locator("#starknetkit-modal-container")
+        .getByRole("button", { name: "Argent X Argent X" })
+        .click()
     } else {
-      await expect(dapp.locator('button :text-is("Argent X")')).toBeVisible()
+      await expect(
+        this.dApp.locator('button :text-is("Argent X")'),
+      ).toBeVisible()
     }
-    await dapp.locator('button :text-is("Argent X")').click()
-    return dapp
+    await this.dApp.locator('button :text-is("Argent X")').click()
   }
 
-  async claimSpok(browserContext: ChromiumBrowserContext) {
-    const spokCampaignUrl = config.spokCampaignUrl! || ''
-    //open dapp page
-    const dapp = await browserContext.newPage()
-    await dapp.setViewportSize({ width: 1080, height: 720 })
-    await dapp.goto("chrome://inspect/#extensions")
-    await dapp.waitForTimeout(1000)
-    await dapp.goto(spokCampaignUrl)
-    await dapp.getByRole("button", { name: "Check eligibility" }).click()
-    await expect(dapp.locator("text=Argent X")).toBeVisible()
-    await dapp.locator("text=Argent X").click()
-    return dapp
-  }
+  async sendERC20transaction({
+    browserContext,
+    type,
+  }: {
+    browserContext: ChromiumBrowserContext
+    type: "ERC20" | "Multicall"
+  }) {
+    const [extension, dappPage] = browserContext.pages()
+    const dialogPromise = this.dApp.waitForEvent("dialog")
 
-  checkCriticalRiskConnectionScreen() {
-    return Promise.all([
-      expect(
-        this.page.locator(
-          `//span[text()="Critical risk"]/following-sibling::label[text()="Use of a blacklisted domain"]`,
-        ),
-      ).toBeVisible(),
-      expect(
-        this.page.locator(
-          `//p[@data-testid="review-footer" and text()="Please review warnings before continuing"]`,
-        ),
-      ).toBeVisible(),
-      expect(this.page.getByRole("button", { name: "Connect" })).toBeDisabled(),
+    dappPage.bringToFront()
+
+    // avoid too many requests in a short time, causing user to reject
+    await this.dApp.waitForTimeout(2500)
+    await this.dApp.locator('button :text-is("Transactions")').click()
+    await this.dApp.locator(`button :text-is("Send ${type}")`).click()
+
+    await expect(extension.getByText("Review transaction")).toBeVisible()
+    await expect(extension.getByText("Confirm")).toBeVisible()
+    const [, dialog] = await Promise.all([
+      extension.getByText("Confirm").click(),
+      dialogPromise,
     ])
+
+    expect(dialog.message()).toContain("Transaction sent")
+    await dialog.accept()
   }
 
-  async acceptCriticalRiskConnection() {
-    await this.page.getByRole("button", { name: "Review" }).click()
-    await Promise.all([
-      expect(
-        this.page.locator(`//header[@title="1 risk identified"]`),
-      ).toBeVisible(),
-      expect(
-        this.page.locator(
-          '//label[text()="We strongly recommend you do not proceed with this transaction"]',
-        ),
-      ).toBeVisible(),
-      expect(
-        this.page.locator(
-          '//span[text()="Critical risk"]/following-sibling::span[text()="Use of a blacklisted domain"]/following-sibling::p[text()="You are currently on an unsafe domain. Be aware of the risks."]',
-        ),
-      ).toBeVisible(),
-    ])
-    await this.page.getByRole("button", { name: "Accept risk" }).click()
-  }
+  async signMessage({
+    browserContext,
+  }: {
+    browserContext: ChromiumBrowserContext
+  }) {
+    const [extension, dappPage] = browserContext.pages()
 
-  async connectedDappsTooltip(dappUrl: string) {
-    await this.showSettingsLocator.click()
-    await this.page.hover('[data-testid="connected-dapp"]')
+    dappPage.bringToFront()
+
+    await this.dApp.locator('button :text-is("Signing")').click()
+    await this.dApp.locator("[name=short-text]").fill("some message to sign")
+    await this.dApp.locator('button[type="submit"]').click()
+
     await expect(
-      this.page.locator('[data-testid="connected-dapp"]'),
-    ).toHaveText(`Connected to ${dappUrl}`)
+      this.page.locator(`button:text-is("${lang.transaction.accept}")`),
+    ).toBeVisible()
+    await expect(
+      this.page.locator(`button:text-is("${lang.transaction.reject}")`),
+    ).toBeVisible()
+
+    extension.bringToFront()
+    await this.page.locator(`button:text-is("${lang.sign.accept}")`).click()
+    dappPage.bringToFront()
+
+    await Promise.all([
+      expect(this.dApp.getByText("Signer", { exact: true })).toBeVisible(),
+      expect(this.dApp.locator("[name=signer_r]")).toBeVisible(),
+      expect(this.dApp.locator("[name=signer_s]")).toBeVisible(),
+    ])
   }
 }
