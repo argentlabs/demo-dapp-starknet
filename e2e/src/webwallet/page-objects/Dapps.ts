@@ -125,7 +125,7 @@ export default class Dapps extends Navigation {
 
     await expect(popup.getByText("Sign Message")).toBeVisible()
     await expect(popup.getByText("Confirm")).toBeVisible()
-    await popup.getByText("Confirm").click({ timeout: 30000, force: true })
+    await popup.getByText("Confirm").click({ timeout: 3000, force: true })
 
     await Promise.all([
       expect(this.dApp.getByText("Signer", { exact: true })).toBeVisible(),
@@ -153,5 +153,55 @@ export default class Dapps extends Navigation {
     const dialog = await dialogPromise
     expect(dialog.message()).toContain("Not implemented")
     await dialog.accept()
+  }
+
+  async sessionKeys() {
+    const popupPromise = this.dApp.waitForEvent("popup")
+
+    await this.dApp.locator('button :text-is("Session Keys")').click()
+    await expect(
+      this.dApp.locator(`button :text-is("Create session")`),
+    ).toBeVisible()
+    await this.dApp.waitForTimeout(100)
+    const [, popup] = await Promise.all([
+      this.dApp.locator(`button :text-is("Create session")`).click(),
+      popupPromise,
+    ])
+
+    await popup
+      .getByRole("button")
+      .and(popup.getByText("Start session"))
+      .click()
+    await this.dApp.waitForTimeout(1000)
+
+    const dialogPromise = this.dApp.waitForEvent("dialog")
+    const [, dialog] = await Promise.all([
+      this.dApp.getByText("Submit session tx").click(),
+      dialogPromise,
+    ])
+
+    expect(dialog.message()).toContain("Transaction sent")
+    await dialog.accept()
+
+    await this.dApp.waitForTimeout(500)
+    await this.dApp.getByText("Submit EFO call").click()
+    const dialogPromiseEFO = this.dApp.waitForEvent("dialog")
+    await this.dApp.waitForTimeout(100)
+    this.dApp.getByText("Copy EFO call").click()
+    const dialogEFO = await dialogPromiseEFO
+    await this.dApp.waitForTimeout(500)
+    expect(dialogEFO.message()).toContain("Data copied in your clipboard")
+    await dialogEFO.accept()
+
+    await this.dApp.getByText("Submit EFO TypedData").click()
+    const dialogPromiseEFOTypedData = this.dApp.waitForEvent("dialog")
+    await this.dApp.waitForTimeout(100)
+    this.dApp.getByText("Copy EFO TypedData").click()
+    const dialogEFOTypedData = await dialogPromiseEFOTypedData
+    await this.dApp.waitForTimeout(500)
+    expect(dialogEFOTypedData.message()).toContain(
+      "Data copied in your clipboard",
+    )
+    await dialogEFOTypedData.accept()
   }
 }
