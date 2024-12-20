@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/Button"
-import { Flex } from "@/components/ui/Flex"
 import { ETHTokenAddress } from "@/constants"
 import { useWalletRequest } from "@starknet-react/core"
 import { shortString } from "starknet"
@@ -24,23 +23,20 @@ const AddNetwork = () => {
     },
   })
 
+  const handleAddNetwork = async () => {
+    try {
+      await walletRequest.requestAsync()
+    } catch {
+      alert("Not implemented")
+    }
+  }
+
   return (
-    <Flex
-      color="black"
-      borderWidth="0px"
-      borderRadius="8px"
-      justifyContent="flex-start"
-      width="100%"
-    >
-      <Button
-        className="full"
-        onClick={async () => {
-          await walletRequest.requestAsync()
-        }}
-      >
+    <div className="flex w-full justify-start">
+      <Button className="w-full" onClick={handleAddNetwork} hideChevron>
         Add Network
       </Button>
-    </Flex>
+    </div>
   )
 }
 

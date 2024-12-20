@@ -1,33 +1,34 @@
 import { Button } from "@/components/ui/Button"
-import { Flex } from "@/components/ui/Flex"
-import { useWalletRequest } from "@starknet-react/core"
+import { isMainnet, toHexChainid } from "@/helpers/chainId"
+import { useAccount, useWalletRequest } from "@starknet-react/core"
 import { constants } from "starknet"
 
 const ChangeNetwork = () => {
+  const { chainId } = useAccount()
+
   const walletRequest = useWalletRequest({
     type: "wallet_switchStarknetChain",
     params: {
-      chainId: constants.StarknetChainId.SN_MAIN,
+      chainId: isMainnet(toHexChainid(chainId))
+        ? constants.StarknetChainId.SN_SEPOLIA
+        : constants.StarknetChainId.SN_MAIN,
     },
   })
 
+  const handleChangeNetwork = async () => {
+    try {
+      await walletRequest.requestAsync()
+    } catch {
+      alert("Not implemented")
+    }
+  }
+
   return (
-    <Flex
-      color="black"
-      borderWidth="0px"
-      borderRadius="8px"
-      justifyContent="flex-start"
-      width="100%"
-    >
-      <Button
-        className="full"
-        onClick={async () => {
-          await walletRequest.requestAsync()
-        }}
-      >
+    <div className="flex w-full justify-start">
+      <Button className="w-full" onClick={handleChangeNetwork} hideChevron>
         Change Network
       </Button>
-    </Flex>
+    </div>
   )
 }
 

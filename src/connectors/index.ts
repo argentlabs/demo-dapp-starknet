@@ -3,18 +3,19 @@ import {
   isInArgentMobileAppBrowser,
   ArgentMobileConnector,
 } from "starknetkit/argentMobile"
-/* import {
+import {
   BraavosMobileConnector,
   isInBraavosMobileAppBrowser,
-} from "starknetkit/braavosMobile" */
+} from "starknetkit/braavosMobile"
 import { InjectedConnector } from "starknetkit/injected"
 import { WebWalletConnector } from "starknetkit/webwallet"
+import { getStarknet } from "@starknet-io/get-starknet-core"
 
-/* const isMobileDevice = () => {
+const isMobileDevice = () => {
   if (typeof window === "undefined") {
     return false
   }
-
+  getStarknet()
   // Primary method: User Agent + Touch support check
   const userAgent = navigator.userAgent.toLowerCase()
   const isMobileUA =
@@ -27,7 +28,7 @@ import { WebWalletConnector } from "starknetkit/webwallet"
 
   // Combine checks: Must match user agent AND (touch support OR small screen)
   return isMobileUA && (hasTouchSupport || isSmallScreen)
-} */
+}
 
 export const availableConnectors = () => {
   if (isInArgentMobileAppBrowser()) {
@@ -42,13 +43,14 @@ export const availableConnectors = () => {
     ]
   }
 
-  /* if (isInBraavosMobileAppBrowser()) {
+  if (isInBraavosMobileAppBrowser()) {
     return [BraavosMobileConnector.init({})]
-  } */
+  }
 
   return [
     new InjectedConnector({ options: { id: "argentX" } }),
     new InjectedConnector({ options: { id: "braavos" } }),
+    new InjectedConnector({ options: { id: "metamask" } }),
     ArgentMobileConnector.init({
       options: {
         url: typeof window !== "undefined" ? window.location.href : "",
@@ -56,8 +58,8 @@ export const availableConnectors = () => {
         chainId: CHAIN_ID,
       },
     }),
-    /*  isMobileDevice() ? BraavosMobileConnector.init({}) : null, */
-    new WebWalletConnector({ url: ARGENT_WEBWALLET_URL }),
+    isMobileDevice() ? BraavosMobileConnector.init({}) : null,
+    new WebWalletConnector({ url: ARGENT_WEBWALLET_URL, theme: "dark" }),
   ].filter((connector) => connector !== null)
 }
 
