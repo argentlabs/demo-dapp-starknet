@@ -31,6 +31,9 @@ const isMobileDevice = () => {
 }
 
 export const availableConnectors = () => {
+  /* if (typeof window !== "undefined") {
+    getStarknet()
+  } */
   if (isInArgentMobileAppBrowser()) {
     return [
       ArgentMobileConnector.init({
@@ -59,7 +62,7 @@ export const availableConnectors = () => {
       },
     }),
     isMobileDevice() ? BraavosMobileConnector.init({}) : null,
-    new WebWalletConnector({ url: ARGENT_WEBWALLET_URL, theme: "dark" }),
+    new WebWalletConnector({ url: ARGENT_WEBWALLET_URL }),
   ].filter((connector) => connector !== null)
 }
 
