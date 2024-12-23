@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@argent/x-sessions':
-        specifier: 7.0.0-beta.5
-        version: 7.0.0-beta.5(starknet@6.11.0)
+        specifier: 7.0.0
+        version: 7.0.0(starknet@6.11.0)
       '@starknet-io/get-starknet-core':
         specifier: 4.0.4
         version: 4.0.4
@@ -170,8 +170,8 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
 
-  '@argent/x-sessions@7.0.0-beta.5':
-    resolution: {integrity: sha512-nnQUrZ7MWZzTTX9gDFpE4iuj+BorIXapxdWoBo8kjWu+SIqnLZcFfcJApP6x+ANA1GUDjqeu7/+AcJSzPfbVtA==}
+  '@argent/x-sessions@7.0.0':
+    resolution: {integrity: sha512-HVbwOALYUZaJ+alLfBdhiqOcEDQsq0/xFk0/H23aho2LG++RWsQnmSLxhMzcjQYx9GRbt7H8oK2HL2YKfrFPCw==}
     peerDependencies:
       starknet: 6.11.0
 
@@ -3324,7 +3324,7 @@ snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
 
-  '@argent/x-sessions@7.0.0-beta.5(starknet@6.11.0)':
+  '@argent/x-sessions@7.0.0(starknet@6.11.0)':
     dependencies:
       minimalistic-assert: 1.0.1
       starknet: 6.11.0
