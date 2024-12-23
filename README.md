@@ -1,5 +1,7 @@
 # demo-dapp-starknet
 
+This dapp is used as an example for integrating [Starknetkit](https://github.com/argentlabs/starknetkit) with [Starknet-react][https://github.com/apibara/starknet-react].
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

@@ -12,7 +12,7 @@ const ConnectStarknetkitModal = () => {
 
   return (
     <Button
-      className="w-full justify-start md:justify-center"
+      className="w-full justify-center"
       onClick={async () => {
         const { connector } = await starknetkitConnectModal()
         if (!connector) {

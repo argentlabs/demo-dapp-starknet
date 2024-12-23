@@ -1,5 +1,5 @@
 import { ETHTokenAddress } from "@/constants"
-import { parseInputAmountToUint256 } from "@/helper/token"
+import { parseInputAmountToUint256 } from "@/helpers/token"
 import {
   useAccount,
   useContract,
@@ -7,7 +7,7 @@ import {
 } from "@starknet-react/core"
 import { useState } from "react"
 import { Button } from "../../ui/Button"
-import { abi } from "./abi"
+import { erco20TransferAbi } from "../../../abi/erc20TransferAbi"
 
 const SendERC20 = () => {
   const { account } = useAccount()
@@ -16,7 +16,7 @@ const SendERC20 = () => {
   const [lastTxError, setLastTxError] = useState("")
 
   const { contract } = useContract({
-    abi,
+    abi: erco20TransferAbi,
     address: ETHTokenAddress,
   })
 
@@ -40,7 +40,9 @@ const SendERC20 = () => {
       e.preventDefault()
       setLastTxStatus("approve")
       const { transaction_hash } = await sendAsync()
-      alert(`Transaction sent: ${transaction_hash}`)
+      setTimeout(() => {
+        alert(`Transaction sent: ${transaction_hash}`)
+      })
     } catch (error) {
       setLastTxError((error as Error).message)
     } finally {

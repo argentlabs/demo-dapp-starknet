@@ -23,15 +23,17 @@ const AddNetwork = () => {
     },
   })
 
+  const handleAddNetwork = async () => {
+    try {
+      await walletRequest.requestAsync()
+    } catch {
+      alert("Not implemented")
+    }
+  }
+
   return (
     <div className="flex w-full justify-start">
-      <Button
-        className="w-full"
-        onClick={async () => {
-          await walletRequest.requestAsync()
-        }}
-        hideChevron
-      >
+      <Button className="w-full" onClick={handleAddNetwork} hideChevron>
         Add Network
       </Button>
     </div>
