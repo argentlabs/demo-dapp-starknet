@@ -5,3 +5,4 @@ export type Section =
   | "Signing"
   | "Network"
   | "ERC20"
+  | "SessionKeys"

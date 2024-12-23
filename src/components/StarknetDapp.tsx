@@ -5,13 +5,14 @@ import { useAccount } from "@starknet-react/core"
 import { useState } from "react"
 import { Connect } from "./connect/Connect"
 import { Header } from "./Header"
+import { GithubLogo } from "./icons/GithubLogo"
 import { AccountStatus } from "./sections/AccountStatus"
 import { AddToken } from "./sections/ERC20/AddToken"
 import { Network } from "./sections/Network/Network"
 import { SectionButton } from "./sections/SectionButton"
-import { Section } from "./sections/types"
-import { GithubLogo } from "./icons/GithubLogo"
 import { SectionLayout } from "./sections/SectionLayout"
+import { SessionKeysSign } from "./sections/SessionKeys/SessionKeysSign"
+import { Section } from "./sections/types"
 
 const StarknetDapp = () => {
   const [section, setSection] = useState<Section | undefined>(undefined)
@@ -40,7 +41,7 @@ const StarknetDapp = () => {
       </div>
 
       {!section && (
-        <div className="md:hidden w-dvw h-dvh fixed bg-backdrop"></div>
+        <div className="md:hidden w-dvw h-dvh fixed bg-backdrop pointer-events-none"></div>
       )}
 
       <div className="flex p-5 gap-3  md:py-[56px] md:px-[116px]  flex-1 h-full">
@@ -91,6 +92,14 @@ const StarknetDapp = () => {
                 disabled={!isConnected}
                 className={`${!section ? "flex" : section === "ERC20" ? "flex" : "md:flex hidden"}`}
               />
+              <SectionButton
+                section="SessionKeys"
+                label="Session Keys"
+                setSection={setSection}
+                selected={section === "SessionKeys"}
+                disabled={!isConnected}
+                className={`${!section ? "flex" : section === "SessionKeys" ? "flex" : "md:flex hidden"}`}
+              />
             </div>
           </div>
 
@@ -107,6 +116,7 @@ const StarknetDapp = () => {
             {section === "Signing" && <SignMessage />}
             {section === "Network" && <Network />}
             {section === "ERC20" && <AddToken />}
+            {section === "SessionKeys" && <SessionKeysSign />}
           </div>
         </div>
       </div>
