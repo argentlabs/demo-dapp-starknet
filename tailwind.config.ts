@@ -33,6 +33,8 @@ export default {
         "medium-grey": "#6f727c",
         "nebula-from": "#EC796B",
         "nebula-to": "#D672EF",
+        "light-grey": "#F6F6F6",
+        backdrop: "rgba(0, 0, 0, 0.3)",
       },
     },
   },

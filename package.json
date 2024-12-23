@@ -2,7 +2,7 @@
   "name": "demo-dapp-starknet",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@9.1.0",
+  "packageManager": "pnpm@9.1.4",
   "engines": {
     "node": "20.x"
   },
@@ -11,19 +11,22 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "playwright test",
+    "test:argentx": "pnpm run --filter @demo-dapp-starket/e2e test:argentx",
+    "test:webwallet": "pnpm run --filter @demo-dapp-starket/e2e test:webwallet",
     "test:headed": "playwright test --headed",
     "test:ui": "playwright test --ui",
     "prepare": "husky"
   },
   "dependencies": {
+    "@argent/x-sessions": "7.0.0",
+    "@starknet-io/get-starknet-core": "4.0.4",
     "@starknet-react/chains": "^3.1.0",
     "@starknet-react/core": "^3.5.0",
     "next": "15.0.2",
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-dom": "19.0.0-rc-02c0e824-20241028",
     "starknet": "^6.11.0",
-    "starknetkit": "^2.6.0"
+    "starknetkit": "2.6.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",

@@ -24,16 +24,18 @@ const AddToken = () => {
     return null
   }
 
+  const handleAddToken = async () => {
+    try {
+      await walletRequest.requestAsync()
+    } catch {
+      alert("Not implemented")
+    }
+  }
+
   return (
     <SectionLayout sectionTitle="Add Token" icon={<AddTokenIcon />}>
       <div className="flex w-1/2 justify-start">
-        <Button
-          className="w-full"
-          onClick={async () => {
-            await walletRequest.requestAsync()
-          }}
-          hideChevron
-        >
+        <Button className="w-full" onClick={handleAddToken} hideChevron>
           Add Token
         </Button>
       </div>

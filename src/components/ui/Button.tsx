@@ -5,6 +5,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   selected?: boolean
   leftIcon?: ReactNode
   rightIcon?: ReactNode
+  responsiveChevron?: boolean
 }
 
 const Button: FC<ButtonProps> = ({
@@ -15,6 +16,7 @@ const Button: FC<ButtonProps> = ({
   selected,
   leftIcon,
   rightIcon,
+  responsiveChevron,
   ...props
 }) => (
   <button
@@ -22,7 +24,7 @@ const Button: FC<ButtonProps> = ({
       ...style,
     }}
     {...props}
-    className={`${props.className} ${selected ? "selected" : ""} ${props.disabled ? "disabled" : ""} hover:bg-charcoal`}
+    className={`${props.className} ${selected ? "selected" : ""} ${props.disabled ? "disabled" : "md:hover:bg-charcoal md:hover:text-light-grey"}`}
     onClick={onClick}
   >
     <div className="flex items-center gap-2">
@@ -42,7 +44,7 @@ const Button: FC<ButtonProps> = ({
         strokeLinejoin="round"
         className={`transform transition-transform duration-400 ease-in-out ${
           selected ? "rotate-90" : ""
-        }`}
+        } ${responsiveChevron ? "md:hidden" : ""}`}
       >
         <polyline points="9 18 15 12 9 6" />
       </svg>

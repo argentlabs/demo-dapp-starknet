@@ -1,6 +1,6 @@
 import { Abi } from "@starknet-react/core"
 
-const abi = [
+const erco20TransferAbi = [
   {
     type: "function",
     name: "transfer",
@@ -19,4 +19,4 @@ const abi = [
   },
 ] as const satisfies Abi
 
-export { abi }
+export { erco20TransferAbi }

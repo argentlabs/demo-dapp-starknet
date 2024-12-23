@@ -5,6 +5,7 @@ import { Section } from "./types"
 interface SectionButtonProps {
   disabled?: boolean
   section: Section
+  label?: string
   selected: boolean
   className?: string
   setSection: (
@@ -17,11 +18,13 @@ interface SectionButtonProps {
 const SectionButton: FC<SectionButtonProps> = ({
   disabled,
   section,
+  label,
   selected,
   setSection,
   className,
 }) => (
   <Button
+    responsiveChevron
     selected={selected}
     className={`text-medium-grey justify-between ${disabled ? "disabled" : ""} ${selected ? "bg-raisin-black" : "bg-black"} 
       ${className}`}
@@ -32,7 +35,7 @@ const SectionButton: FC<SectionButtonProps> = ({
       )
     }}
   >
-    {section}
+    {label || section}
   </Button>
 )
 
