@@ -2,7 +2,7 @@
 import { SignMessage } from "@/components/sections/SignMessage"
 import { Transactions } from "@/components/sections/Transactions/Transactions"
 import { useAccount } from "@starknet-react/core"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Connect } from "./connect/Connect"
 import { Header } from "./Header"
 import { GithubLogo } from "./icons/GithubLogo"
@@ -13,10 +13,22 @@ import { SectionButton } from "./sections/SectionButton"
 import { SectionLayout } from "./sections/SectionLayout"
 import { SessionKeysSign } from "./sections/SessionKeys/SessionKeysSign"
 import { Section } from "./sections/types"
+import { DeclareContract } from "./sections/Declare/DeclareContract"
+import { useSearchParams } from "next/navigation"
+import { upperFirst } from "@/helpers/upperFirst"
 
 const StarknetDapp = () => {
   const [section, setSection] = useState<Section | undefined>(undefined)
   const { isConnected } = useAccount()
+
+  const searchParams = useSearchParams()
+
+  useEffect(() => {
+    const section = searchParams.get("section")
+    if (section) {
+      setSection(upperFirst(section) as Section)
+    }
+  }, [searchParams])
 
   return (
     <div className="flex w-full h-full column">
@@ -99,6 +111,14 @@ const StarknetDapp = () => {
                 selected={section === "SessionKeys"}
                 disabled={!isConnected}
                 className={`${!section ? "flex" : section === "SessionKeys" ? "flex" : "md:flex hidden"}`}
+              />{" "}
+              <SectionButton
+                section="Declare"
+                label="Declare Contract"
+                setSection={setSection}
+                selected={section === "Declare"}
+                disabled={!isConnected}
+                className={`${!section ? "flex" : section === "SessionKeys" ? "flex" : "md:flex hidden"}`}
               />
             </div>
           </div>
@@ -117,6 +137,7 @@ const StarknetDapp = () => {
             {section === "Network" && <Network />}
             {section === "ERC20" && <AddToken />}
             {section === "SessionKeys" && <SessionKeysSign />}
+            {section === "Declare" && <DeclareContract />}
           </div>
         </div>
       </div>
