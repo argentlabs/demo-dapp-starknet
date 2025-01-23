@@ -18,17 +18,17 @@ import { useSearchParams } from "next/navigation"
 import { upperFirst } from "@/helpers/upperFirst"
 
 const StarknetDapp = () => {
-  const [section, setSection] = useState<Section | undefined>(undefined)
+  const [section, setSection] = useState<Section | undefined>("Connection")
   const { isConnected } = useAccount()
 
   const searchParams = useSearchParams()
 
   useEffect(() => {
     const section = searchParams.get("section")
-    if (section) {
+    if (section && isConnected) {
       setSection(upperFirst(section) as Section)
     }
-  }, [searchParams])
+  }, [searchParams, isConnected])
 
   return (
     <div className="flex w-full h-full column">
