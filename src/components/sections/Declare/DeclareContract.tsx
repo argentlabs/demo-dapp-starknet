@@ -125,13 +125,13 @@ const DeclareContract = () => {
       )}
 
       {declaredClassHash && txHash && (
-        <div className="flex flex-col gap-6 w-full p-4 border border-solid border-raisin-black  rounded-lg shadow-md">
+        <div className="flex flex-col gap-6 w-full p-4 border border-solid border-raisin-black rounded-lg shadow-md">
           <div className="flex flex-col items-center">
             <span className="text-md font-semibold text-white">
               Declared Contract Hash
             </span>
             <span
-              className="text-sm text-gray-400 break-all"
+              className="text-sm text-gray-400 break-all cursor-pointer"
               onClick={openClassHashOnVoyager}
             >
               {declaredClassHash}
