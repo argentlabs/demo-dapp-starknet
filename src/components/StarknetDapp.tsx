@@ -2,7 +2,7 @@
 import { SignMessage } from "@/components/sections/SignMessage"
 import { Transactions } from "@/components/sections/Transactions/Transactions"
 import { useAccount } from "@starknet-react/core"
-import { useEffect, useState } from "react"
+import { useEffect, useState, Suspense } from "react"
 import { Connect } from "./connect/Connect"
 import { Header } from "./Header"
 import { GithubLogo } from "./icons/GithubLogo"
@@ -17,10 +17,9 @@ import { DeclareContract } from "./sections/Declare/DeclareContract"
 import { useSearchParams } from "next/navigation"
 import { upperFirst } from "@/helpers/upperFirst"
 
-const StarknetDapp = () => {
+const StarknetDappContent = () => {
   const [section, setSection] = useState<Section | undefined>("Connection")
   const { isConnected } = useAccount()
-
   const searchParams = useSearchParams()
 
   useEffect(() => {
@@ -153,6 +152,14 @@ const StarknetDapp = () => {
         </div>
       </a>
     </div>
+  )
+}
+
+const StarknetDapp = () => {
+  return (
+    <Suspense>
+      <StarknetDappContent />
+    </Suspense>
   )
 }
 
