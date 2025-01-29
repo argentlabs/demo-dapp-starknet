@@ -2,7 +2,7 @@
 import { SignMessage } from "@/components/sections/SignMessage"
 import { Transactions } from "@/components/sections/Transactions/Transactions"
 import { useAccount } from "@starknet-react/core"
-import { useEffect, useState, Suspense } from "react"
+import { useState, Suspense } from "react"
 import { Connect } from "./connect/Connect"
 import { Header } from "./Header"
 import { GithubLogo } from "./icons/GithubLogo"
@@ -14,20 +14,18 @@ import { SectionLayout } from "./sections/SectionLayout"
 import { SessionKeysSign } from "./sections/SessionKeys/SessionKeysSign"
 import { Section } from "./sections/types"
 import { DeclareContract } from "./sections/Declare/DeclareContract"
-import { useSearchParams } from "next/navigation"
-import { upperFirst } from "@/helpers/upperFirst"
 
 const StarknetDappContent = () => {
   const [section, setSection] = useState<Section | undefined>("Connection")
   const { isConnected } = useAccount()
-  const searchParams = useSearchParams()
+  // const searchParams = useSearchParams()
 
-  useEffect(() => {
-    const section = searchParams.get("section")
-    if (section && isConnected) {
-      setSection(upperFirst(section) as Section)
-    }
-  }, [searchParams, isConnected])
+  // useEffect(() => {
+  //   const section = searchParams.get("section")
+  //   if (section && isConnected) {
+  //     setSection(upperFirst(section) as Section)
+  //   }
+  // }, [searchParams, isConnected])
 
   return (
     <div className="flex w-full h-full column">
@@ -110,7 +108,7 @@ const StarknetDappContent = () => {
                 selected={section === "SessionKeys"}
                 disabled={!isConnected}
                 className={`${!section ? "flex" : section === "SessionKeys" ? "flex" : "md:flex hidden"}`}
-              />{" "}
+              />
               <SectionButton
                 section="Declare"
                 label="Declare Contract"
