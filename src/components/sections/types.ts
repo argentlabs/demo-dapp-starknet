@@ -6,3 +6,4 @@ export type Section =
   | "Network"
   | "ERC20"
   | "SessionKeys"
+  | "Declare"
