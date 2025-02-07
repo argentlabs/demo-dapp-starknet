@@ -16,7 +16,7 @@ import { Section } from "./sections/types"
 import { DeclareContract } from "./sections/Declare/DeclareContract"
 
 const StarknetDappContent = () => {
-  const [section, setSection] = useState<Section | undefined>("Connection")
+  const [section, setSection] = useState<Section | undefined>(undefined)
   const { isConnected } = useAccount()
   // const searchParams = useSearchParams()
 
