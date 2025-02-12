@@ -28,26 +28,28 @@ const SessionKeysExecute: FC<WithSessionAccount> = ({ sessionAccount }) => {
         throw new Error("No session account")
       }
 
-      const transferCallData = contract.populate("set_number", {
+      const transferCallData = contract?.populate("set_number", {
         number: 1,
-      })
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      } as any)
 
       // https://www.starknetjs.com/docs/guides/estimate_fees/#estimateinvokefee
       const { suggestedMaxFee } = await sessionAccount.estimateInvokeFee({
         contractAddress: ARGENT_DUMMY_CONTRACT_ADDRESS,
         entrypoint: "set_number",
-        calldata: transferCallData.calldata,
+        calldata: transferCallData?.calldata,
       })
 
       // https://www.starknetjs.com/docs/guides/estimate_fees/#fee-limitation
       const maxFee = (suggestedMaxFee * BigInt(15)) / BigInt(10)
       // send to same account
-      const { transaction_hash } = await contract.set_number(
-        transferCallData.calldata,
+      const { transaction_hash } = (await contract?.set_number(
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        transferCallData?.calldata as any,
         {
           maxFee,
         },
-      )
+      )) as { transaction_hash: string }
       setTimeout(() => {
         alert(`Transaction sent: ${transaction_hash}`)
       })
