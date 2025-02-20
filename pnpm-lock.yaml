@@ -33,8 +33,8 @@ importers:
         specifier: ^6.11.0
         version: 6.11.0
       starknetkit:
-        specifier: 2.6.2
-        version: 2.6.2(starknet@6.11.0)
+        specifier: 2.7.0
+        version: 2.7.0(starknet@6.11.0)
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.5.0
@@ -731,8 +731,11 @@ packages:
   '@starknet-io/get-starknet-core@4.0.4':
     resolution: {integrity: sha512-XSypDxLUE1WDDD/yh8ik+tEAqE+MZZMa4CJ/ocn7hbrKvHOF08/oT3npddObhuu4/IjklZaRzIvdfv0nT+QduA==}
 
-  '@starknet-io/get-starknet@4.0.4':
-    resolution: {integrity: sha512-3qPn8l7khUef1710j/qp80T9iP+QKRYzaHAMae6ZJtGLKxDNqGdRMb6Efi0XARIHXG3xbg26Fh32FesEflV/Og==}
+  '@starknet-io/get-starknet-core@4.0.6':
+    resolution: {integrity: sha512-Ka7d1+ZnpVcQObph4eQyQ/pz5vkZVTdtoFMotTarLXi5S4DvDAlCwnTC/LX3gSJK4UXBSxn9MPP1S+VPw3W/9Q==}
+
+  '@starknet-io/get-starknet@4.0.6':
+    resolution: {integrity: sha512-FhyYF90g1FQHRJudv1FOWtSRLSFoVAM4PTb14Pgy+5aeENubr5hekprqFhZWNk9c3msxK/Nxio+Xc+sgg9zvEg==}
 
   '@starknet-io/types-js@0.7.7':
     resolution: {integrity: sha512-WLrpK7LIaIb8Ymxu6KF/6JkGW1sso988DweWu7p5QY/3y7waBIiPvzh27D9bX5KIJNRDyOoOVoHVEKYUYWZ/RQ==}
@@ -2868,8 +2871,8 @@ packages:
   starknet@6.11.0:
     resolution: {integrity: sha512-u50KrGDi9fbu1Ogu7ynwF/tSeFlp3mzOg1/Y5x50tYFICImo3OfY4lOz9OtYDk404HK4eUujKkhov9tG7GAKlg==}
 
-  starknetkit@2.6.2:
-    resolution: {integrity: sha512-rGEzyDtB6oC+LuyjFg3TCFJOkdNiB7D9FXirZw2VjtBiAltrB+6MVDPikZ0Ru30MqcQ4Kc+CbgT9JsAFsk15MQ==}
+  starknetkit@2.7.0:
+    resolution: {integrity: sha512-IbShYl2fVrSK4vRsLaq1LnX0jo045VE1heDpQlH82OZ3mpeWWN9cFKnwgtfW61T/FplOo/lmUGE32tE2WRqLVg==}
     peerDependencies:
       starknet: ^6.9.0
 
@@ -3948,9 +3951,15 @@ snapshots:
       '@starknet-io/types-js': 0.7.7
       async-mutex: 0.5.0
 
-  '@starknet-io/get-starknet@4.0.4':
+  '@starknet-io/get-starknet-core@4.0.6':
     dependencies:
-      '@starknet-io/get-starknet-core': 4.0.4
+      '@module-federation/runtime': 0.1.21
+      '@starknet-io/types-js': 0.7.7
+      async-mutex: 0.5.0
+
+  '@starknet-io/get-starknet@4.0.6':
+    dependencies:
+      '@starknet-io/get-starknet-core': 4.0.6
       bowser: 2.11.0
 
   '@starknet-io/types-js@0.7.7': {}
@@ -5006,7 +5015,7 @@ snapshots:
       debug: 4.3.7
       enhanced-resolve: 5.17.1
       eslint: 8.57.1
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@8.57.1))(eslint@8.57.1)
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1)
       fast-glob: 3.3.2
       get-tsconfig: 4.8.1
       is-bun-module: 1.2.1
@@ -5019,7 +5028,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@8.57.1))(eslint@8.57.1):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -5041,7 +5050,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@8.57.1))(eslint@8.57.1)
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1)
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
@@ -6498,10 +6507,10 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  starknetkit@2.6.2(starknet@6.11.0):
+  starknetkit@2.7.0(starknet@6.11.0):
     dependencies:
-      '@starknet-io/get-starknet': 4.0.4
-      '@starknet-io/get-starknet-core': 4.0.4
+      '@starknet-io/get-starknet': 4.0.6
+      '@starknet-io/get-starknet-core': 4.0.6
       '@starknet-io/types-js': 0.7.7
       '@trpc/client': 10.45.2(@trpc/server@10.45.2)
       '@trpc/server': 10.45.2
