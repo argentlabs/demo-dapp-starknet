@@ -33,7 +33,7 @@ const SessionKeysSign = () => {
   const sessionParams: CreateSessionParams = {
     allowedMethods,
     expiry,
-    metaData: metaData(false),
+    metaData,
     sessionKey,
   }
 

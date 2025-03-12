@@ -5,6 +5,7 @@ import { ARGENT_DUMMY_CONTRACT_ADDRESS } from "@/constants"
 import { useAccount, useContract } from "@starknet-react/core"
 import { FC, useState } from "react"
 import { WithSessionAccount } from "./types"
+import { CallData } from "starknet"
 
 const SessionKeysExecute: FC<WithSessionAccount> = ({ sessionAccount }) => {
   const { address } = useAccount()
@@ -28,26 +29,46 @@ const SessionKeysExecute: FC<WithSessionAccount> = ({ sessionAccount }) => {
         throw new Error("No session account")
       }
 
-      const transferCallData = contract.populate("set_number", {
-        number: 1,
-      })
+      if (!contract) {
+        throw new Error("No contract")
+      }
 
       // https://www.starknetjs.com/docs/guides/estimate_fees/#estimateinvokefee
-      const { suggestedMaxFee } = await sessionAccount.estimateInvokeFee({
-        contractAddress: ARGENT_DUMMY_CONTRACT_ADDRESS,
-        entrypoint: "set_number",
-        calldata: transferCallData.calldata,
-      })
+      const { suggestedMaxFee, resourceBounds: estimatedResourceBounds } =
+        await sessionAccount.estimateInvokeFee(
+          {
+            contractAddress: ARGENT_DUMMY_CONTRACT_ADDRESS,
+            entrypoint: "set_number",
+            calldata: CallData.compile(["1"]),
+          },
+          {
+            version: "0x3",
+          },
+        )
 
-      // https://www.starknetjs.com/docs/guides/estimate_fees/#fee-limitation
       const maxFee = (suggestedMaxFee * BigInt(15)) / BigInt(10)
-      // send to same account
-      const { transaction_hash } = await contract.set_number(
-        transferCallData.calldata,
+
+      const resourceBounds = {
+        ...estimatedResourceBounds,
+        l1_gas: {
+          ...estimatedResourceBounds.l1_gas,
+          max_amount: "0x28",
+        },
+      }
+
+      const { transaction_hash } = await sessionAccount.execute(
+        {
+          contractAddress: ARGENT_DUMMY_CONTRACT_ADDRESS,
+          entrypoint: "set_number",
+          calldata: CallData.compile(["1"]),
+        },
         {
           maxFee,
+          resourceBounds,
+          version: "0x3",
         },
       )
+
       setTimeout(() => {
         alert(`Transaction sent: ${transaction_hash}`)
       })
