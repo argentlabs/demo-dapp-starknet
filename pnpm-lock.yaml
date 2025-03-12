@@ -10,19 +10,19 @@ importers:
     dependencies:
       '@argent/x-sessions':
         specifier: 7.0.0
-        version: 7.0.0(starknet@6.11.0)
+        version: 7.0.0(starknet@6.23.1)
       '@starknet-io/get-starknet-core':
         specifier: 4.0.4
         version: 4.0.4
       '@starknet-react/chains':
-        specifier: ^3.1.0
-        version: 3.1.0
+        specifier: ^3.1.2
+        version: 3.1.2
       '@starknet-react/core':
-        specifier: ^3.5.0
-        version: 3.5.0(get-starknet-core@4.0.0)(react@19.0.0-rc-02c0e824-20241028)(starknet@6.11.0)(typescript@5.6.3)
+        specifier: ^3.7.2
+        version: 3.7.2(get-starknet-core@4.0.0)(react@19.0.0-rc-02c0e824-20241028)(starknet@6.23.1)(typescript@5.6.3)
       next:
-        specifier: 15.0.2
-        version: 15.0.2(@playwright/test@1.48.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
+        specifier: 15.2.2
+        version: 15.2.2(@playwright/test@1.48.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
       react:
         specifier: 19.0.0-rc-02c0e824-20241028
         version: 19.0.0-rc-02c0e824-20241028
@@ -30,11 +30,11 @@ importers:
         specifier: 19.0.0-rc-02c0e824-20241028
         version: 19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028)
       starknet:
-        specifier: ^6.11.0
-        version: 6.11.0
+        specifier: ^6.21.1
+        version: 6.23.1
       starknetkit:
-        specifier: 2.7.0
-        version: 2.7.0(starknet@6.11.0)
+        specifier: 2.8.1-beta-wallet-account.1
+        version: 2.8.1-beta-wallet-account.1(starknet@6.23.1)
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.5.0
@@ -470,56 +470,56 @@ packages:
   '@module-federation/sdk@0.1.21':
     resolution: {integrity: sha512-r7xPiAm+O4e+8Zvw+8b4ToeD0D0VJD004nHmt+Y8r/l98J2eA6di72Vn1FeyjtQbCrFtiMw3ts/dlqtcmIBipw==}
 
-  '@next/env@15.0.2':
-    resolution: {integrity: sha512-c0Zr0ModK5OX7D4ZV8Jt/wqoXtitLNPwUfG9zElCZztdaZyNVnN40rDXVZ/+FGuR4CcNV5AEfM6N8f+Ener7Dg==}
+  '@next/env@15.2.2':
+    resolution: {integrity: sha512-yWgopCfA9XDR8ZH3taB5nRKtKJ1Q5fYsTOuYkzIIoS8TJ0UAUKAGF73JnGszbjk2ufAQDj6mDdgsJAFx5CLtYQ==}
 
   '@next/eslint-plugin-next@15.0.2':
     resolution: {integrity: sha512-R9Jc7T6Ge0txjmqpPwqD8vx6onQjynO9JT73ArCYiYPvSrwYXepH/UY/WdKDY8JPWJl72sAE4iGMHPeQ5xdEWg==}
 
-  '@next/swc-darwin-arm64@15.0.2':
-    resolution: {integrity: sha512-GK+8w88z+AFlmt+ondytZo2xpwlfAR8U6CRwXancHImh6EdGfHMIrTSCcx5sOSBei00GyLVL0ioo1JLKTfprgg==}
+  '@next/swc-darwin-arm64@15.2.2':
+    resolution: {integrity: sha512-HNBRnz+bkZ+KfyOExpUxTMR0Ow8nkkcE6IlsdEa9W/rI7gefud19+Sn1xYKwB9pdCdxIP1lPru/ZfjfA+iT8pw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@next/swc-darwin-x64@15.0.2':
-    resolution: {integrity: sha512-KUpBVxIbjzFiUZhiLIpJiBoelqzQtVZbdNNsehhUn36e2YzKHphnK8eTUW1s/4aPy5kH/UTid8IuVbaOpedhpw==}
+  '@next/swc-darwin-x64@15.2.2':
+    resolution: {integrity: sha512-mJOUwp7al63tDpLpEFpKwwg5jwvtL1lhRW2fI1Aog0nYCPAhxbJsaZKdoVyPZCy8MYf/iQVNDuk/+i29iLCzIA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@next/swc-linux-arm64-gnu@15.0.2':
-    resolution: {integrity: sha512-9J7TPEcHNAZvwxXRzOtiUvwtTD+fmuY0l7RErf8Yyc7kMpE47MIQakl+3jecmkhOoIyi/Rp+ddq7j4wG6JDskQ==}
+  '@next/swc-linux-arm64-gnu@15.2.2':
+    resolution: {integrity: sha512-5ZZ0Zwy3SgMr7MfWtRE7cQWVssfOvxYfD9O7XHM7KM4nrf5EOeqwq67ZXDgo86LVmffgsu5tPO57EeFKRnrfSQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-arm64-musl@15.0.2':
-    resolution: {integrity: sha512-BjH4ZSzJIoTTZRh6rG+a/Ry4SW0HlizcPorqNBixBWc3wtQtj4Sn9FnRZe22QqrPnzoaW0ctvSz4FaH4eGKMww==}
+  '@next/swc-linux-arm64-musl@15.2.2':
+    resolution: {integrity: sha512-cgKWBuFMLlJ4TWcFHl1KOaVVUAF8vy4qEvX5KsNd0Yj5mhu989QFCq1WjuaEbv/tO1ZpsQI6h/0YR8bLwEi+nA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-x64-gnu@15.0.2':
-    resolution: {integrity: sha512-i3U2TcHgo26sIhcwX/Rshz6avM6nizrZPvrDVDY1bXcLH1ndjbO8zuC7RoHp0NSK7wjJMPYzm7NYL1ksSKFreA==}
+  '@next/swc-linux-x64-gnu@15.2.2':
+    resolution: {integrity: sha512-c3kWSOSsVL8rcNBBfOq1+/j2PKs2nsMwJUV4icUxRgGBwUOfppeh7YhN5s79enBQFU+8xRgVatFkhHU1QW7yUA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-linux-x64-musl@15.0.2':
-    resolution: {integrity: sha512-AMfZfSVOIR8fa+TXlAooByEF4OB00wqnms1sJ1v+iu8ivwvtPvnkwdzzFMpsK5jA2S9oNeeQ04egIWVb4QWmtQ==}
+  '@next/swc-linux-x64-musl@15.2.2':
+    resolution: {integrity: sha512-PXTW9PLTxdNlVYgPJ0equojcq1kNu5NtwcNjRjHAB+/sdoKZ+X8FBu70fdJFadkxFIGekQTyRvPMFF+SOJaQjw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-win32-arm64-msvc@15.0.2':
-    resolution: {integrity: sha512-JkXysDT0/hEY47O+Hvs8PbZAeiCQVxKfGtr4GUpNAhlG2E0Mkjibuo8ryGD29Qb5a3IOnKYNoZlh/MyKd2Nbww==}
+  '@next/swc-win32-arm64-msvc@15.2.2':
+    resolution: {integrity: sha512-nG644Es5llSGEcTaXhnGWR/aThM/hIaz0jx4MDg4gWC8GfTCp8eDBWZ77CVuv2ha/uL9Ce+nPTfYkSLG67/sHg==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@next/swc-win32-x64-msvc@15.0.2':
-    resolution: {integrity: sha512-foaUL0NqJY/dX0Pi/UcZm5zsmSk5MtP/gxx3xOPyREkMFN+CTjctPfu3QaqrQHinaKdPnMWPJDKt4VjDfTBe/Q==}
+  '@next/swc-win32-x64-msvc@15.2.2':
+    resolution: {integrity: sha512-52nWy65S/R6/kejz3jpvHAjZDPKIbEQu4x9jDBzmB9jJfuOy5rspjKu4u77+fI4M/WzLXrrQd57hlFGzz1ubcQ==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -534,6 +534,10 @@ packages:
     resolution: {integrity: sha512-TlaHRXDehJuRNR9TfZDNQ45mMEd5dwUwmicsafcIX4SsNiqnCHKjE/1alYPd/lDRVhxdhUAlv8uEhMCI5zjIJQ==}
     engines: {node: ^14.21.3 || >=16}
 
+  '@noble/curves@1.7.0':
+    resolution: {integrity: sha512-UTMhXK9SeDhFJVrHeUJ5uZlI6ajXg10O6Ddocf9S6GjbSBVZsJo88HzKwXznNfGpMTRDyJkqMjNDPYgf0qFWnw==}
+    engines: {node: ^14.21.3 || >=16}
+
   '@noble/hashes@1.3.3':
     resolution: {integrity: sha512-V7/fPHgl+jsVPXqqeOzT8egNj2iBIVt+ECeMMG8TdcnTikP3oaBtUVqpT/gYCR68aEBJSF+XbYUxStjbFMqIIA==}
     engines: {node: '>= 16'}
@@ -544,6 +548,10 @@ packages:
 
   '@noble/hashes@1.5.0':
     resolution: {integrity: sha512-1j6kQFb7QRru7eKN3ZDvRcP13rugwdxZqCjbiAVZfIJwgj2A65UmT4TgARXGlXgnRkORLTDTrO19ZErt7+QXgA==}
+    engines: {node: ^14.21.3 || >=16}
+
+  '@noble/hashes@1.6.0':
+    resolution: {integrity: sha512-YUULf0Uk4/mAA89w+k3+yUYh6NrEvxZa5T6SY3wlMvE2chHkxFUUIDI8/XW1QSC357iA5pSnqt7XEhvFOqmDyQ==}
     engines: {node: ^14.21.3 || >=16}
 
   '@nodelib/fs.scandir@2.1.5':
@@ -662,6 +670,9 @@ packages:
   '@scure/base@1.1.9':
     resolution: {integrity: sha512-8YKhl8GHiNI/pU2VMaofa2Tor7PJRAjwQLBBuilkJ9L5+13yVbC7JO/wS7piioAvPSwR3JKM1IJ/u4xQzbcXKg==}
 
+  '@scure/base@1.2.1':
+    resolution: {integrity: sha512-DGmGtC8Tt63J5GfHgfl5CuAXh96VF/LD8K9Hr/Gv0J2lAoRGlPOMpqMpMbCTOoOJMZCk2Xt+DskdDyn6dEFdzQ==}
+
   '@scure/bip32@1.5.0':
     resolution: {integrity: sha512-8EnFYkqEQdnkuGBVpCzKxyIwDCBLDVj3oiX0EKUFre/tOjL/Hqba1D6n/8RcmaQy4f95qQFrO2A8Sr6ybh4NRw==}
 
@@ -670,6 +681,9 @@ packages:
 
   '@scure/starknet@1.0.0':
     resolution: {integrity: sha512-o5J57zY0f+2IL/mq8+AYJJ4Xpc1fOtDhr+mFQKbHnYFmm3WQrC+8zj2HEgxak1a+x86mhmBC1Kq305KUpVf0wg==}
+
+  '@scure/starknet@1.1.0':
+    resolution: {integrity: sha512-83g3M6Ix2qRsPN4wqLDqiRZ2GBNbjVWfboJE/9UjfG+MHr6oDSu/CWgy8hsBSJejr09DkkL+l0Ze4KVrlCIdtQ==}
 
   '@selderee/plugin-htmlparser2@0.11.0':
     resolution: {integrity: sha512-P33hHGdldxGabLFjPPpaTxVolMrzrcegejx+0GxjrIb9Zv48D8yAIA/QTDR2dFl7Uz7urX8aX6+5bCZslr+gWQ==}
@@ -737,14 +751,17 @@ packages:
   '@starknet-io/get-starknet@4.0.6':
     resolution: {integrity: sha512-FhyYF90g1FQHRJudv1FOWtSRLSFoVAM4PTb14Pgy+5aeENubr5hekprqFhZWNk9c3msxK/Nxio+Xc+sgg9zvEg==}
 
+  '@starknet-io/types-js@0.7.10':
+    resolution: {integrity: sha512-1VtCqX4AHWJlRRSYGSn+4X1mqolI1Tdq62IwzoU2vUuEE72S1OlEeGhpvd6XsdqXcfHmVzYfj8k1XtKBQqwo9w==}
+
   '@starknet-io/types-js@0.7.7':
     resolution: {integrity: sha512-WLrpK7LIaIb8Ymxu6KF/6JkGW1sso988DweWu7p5QY/3y7waBIiPvzh27D9bX5KIJNRDyOoOVoHVEKYUYWZ/RQ==}
 
-  '@starknet-react/chains@3.1.0':
-    resolution: {integrity: sha512-h+fxh+Bs8h0ZSEX651vG3mn1NtMKzFDSHqrX7Q8YRRIeTKolPCx4vmoi5Gg19SXr/9iIVSwgx6qe4rVZTNfhcQ==}
+  '@starknet-react/chains@3.1.2':
+    resolution: {integrity: sha512-/Oldb4AVYdvHXzlBRxu01s0WwdOjqL2Q47BAmiv07/aBRU7mSZl6r/6l+bYKNrChSZl7WVnlpb+ojfwhRpbGcw==}
 
-  '@starknet-react/core@3.5.0':
-    resolution: {integrity: sha512-qeE6+kcumRZszx2iA1FKu2ZFLPrxF3rYOv9Tu1cJriQtCymKblolGyaE2/nBz5ysIhZB80JtHksC9l6dpgRmuw==}
+  '@starknet-react/core@3.7.2':
+    resolution: {integrity: sha512-5l6IlXqYzbnInVPwL2VdSwmIiaNnTjm4iYnEGSSVUUPyklHr3bdXaZoILJWcIQ0NaF2ebhNhoKYL8GDHiSKTPw==}
     peerDependencies:
       get-starknet-core: ^4.0.0
       react: ^18.0
@@ -753,8 +770,8 @@ packages:
   '@swc/counter@0.1.3':
     resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
 
-  '@swc/helpers@0.5.13':
-    resolution: {integrity: sha512-UoKGxQ3r5kYI9dALKJapMmuK+1zWM/H17Z1+iwnNmzcJRnfFuevZs375TA5rW31pu4BS4NoSy1fRsexDXfWn5w==}
+  '@swc/helpers@0.5.15':
+    resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
 
   '@tanstack/query-core@5.59.16':
     resolution: {integrity: sha512-crHn+G3ltqb5JG0oUv6q+PMz1m1YkjpASrXTU+sYWW9pLk0t2GybUHNRqYPZWhxgjPaVGC4yp92gSFEJgYEsPw==}
@@ -947,6 +964,10 @@ packages:
 
   abi-wan-kanabi@2.2.3:
     resolution: {integrity: sha512-JlqiAl9CPvTm5kKG0QXmVCWNWoC/XyRMOeT77cQlbxXWllgjf6SqUmaNqFon72C2o5OSZids+5FvLdsw6dvWaw==}
+    hasBin: true
+
+  abi-wan-kanabi@2.2.4:
+    resolution: {integrity: sha512-0aA81FScmJCPX+8UvkXLki3X1+yPQuWxEkqXBVKltgPAK79J+NB+Lp5DouMXa7L6f+zcRlIA/6XO7BN/q9fnvg==}
     hasBin: true
 
   abitype@1.0.6:
@@ -2211,6 +2232,7 @@ packages:
 
   lodash.isequal@4.5.0:
     resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
+    deprecated: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
 
   lodash.isplainobject@4.0.6:
     resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
@@ -2336,16 +2358,16 @@ packages:
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
-  next@15.0.2:
-    resolution: {integrity: sha512-rxIWHcAu4gGSDmwsELXacqAPUk+j8dV/A9cDF5fsiCMpkBDYkO2AEaL1dfD+nNmDiU6QMCFN8Q30VEKapT9UHQ==}
-    engines: {node: '>=18.18.0'}
+  next@15.2.2:
+    resolution: {integrity: sha512-dgp8Kcx5XZRjMw2KNwBtUzhngRaURPioxoNIVl5BOyJbhi9CUgEtKDO7fx5wh8Z8vOVX1nYZ9meawJoRrlASYA==}
+    engines: {node: ^18.18.0 || ^19.8.0 || >= 20.0.0}
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
       '@playwright/test': ^1.41.2
       babel-plugin-react-compiler: '*'
-      react: ^18.2.0 || 19.0.0-rc-02c0e824-20241028
-      react-dom: ^18.2.0 || 19.0.0-rc-02c0e824-20241028
+      react: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
+      react-dom: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
       sass: ^1.3.0
     peerDependenciesMeta:
       '@opentelemetry/api':
@@ -2871,10 +2893,13 @@ packages:
   starknet@6.11.0:
     resolution: {integrity: sha512-u50KrGDi9fbu1Ogu7ynwF/tSeFlp3mzOg1/Y5x50tYFICImo3OfY4lOz9OtYDk404HK4eUujKkhov9tG7GAKlg==}
 
-  starknetkit@2.7.0:
-    resolution: {integrity: sha512-IbShYl2fVrSK4vRsLaq1LnX0jo045VE1heDpQlH82OZ3mpeWWN9cFKnwgtfW61T/FplOo/lmUGE32tE2WRqLVg==}
+  starknet@6.23.1:
+    resolution: {integrity: sha512-vQV9luXpmwZZs9RVZaRwm2iD8T0PYx1AzgZeQsCvD89tR0HwUF0paty27ZzuJrdPe0CmAs/ipAYFCE55jbj0RQ==}
+
+  starknetkit@2.8.1-beta-wallet-account.1:
+    resolution: {integrity: sha512-edbIic8tvvwp/CshS+8Rd+1PSb7qVIfDEEnEel6kfUhUiHhgrGeio2oUTFYs+E7ohwIlGIKcSCagjZLhYiK4ew==}
     peerDependencies:
-      starknet: ^6.9.0
+      starknet: ^6.21.1
 
   std-env@3.7.0:
     resolution: {integrity: sha512-JPbdCEQLj1w5GilpiHAx3qJvFndqybBysA3qUOnznweH4QbNYUsW/ea8QzSrnh0vNsezMMw5bcVool8lM0gwzg==}
@@ -3327,10 +3352,10 @@ snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
 
-  '@argent/x-sessions@7.0.0(starknet@6.11.0)':
+  '@argent/x-sessions@7.0.0(starknet@6.23.1)':
     dependencies:
       minimalistic-assert: 1.0.1
-      starknet: 6.11.0
+      starknet: 6.23.1
 
   '@babel/code-frame@7.26.2':
     dependencies:
@@ -3708,34 +3733,34 @@ snapshots:
 
   '@module-federation/sdk@0.1.21': {}
 
-  '@next/env@15.0.2': {}
+  '@next/env@15.2.2': {}
 
   '@next/eslint-plugin-next@15.0.2':
     dependencies:
       fast-glob: 3.3.1
 
-  '@next/swc-darwin-arm64@15.0.2':
+  '@next/swc-darwin-arm64@15.2.2':
     optional: true
 
-  '@next/swc-darwin-x64@15.0.2':
+  '@next/swc-darwin-x64@15.2.2':
     optional: true
 
-  '@next/swc-linux-arm64-gnu@15.0.2':
+  '@next/swc-linux-arm64-gnu@15.2.2':
     optional: true
 
-  '@next/swc-linux-arm64-musl@15.0.2':
+  '@next/swc-linux-arm64-musl@15.2.2':
     optional: true
 
-  '@next/swc-linux-x64-gnu@15.0.2':
+  '@next/swc-linux-x64-gnu@15.2.2':
     optional: true
 
-  '@next/swc-linux-x64-musl@15.0.2':
+  '@next/swc-linux-x64-musl@15.2.2':
     optional: true
 
-  '@next/swc-win32-arm64-msvc@15.0.2':
+  '@next/swc-win32-arm64-msvc@15.2.2':
     optional: true
 
-  '@next/swc-win32-x64-msvc@15.0.2':
+  '@next/swc-win32-x64-msvc@15.2.2':
     optional: true
 
   '@noble/curves@1.3.0':
@@ -3750,11 +3775,17 @@ snapshots:
     dependencies:
       '@noble/hashes': 1.5.0
 
+  '@noble/curves@1.7.0':
+    dependencies:
+      '@noble/hashes': 1.6.0
+
   '@noble/hashes@1.3.3': {}
 
   '@noble/hashes@1.4.0': {}
 
   '@noble/hashes@1.5.0': {}
+
+  '@noble/hashes@1.6.0': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -3844,6 +3875,8 @@ snapshots:
 
   '@scure/base@1.1.9': {}
 
+  '@scure/base@1.2.1': {}
+
   '@scure/bip32@1.5.0':
     dependencies:
       '@noble/curves': 1.6.0
@@ -3859,6 +3892,11 @@ snapshots:
     dependencies:
       '@noble/curves': 1.3.0
       '@noble/hashes': 1.3.3
+
+  '@scure/starknet@1.1.0':
+    dependencies:
+      '@noble/curves': 1.7.0
+      '@noble/hashes': 1.6.0
 
   '@selderee/plugin-htmlparser2@0.11.0':
     dependencies:
@@ -3954,7 +3992,7 @@ snapshots:
   '@starknet-io/get-starknet-core@4.0.6':
     dependencies:
       '@module-federation/runtime': 0.1.21
-      '@starknet-io/types-js': 0.7.7
+      '@starknet-io/types-js': 0.7.10
       async-mutex: 0.5.0
 
   '@starknet-io/get-starknet@4.0.6':
@@ -3962,19 +4000,22 @@ snapshots:
       '@starknet-io/get-starknet-core': 4.0.6
       bowser: 2.11.0
 
+  '@starknet-io/types-js@0.7.10': {}
+
   '@starknet-io/types-js@0.7.7': {}
 
-  '@starknet-react/chains@3.1.0': {}
+  '@starknet-react/chains@3.1.2': {}
 
-  '@starknet-react/core@3.5.0(get-starknet-core@4.0.0)(react@19.0.0-rc-02c0e824-20241028)(starknet@6.11.0)(typescript@5.6.3)':
+  '@starknet-react/core@3.7.2(get-starknet-core@4.0.0)(react@19.0.0-rc-02c0e824-20241028)(starknet@6.23.1)(typescript@5.6.3)':
     dependencies:
-      '@starknet-io/types-js': 0.7.7
-      '@starknet-react/chains': 3.1.0
+      '@starknet-io/types-js': 0.7.10
+      '@starknet-react/chains': 3.1.2
       '@tanstack/react-query': 5.59.16(react@19.0.0-rc-02c0e824-20241028)
+      abi-wan-kanabi: 2.2.4
       eventemitter3: 5.0.1
       get-starknet-core: 4.0.0
       react: 19.0.0-rc-02c0e824-20241028
-      starknet: 6.11.0
+      starknet: 6.23.1
       viem: 2.21.37(typescript@5.6.3)(zod@3.23.8)
       zod: 3.23.8
     transitivePeerDependencies:
@@ -3984,7 +4025,7 @@ snapshots:
 
   '@swc/counter@0.1.3': {}
 
-  '@swc/helpers@0.5.13':
+  '@swc/helpers@0.5.15':
     dependencies:
       tslib: 2.8.0
 
@@ -4370,6 +4411,13 @@ snapshots:
       through: 2.3.8
 
   abi-wan-kanabi@2.2.3:
+    dependencies:
+      ansicolors: 0.3.2
+      cardinal: 2.1.1
+      fs-extra: 10.1.0
+      yargs: 17.7.2
+
+  abi-wan-kanabi@2.2.4:
     dependencies:
       ansicolors: 0.3.2
       cardinal: 2.1.1
@@ -5015,7 +5063,7 @@ snapshots:
       debug: 4.3.7
       enhanced-resolve: 5.17.1
       eslint: 8.57.1
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1)
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@8.57.1))(eslint@8.57.1)
       fast-glob: 3.3.2
       get-tsconfig: 4.8.1
       is-bun-module: 1.2.1
@@ -5028,7 +5076,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@8.57.1))(eslint@8.57.1):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -5050,7 +5098,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1)
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@8.12.2(eslint@8.57.1)(typescript@5.6.3))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@8.57.1))(eslint@8.57.1)
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
@@ -5949,11 +5997,11 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  next@15.0.2(@playwright/test@1.48.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028):
+  next@15.2.2(@playwright/test@1.48.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028):
     dependencies:
-      '@next/env': 15.0.2
+      '@next/env': 15.2.2
       '@swc/counter': 0.1.3
-      '@swc/helpers': 0.5.13
+      '@swc/helpers': 0.5.15
       busboy: 1.6.0
       caniuse-lite: 1.0.30001676
       postcss: 8.4.31
@@ -5961,14 +6009,14 @@ snapshots:
       react-dom: 19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028)
       styled-jsx: 5.1.6(react@19.0.0-rc-02c0e824-20241028)
     optionalDependencies:
-      '@next/swc-darwin-arm64': 15.0.2
-      '@next/swc-darwin-x64': 15.0.2
-      '@next/swc-linux-arm64-gnu': 15.0.2
-      '@next/swc-linux-arm64-musl': 15.0.2
-      '@next/swc-linux-x64-gnu': 15.0.2
-      '@next/swc-linux-x64-musl': 15.0.2
-      '@next/swc-win32-arm64-msvc': 15.0.2
-      '@next/swc-win32-x64-msvc': 15.0.2
+      '@next/swc-darwin-arm64': 15.2.2
+      '@next/swc-darwin-x64': 15.2.2
+      '@next/swc-linux-arm64-gnu': 15.2.2
+      '@next/swc-linux-arm64-musl': 15.2.2
+      '@next/swc-linux-x64-gnu': 15.2.2
+      '@next/swc-linux-x64-musl': 15.2.2
+      '@next/swc-win32-arm64-msvc': 15.2.2
+      '@next/swc-win32-x64-msvc': 15.2.2
       '@playwright/test': 1.48.2
       sharp: 0.33.5
     transitivePeerDependencies:
@@ -6501,17 +6549,33 @@ snapshots:
       isomorphic-fetch: 3.0.0
       lossless-json: 4.0.2
       pako: 2.1.0
-      starknet-types-07: '@starknet-io/types-js@0.7.7'
+      starknet-types-07: '@starknet-io/types-js@0.7.10'
       ts-mixer: 6.0.4
       url-join: 4.0.1
     transitivePeerDependencies:
       - encoding
 
-  starknetkit@2.7.0(starknet@6.11.0):
+  starknet@6.23.1:
+    dependencies:
+      '@noble/curves': 1.7.0
+      '@noble/hashes': 1.6.0
+      '@scure/base': 1.2.1
+      '@scure/starknet': 1.1.0
+      abi-wan-kanabi: 2.2.3
+      fetch-cookie: 3.0.1
+      isomorphic-fetch: 3.0.0
+      lossless-json: 4.0.2
+      pako: 2.1.0
+      starknet-types-07: '@starknet-io/types-js@0.7.10'
+      ts-mixer: 6.0.4
+    transitivePeerDependencies:
+      - encoding
+
+  starknetkit@2.8.1-beta-wallet-account.1(starknet@6.23.1):
     dependencies:
       '@starknet-io/get-starknet': 4.0.6
       '@starknet-io/get-starknet-core': 4.0.6
-      '@starknet-io/types-js': 0.7.7
+      '@starknet-io/types-js': 0.7.10
       '@trpc/client': 10.45.2(@trpc/server@10.45.2)
       '@trpc/server': 10.45.2
       '@walletconnect/sign-client': 2.17.1
@@ -6520,7 +6584,7 @@ snapshots:
       eventemitter3: 5.0.1
       events: 3.3.0
       lodash-es: 4.17.21
-      starknet: 6.11.0
+      starknet: 6.23.1
       svelte-forms: 2.3.1
       trpc-browser: 1.4.2(@trpc/client@10.45.2(@trpc/server@10.45.2))(@trpc/server@10.45.2)
     transitivePeerDependencies:
@@ -6897,8 +6961,8 @@ snapshots:
 
   webauthn-p256@0.0.10:
     dependencies:
-      '@noble/curves': 1.6.0
-      '@noble/hashes': 1.5.0
+      '@noble/curves': 1.7.0
+      '@noble/hashes': 1.6.0
 
   webidl-conversions@3.0.1: {}
 
