@@ -63,6 +63,8 @@ const Header = () => {
                       height={20}
                       className="w-6 h-6"
                       src={data?.profilePicture}
+                      priority
+                      unoptimized
                     />
                   ) : (
                     <AvatarIcon />
