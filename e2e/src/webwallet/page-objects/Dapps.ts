@@ -156,8 +156,8 @@ export default class Dapps extends Navigation {
   }
 
   async sessionKeys() {
+    await new Promise((resolve) => setTimeout(resolve, 1000)) // Add 1 second sleep
     const popupPromise = this.dApp.waitForEvent("popup")
-
     await this.dApp.locator('button :text-is("Session Keys")').click()
     await expect(
       this.dApp.locator(`button :text-is("Create session")`),
