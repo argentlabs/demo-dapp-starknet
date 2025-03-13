@@ -68,18 +68,18 @@ export default class Dapps extends Navigation {
     // password submit
     await popup.locator('button[type="submit"]').click()
 
-    await Promise.all([
-      popup.waitForURL("**/connect?**"),
-      popup.waitForTimeout(5000), // additional safety delay if needed
-    ])
+    //await Promise.all([
+    //popup.waitForURL("**/connect?**"),
+    //  popup.waitForTimeout(5000), // additional safety delay if needed
+    //])
 
-    const allButtons = popup.locator("button")
-    const count = await allButtons.count()
+    //const allButtons = popup.locator("button")
+    //const count = await allButtons.count()
 
     // check if connect page is showed by checking buttons
-    if (count > 0) {
-      await popup.locator('button[type="submit"]').click()
-    }
+    //if (count > 0) {
+    //  await popup.locator('button[type="submit"]').click()
+    // }
 
     return popup
   }
