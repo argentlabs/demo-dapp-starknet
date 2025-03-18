@@ -1,23 +1,26 @@
 "use client"
 import { SignMessage } from "@/components/sections/SignMessage"
 import { Transactions } from "@/components/sections/Transactions/Transactions"
-import { useAccount } from "@starknet-react/core"
-import { useState, Suspense } from "react"
+import { useAccount, useDisconnect } from "@starknet-react/core"
+import { Suspense, useEffect, useState } from "react"
+import { handleWebwalletLogoutEvent } from "starknetkit/webwallet"
 import { Connect } from "./connect/Connect"
 import { Header } from "./Header"
 import { GithubLogo } from "./icons/GithubLogo"
 import { AccountStatus } from "./sections/AccountStatus"
+import { DeclareContract } from "./sections/Declare/DeclareContract"
 import { AddToken } from "./sections/ERC20/AddToken"
 import { Network } from "./sections/Network/Network"
 import { SectionButton } from "./sections/SectionButton"
 import { SectionLayout } from "./sections/SectionLayout"
 import { SessionKeysSign } from "./sections/SessionKeys/SessionKeysSign"
 import { Section } from "./sections/types"
-import { DeclareContract } from "./sections/Declare/DeclareContract"
 
 const StarknetDappContent = () => {
   const [section, setSection] = useState<Section | undefined>(undefined)
   const { isConnected } = useAccount()
+  const { disconnect } = useDisconnect()
+
   // const searchParams = useSearchParams()
 
   // useEffect(() => {
@@ -26,6 +29,10 @@ const StarknetDappContent = () => {
   //     setSection(upperFirst(section) as Section)
   //   }
   // }, [searchParams, isConnected])
+
+  useEffect(() => {
+    handleWebwalletLogoutEvent(disconnect)
+  }, [])
 
   return (
     <div className="flex w-full h-full column">
