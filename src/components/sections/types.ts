@@ -7,3 +7,5 @@ export type Section =
   | "ERC20"
   | "SessionKeys"
   | "Declare"
+  | "UniversalExecute"
+  | "UniversalSign"
