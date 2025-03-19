@@ -17,7 +17,7 @@ export default class Account extends Activity {
     super(page)
     this.upgradeTest = upgradeTest
   }
-  accountName1 = "Account 1"
+  accountName1 = "Helpful Hotdog"
   accountName2 = "Account 2"
   accountName3 = "Account 3"
   accountNameMulti1 = "Multisig 1"
@@ -368,7 +368,7 @@ export default class Account extends Activity {
     await Promise.race([
       expect(this.confirmLocator)
         .toBeEnabled()
-        .then((_) => this.confirmLocator.click()),
+        .then(() => this.confirmLocator.click()),
       expect(this.failPredict).toBeVisible(),
     ])
     if (await this.failPredict.isVisible()) {
@@ -421,7 +421,7 @@ export default class Account extends Activity {
     try {
       await expect(this.failPredict)
         .toBeVisible({ timeout: 1000 * 3 })
-        .then(async (_) => {
+        .then(async () => {
           await this.failPredict.click()
           await this.page.locator('[data-testid="copy-error"]').click()
           await this.setClipboard()

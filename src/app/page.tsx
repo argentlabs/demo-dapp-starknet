@@ -10,7 +10,7 @@ export default function Home() {
   const providers = publicProvider()
 
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col flex-grow">
       <StarknetConfig
         chains={chains}
         provider={providers}

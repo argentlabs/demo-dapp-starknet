@@ -51,3 +51,4 @@ argent-x-dist
 /e2e/node_modules/
 
 settings.json
+.idea

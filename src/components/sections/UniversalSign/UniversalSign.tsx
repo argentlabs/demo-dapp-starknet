@@ -1,0 +1,211 @@
+import { useAccount, useSignTypedData } from "@starknet-react/core"
+import { useState } from "react"
+import { stark } from "starknet"
+import { SigningIcon } from "../../icons/SigningIcon"
+import { Button } from "../../ui/Button"
+import { SectionLayout } from "../SectionLayout"
+
+const UniversalSign = () => {
+  const { account, address } = useAccount()
+  const [typedData, setTypedData] = useState<object | undefined>(undefined)
+  const [displayTypedData, setDisplayTypedData] = useState<string | undefined>(
+    undefined,
+  )
+  const [lastSig, setLastSig] = useState<string[]>([])
+  const [lastSigError, setLastSigError] = useState("")
+  const [jsonFormatError, setJsonFormatError] = useState(false)
+
+  const { signTypedDataAsync } = useSignTypedData(typedData || {})
+
+  const handleSignSubmit = async () => {
+    try {
+      if (!account) {
+        throw new Error("Account not connected")
+      }
+
+      if (jsonFormatError) {
+        throw new Error("JSON Format Error")
+      }
+
+      setJsonFormatError(false)
+      const result = await signTypedDataAsync()
+      setLastSig(stark.formatSignature(result))
+    } catch (error) {
+      setLastSigError((error as Error).message)
+    }
+  }
+
+  if (!account || !address) {
+    return null
+  }
+
+  return (
+    <SectionLayout sectionTitle="Signing" icon={<SigningIcon />}>
+      <div className="flex flex-1 w-full bg-raisin-black rounded-lg p-3">
+        <form
+          className="flex flex-1 flex-col w-full gap-4"
+          onSubmit={(e) => {
+            e.preventDefault()
+            handleSignSubmit()
+          }}
+        >
+          <span className="text-base font-medium leading-6">Sign message</span>
+          <textarea
+            id="short-text"
+            name="short-text"
+            placeholder={`// Example message - please replace before executing
+{
+	"domain": {
+		"name": "Example DApp",
+		"chainId": "0x1",
+		"version": "0.0.1"
+	},
+	"types": {
+		"StarkNetDomain": [
+			{ "name": "name", "type": "felt" },
+			{ "name": "chainId", "type": "felt" },
+			{ "name": "version", "type": "felt" }
+		],
+		"Message": [{ "name": "message", "type": "felt" }]
+	},
+	"primaryType": "Message",
+	"message": {
+		"message": "1234"
+	}
+}`}
+            className="w-full outline-none focus:border-white focus:text-white"
+            value={displayTypedData}
+            style={{ minHeight: "350px" }}
+            onChange={(e) => {
+              setDisplayTypedData(e.target.value)
+              try {
+                setTypedData(JSON.parse(`{ "params" : ${e.target.value} }`))
+                setJsonFormatError(false)
+              } catch {
+                setJsonFormatError(true)
+                return
+              }
+            }}
+          />
+
+          <div className="flex justify-end">
+            <Button
+              type="submit"
+              style={{
+                fontSize: "14px",
+                alignItems: "center",
+                justifyContent: "center",
+                display: "flex",
+                lineHeight: "16px",
+                height: "36px",
+                maxWidth: "175px",
+                textAlign: "center",
+                width: "100%",
+              }}
+              disabled={!displayTypedData}
+              hideChevron
+            >
+              Submit
+            </Button>
+          </div>
+        </form>
+      </div>
+      {lastSigError ? (
+        <span style={{ color: "red" }}>Error: {lastSigError}</span>
+      ) : null}
+      <div className="flex column p-1 gap-3" style={{ flex: "1" }}>
+        {lastSig && lastSig.length > 0 && (
+          <>
+            {lastSig.length % 2 === 0 ? (
+              <>
+                <textarea
+                  id="r"
+                  name="r"
+                  placeholder="r"
+                  value={lastSig[0]}
+                  readOnly
+                />
+                <textarea
+                  id="s"
+                  name="s"
+                  placeholder="s"
+                  value={lastSig[1]}
+                  readOnly
+                />
+              </>
+            ) : (
+              <>
+                <div className="flex column gap-1">
+                  <h4>Signer</h4>
+                  <textarea
+                    id="signer"
+                    name="signer"
+                    placeholder="signer"
+                    value={lastSig[2]}
+                    readOnly
+                  />
+                </div>
+                <div className="flex column gap-1">
+                  <h4>r</h4>
+                  <textarea
+                    id="signer_r"
+                    name="signer_r"
+                    placeholder="r"
+                    value={lastSig[3]}
+                    readOnly
+                  />
+                </div>
+                <div className="flex column gap-1">
+                  <h4>s</h4>
+                  <textarea
+                    id="signer_s"
+                    name="signer_s"
+                    placeholder="s"
+                    value={lastSig[4]}
+                    readOnly
+                  />
+                </div>
+                {lastSig.length > 5 && (
+                  <>
+                    <div className="flex column gap-1">
+                      <h4>Cosigner</h4>
+                      <textarea
+                        id="cosigner"
+                        name="cosigner"
+                        placeholder="cosigner"
+                        value={lastSig[6]}
+                        readOnly
+                      />
+                    </div>
+                    <div className="flex column gap-1">
+                      <h4>r</h4>
+                      <textarea
+                        id="cosigner_r"
+                        name="cosigner_r"
+                        placeholder="r"
+                        value={lastSig[7]}
+                        readOnly
+                      />
+                    </div>
+                    <div className="flex column gap-1">
+                      <h4>s</h4>
+                      <textarea
+                        id="cosigner_s"
+                        name="cosigner_s"
+                        placeholder="s"
+                        value={lastSig[8]}
+                        readOnly
+                      />
+                    </div>
+                  </>
+                )}
+              </>
+            )}
+          </>
+        )}
+      </div>
+    </SectionLayout>
+  )
+}
+
+export { UniversalSign }
