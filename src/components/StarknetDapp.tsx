@@ -15,6 +15,8 @@ import { SectionButton } from "./sections/SectionButton"
 import { SectionLayout } from "./sections/SectionLayout"
 import { SessionKeysSign } from "./sections/SessionKeys/SessionKeysSign"
 import { Section } from "./sections/types"
+import { UniversalSign } from "./sections/UniversalSign/UniversalSign"
+import { UniversalExecute } from "./sections/UniversalExecute/UniversalExecute"
 
 const StarknetDappContent = () => {
   const [section, setSection] = useState<Section | undefined>(undefined)
@@ -124,6 +126,22 @@ const StarknetDappContent = () => {
                 disabled={!isConnected}
                 className={`${!section ? "flex" : section === "SessionKeys" ? "flex" : "md:flex hidden"}`}
               />
+              <SectionButton
+                section="UniversalExecute"
+                label="Execute custom transaction"
+                setSection={setSection}
+                selected={section === "UniversalExecute"}
+                disabled={!isConnected}
+                className={`${!section ? "flex" : section === "UniversalExecute" ? "flex" : "md:flex hidden"}`}
+              />
+              <SectionButton
+                section="UniversalSign"
+                label="Sign custom message"
+                setSection={setSection}
+                selected={section === "UniversalSign"}
+                disabled={!isConnected}
+                className={`${!section ? "flex" : section === "UniversalSign" ? "flex" : "md:flex hidden"}`}
+              />
             </div>
           </div>
 
@@ -142,6 +160,8 @@ const StarknetDappContent = () => {
             {section === "ERC20" && <AddToken />}
             {section === "SessionKeys" && <SessionKeysSign />}
             {section === "Declare" && <DeclareContract />}
+            {section === "UniversalExecute" && <UniversalExecute />}
+            {section === "UniversalSign" && <UniversalSign />}
           </div>
         </div>
       </div>
