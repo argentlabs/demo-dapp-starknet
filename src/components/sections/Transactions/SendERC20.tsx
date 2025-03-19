@@ -8,6 +8,7 @@ import {
 import { useState } from "react"
 import { Button } from "../../ui/Button"
 import { erco20TransferAbi } from "../../../abi/erc20TransferAbi"
+import { CallData } from "starknet"
 
 const SendERC20 = () => {
   const { account } = useAccount()
@@ -24,10 +25,14 @@ const SendERC20 = () => {
     calls:
       contract && account?.address
         ? [
-            contract.populate("transfer", [
-              account?.address,
-              parseInputAmountToUint256("0.000000001"),
-            ]),
+            {
+              contractAddress: ETHTokenAddress,
+              entrypoint: "transfer",
+              calldata: CallData.compile([
+                account?.address,
+                parseInputAmountToUint256("0.000000001"),
+              ]),
+            },
           ]
         : undefined,
   })

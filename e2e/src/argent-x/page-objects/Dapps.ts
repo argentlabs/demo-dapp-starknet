@@ -86,7 +86,6 @@ export default class Dapps extends Navigation {
         this.dApp.locator('button :text-is("Argent X")'),
       ).toBeVisible()
     }
-
     await this.dApp.locator('button :text-is("Argent X")').click()
   }
 
