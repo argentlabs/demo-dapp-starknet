@@ -1,7 +1,17 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
+  images: {
+    domains: ["starknet.id"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "starknet.id",
+        pathname: "/api/identicons/**",
+      },
+    ],
+    formats: ["image/webp", "image/avif"],
+  },
+}
 
-export default nextConfig;
+export default nextConfig

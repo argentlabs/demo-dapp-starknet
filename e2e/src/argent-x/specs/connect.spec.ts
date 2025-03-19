@@ -4,7 +4,6 @@ import test from "../test"
 import config from "../../../config"
 
 test.describe("Connect", () => {
-  
   for (const useStarknetKitModal of [true, false] as const) {
     test(`connect from testDapp using starknetKitModal ${useStarknetKitModal}`, async ({
       extension,
@@ -27,6 +26,7 @@ test.describe("Connect", () => {
       await extension.navigation.showSettingsLocator.click()
       await extension.settings.account(extension.account.accountName1).click()
       await extension.page
+        // .locator(`//a//*[text()="Authorized dapps"]`)
         .getByRole("button", { name: "Connected dapps" })
         .click()
 
@@ -34,11 +34,9 @@ test.describe("Connect", () => {
       //disconnect dapp from Argent X
       await extension.dapps.disconnect().click()
       await expect(extension.dapps.connected()).toBeHidden()
-      await extension.page
-        .getByRole("button", { name: "Connected dapps" })
-        .click()
+
       await expect(
-        extension.page.getByRole("heading", { name: "No authorised dapps" }),
+        extension.page.getByRole("heading", { name: "No authorized dapps" }),
       ).toBeVisible()
     })
   }

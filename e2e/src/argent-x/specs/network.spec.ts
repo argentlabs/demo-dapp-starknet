@@ -3,7 +3,6 @@ import config from "../../../config"
 import { expect } from "@playwright/test"
 
 test.describe(`Network`, () => {
-
   test(`add a new network`, async ({ extension, browserContext }) => {
     await extension.open()
     await extension.recoverWallet(config.testSeed3!)
