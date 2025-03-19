@@ -8,7 +8,7 @@ import { sessionKey } from "@/helpers/sessionKeys"
 import { createOutsideExecutionCall } from "@argent/x-sessions"
 import { useContract } from "@starknet-react/core"
 import { FC, useState } from "react"
-import { constants } from "starknet"
+import { CallData, constants } from "starknet"
 import { SessionKeysEFOLayout } from "./SessionKeysEFOLayout"
 import { WithSession } from "./types"
 
@@ -30,16 +30,20 @@ const SessionKeysExecuteOutside: FC<WithSession> = ({
       if (!session || !sessionAccount) {
         throw new Error("No open session")
       }
-      // https://www.starknetjs.com/docs/guides/use_erc20/#interact-with-an-erc20
-      // check .populate
-      const transferCallData = contract.populate("set_number", {
-        number: 1,
-      })
+      if (!contract) {
+        throw new Error("No contract")
+      }
 
       const efoExecutionCall = await createOutsideExecutionCall({
         session,
         sessionKey,
-        calls: [transferCallData],
+        calls: [
+          {
+            contractAddress: ARGENT_DUMMY_CONTRACT_ADDRESS,
+            entrypoint: "set_number",
+            calldata: CallData.compile(["1"]),
+          },
+        ],
         argentSessionServiceUrl: ARGENT_SESSION_SERVICE_BASE_URL,
         network:
           CHAIN_ID === constants.NetworkName.SN_SEPOLIA ? "sepolia" : "mainnet",
