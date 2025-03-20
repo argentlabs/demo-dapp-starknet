@@ -1,10 +1,12 @@
-// import { useAccount, useDeclareContract } from "@starknet-react/core"
-import { useState } from "react"
-import { SectionLayout } from "../SectionLayout"
+import { DeclareIcon } from "@/components/icons/DeclareIcon"
 import { Button } from "@/components/ui/Button"
-import { useAccount, useDeclareContract } from "@starknet-react/core"
-import { hash } from "starknet"
+import { ErrorText } from "@/components/ui/Error"
 import { isMainnet, toHexChainid } from "@/helpers/chainId"
+import { useAccount, useDeclareContract } from "@starknet-react/core"
+import { useState } from "react"
+import { hash } from "starknet"
+import { SectionLayout } from "../SectionLayout"
+import { FileUploader } from "./FileUploader"
 
 const DeclareContract = () => {
   const { account, address, chainId } = useAccount()
@@ -17,6 +19,13 @@ const DeclareContract = () => {
   const [txHash, setTxHash] = useState<string | null>()
   const [error, setError] = useState<string | null>()
 
+  const [selectedContractFile, setSelectedContractFile] = useState<File | null>(
+    null,
+  )
+  const [selectedCompiledFile, setSelectedCompiledFile] = useState<File | null>(
+    null,
+  )
+
   if (!account || !address) {
     return null
   }
@@ -24,11 +33,14 @@ const DeclareContract = () => {
   const handleContractChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files.length > 0) {
       const file = e.target.files[0]
+      setSelectedContractFile(file)
       const reader = new FileReader()
       reader.onload = () => {
         setContractJson(reader.result as string)
       }
       reader.readAsText(file)
+    } else {
+      setSelectedContractFile(null)
     }
   }
 
@@ -37,11 +49,14 @@ const DeclareContract = () => {
   ) => {
     if (e.target.files && e.target.files.length > 0) {
       const file = e.target.files[0]
+      setSelectedCompiledFile(file)
       const reader = new FileReader()
       reader.onload = () => {
         setCompiledClassHashJson(reader.result as string)
       }
       reader.readAsText(file)
+    } else {
+      setSelectedCompiledFile(null)
     }
   }
 
@@ -82,47 +97,31 @@ const DeclareContract = () => {
   }
 
   return (
-    <SectionLayout sectionTitle="Declare Contract">
-      <div className="flex flex-1 w-full bg-raisin-black rounded-lg p-3">
+    <SectionLayout sectionTitle="Declare Contract" icon={<DeclareIcon />}>
+      <div className="flex flex-1 w-full  rounded-lg">
         <div className="flex flex-col gap-4 w-full">
-          <span className="text-base font-medium leading-6">
+          <span className="text-lg font-semibold leading-6">
             Upload Contract Files
           </span>
           <div className="flex flex-col gap-4">
-            <div className="flex flex-col gap-2">
-              <label htmlFor="contract-file" className="text-sm">
-                Contract File (sierra)
-              </label>
-              <input
-                type="file"
-                id="contract-file"
-                accept=".json"
-                onChange={handleContractChange}
-                className="w-full outline-none focus:border-white focus:text-white"
-              />
-            </div>
-            <div className="flex flex-col gap-2">
-              <label htmlFor="compiled-file" className="text-sm">
-                Compiled Contract File (casm)
-              </label>
-              <input
-                type="file"
-                id="compiled-file"
-                accept=".json"
-                onChange={handleCompiledClassHashChange}
-                className="w-full outline-none focus:border-white focus:text-white"
-              />
-            </div>
+            <FileUploader
+              title="Contract File (sierra)"
+              selectedFile={selectedContractFile}
+              onChange={handleContractChange}
+              id="contract-file"
+            />
+
+            <FileUploader
+              title="Compiled Contract File (casm)"
+              selectedFile={selectedCompiledFile}
+              onChange={handleCompiledClassHashChange}
+              id="compiled-file"
+            />
           </div>
         </div>
       </div>
 
-      {error && (
-        <div className="flex flex-col gap-2 w-full p-4 border border-solid border-raisin-black  rounded-lg shadow-md">
-          <span className="text-md font-semibold text-red-600">Error</span>
-          <span className="text-sm ">{error}</span>
-        </div>
-      )}
+      {error && <ErrorText>{error}</ErrorText>}
 
       {declaredClassHash && txHash && (
         <div className="flex flex-col gap-6 w-full p-4 border border-solid border-raisin-black rounded-lg shadow-md">
@@ -152,7 +151,12 @@ const DeclareContract = () => {
       )}
 
       <div className="flex  justify-center">
-        <Button className="w-full mt-3" onClick={onDeclare} hideChevron>
+        <Button
+          className="w-full mt-3"
+          onClick={onDeclare}
+          hideChevron
+          disabled={!selectedContractFile || !selectedCompiledFile}
+        >
           Declare contract
         </Button>
       </div>

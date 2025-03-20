@@ -22,6 +22,7 @@ import { SessionKeysExecute } from "./SessionKeysExecute"
 import { SessionKeysExecuteOutside } from "./SessionKeysExecuteOutside"
 import { SessionKeysTypedDataOutside } from "./SessionKeysTypedDataOutside"
 import { SessionKeysIcon } from "@/components/icons/SessionKesIcon"
+import { ErrorText } from "@/components/ui/Error"
 
 const SessionKeysSign = () => {
   const { address, chainId } = useAccount()
@@ -29,6 +30,8 @@ const SessionKeysSign = () => {
   const [sessionAccount, setSessionAccount] = useState<
     Account | AccountInterface | undefined
   >()
+
+  const [sessionError, setSessionError] = useState("")
 
   const sessionParams: CreateSessionParams = {
     allowedMethods,
@@ -73,6 +76,7 @@ const SessionKeysSign = () => {
       setSessionAccount(sessionAccount)
     } catch (e) {
       console.error(e)
+      setSessionError((e as Error).message)
     }
   }
 
@@ -90,6 +94,7 @@ const SessionKeysSign = () => {
         session={session}
         sessionAccount={sessionAccount}
       />
+      {sessionError ? <ErrorText>{sessionError}</ErrorText> : null}
     </SectionLayout>
   )
 }
