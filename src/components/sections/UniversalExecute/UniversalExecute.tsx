@@ -1,5 +1,6 @@
 import { TransactionsIcon } from "@/components/icons/TransactionsIcon"
 import { Button } from "@/components/ui/Button"
+import { ErrorText } from "@/components/ui/Error"
 import {
   RequestResult,
   useAccount,
@@ -128,9 +129,7 @@ const UniversalExecute = () => {
                 : "Submit"}
             </Button>
           </div>
-          {lastTxError ? (
-            <span style={{ color: "red" }}>Error: {lastTxError}</span>
-          ) : null}
+          {lastTxError ? <ErrorText>Error: {lastTxError}</ErrorText> : null}
         </form>
       </div>
     </SectionLayout>

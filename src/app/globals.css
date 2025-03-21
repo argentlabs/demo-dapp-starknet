@@ -53,7 +53,8 @@ button {
 }
 
 button.disabled {
-  opacity: 0.4;
+  background-color: #1b1e25;
+  color: #646876;
   cursor: default;
 }
 
