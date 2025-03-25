@@ -58,6 +58,10 @@ button.disabled {
   cursor: default;
 }
 
+button[type="submit"].disabled {
+  opacity: 0.4;
+}
+
 button.selected {
   border: solid 1px #aecbfc;
   color: #aecbfc;
