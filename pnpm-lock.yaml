@@ -33,8 +33,8 @@ importers:
         specifier: ^6.21.1
         version: 6.23.1
       starknetkit:
-        specifier: ^2.10.3
-        version: 2.10.3(starknet@6.23.1)
+        specifier: ^2.10.4
+        version: 2.10.4(starknet@6.23.1)
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.5.0
@@ -2896,8 +2896,8 @@ packages:
   starknet@6.23.1:
     resolution: {integrity: sha512-vQV9luXpmwZZs9RVZaRwm2iD8T0PYx1AzgZeQsCvD89tR0HwUF0paty27ZzuJrdPe0CmAs/ipAYFCE55jbj0RQ==}
 
-  starknetkit@2.10.3:
-    resolution: {integrity: sha512-VqMhQcqq6FJnqwPcwTYcHlOkxu1dGFZNHS46aKkCayrtR25u5VsX2VqoeIHXzDHCniY/nDcJDPE8xwPhcmsMAQ==}
+  starknetkit@2.10.4:
+    resolution: {integrity: sha512-POdv8GdGzBmwgMxn+FQhGXxcc4kFY6tnCHoB/c3j5vigZO2fLVxi5tJX9nYsITRX7QzoV3yal7W5e2agJ4SFSA==}
     peerDependencies:
       starknet: ^6.21.1
 
@@ -6571,7 +6571,7 @@ snapshots:
     transitivePeerDependencies:
       - encoding
 
-  starknetkit@2.10.3(starknet@6.23.1):
+  starknetkit@2.10.4(starknet@6.23.1):
     dependencies:
       '@starknet-io/get-starknet': 4.0.6
       '@starknet-io/get-starknet-core': 4.0.6
