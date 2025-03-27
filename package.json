@@ -1,6 +1,6 @@
 {
   "name": "demo-dapp-starknet",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "packageManager": "pnpm@9.1.4",
   "engines": {
