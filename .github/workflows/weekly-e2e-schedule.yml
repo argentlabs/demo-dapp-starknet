@@ -9,9 +9,8 @@ on:
   workflow_dispatch:
 
 env:
-  NODE_VERSION: "18"
-  PNPM_VERSION: "8"
-  ARGENT_X_ENVIRONMENT: "hydrogen"
+  PNPM_VERSION: 9.1.4
+  NODE_VERSION: 20.x
 
 jobs:
   build:
