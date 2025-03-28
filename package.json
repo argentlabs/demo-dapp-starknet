@@ -12,7 +12,6 @@
     "start": "next start",
     "lint": "next lint",
     "test:argentx": "pnpm run --filter @demo-dapp-starket/e2e test:argentx",
-    "test:webwallet": "pnpm run --filter @demo-dapp-starket/e2e test:webwallet",
     "test:headed": "playwright test --headed",
     "test:ui": "playwright test --ui",
     "prepare": "husky"
