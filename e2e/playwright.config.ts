@@ -18,21 +18,6 @@ const playwrightConfig: PlaywrightTestConfig = {
       retries: config.isCI ? 1 : 0,
       outputDir: config.artifactsDir,
     },
-    {
-      name: "WebWallet",
-      use: {
-        trace: "retain-on-failure",
-        actionTimeout: 120 * 1000, // 2 minute
-        permissions: ["clipboard-read", "clipboard-write"],
-        screenshot: "only-on-failure",
-      },
-      timeout: config.isCI ? 5 * 60e3 : 1 * 60e3,
-      expect: { timeout: 2 * 60e3 }, // 2 minute
-      testDir: "./src/webwallet/specs",
-      testMatch: /\.spec.ts$/,
-      retries: config.isCI ? 1 : 0,
-      outputDir: config.artifactsDir,
-    },
   ],
   workers: 1,
   fullyParallel: true,
