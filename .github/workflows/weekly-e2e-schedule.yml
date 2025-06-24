@@ -1,10 +1,13 @@
-name: Build and run tests
+name: Weekly E2E Tests
+
+# Run every Monday at 8:00 AM UTC
 on:
-  push:
-    branches:
-      - develop
-      - main
-  pull_request:
+  schedule:
+    - cron: "0 8 * * 1"
+
+  # Optional: Also allow manual triggering for testing
+  workflow_dispatch:
+
 env:
   PNPM_VERSION: 9.1.4
   NODE_VERSION: 20.x

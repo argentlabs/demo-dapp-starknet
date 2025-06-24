@@ -3,7 +3,6 @@ import config from "../../../config"
 import { expect } from "@playwright/test"
 
 test.describe(`Token`, () => {
-
   test(`add a new token`, async ({ extension, browserContext }) => {
     await extension.open()
     await extension.recoverWallet(config.testSeed3!)
@@ -14,7 +13,7 @@ test.describe(`Token`, () => {
       browserContext,
       useStarknetKitModal: true,
     })
-    //accept connection from Argent X
+    //accept connection from Ready
     await extension.dapps.accept.click()
 
     await extension.dapps.addToken({
