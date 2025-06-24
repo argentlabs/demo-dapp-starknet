@@ -35,7 +35,7 @@ const Header = () => {
             <div className="flex flex-1 w-full" />
 
             {isConnected && (
-              <div className="flex border-col rounded-md md:rounded-lg gap-3 p-2 md:p-3 border border-solid border-charcoal font-medium text-sm md:text-base text-nowrap">
+              <div className="flex border-col rounded-md md:rounded-lg gap-3 p-2 md:p-3 border border-solid border-charcoal font-medium text-sm md:text-base text-nowrap hover:bg-raisin-black hover:border-raisin-black">
                 <div className="hidden md:flex items-center gap-2">
                   <WalletIcon />
                   {balance

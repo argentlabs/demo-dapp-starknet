@@ -30,8 +30,7 @@
     "uuid": "^11.0.0"
   },
   "scripts": {
-    "test:argentx": "DONWNLOAD_ARGENTX_BUILD=1 pnpm playwright test --project=ArgentX",
-    "test:webwallet": "pnpm playwright test --project=WebWallet"
+    "test:argentx": "DONWNLOAD_ARGENTX_BUILD=1 pnpm playwright test --project=ArgentX"
   },
   "dependencies": {
     "imap-simple": "^5.1.0",

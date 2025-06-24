@@ -20,7 +20,7 @@ test.describe("Connect", () => {
         useStarknetKitModal,
       })
 
-      //accept connection from Argent X
+      //accept connection from Ready
       await extension.dapps.accept.click()
       //check connect dapps
       await extension.navigation.showSettingsLocator.click()
@@ -31,7 +31,7 @@ test.describe("Connect", () => {
         .click()
 
       await expect(extension.dapps.connected()).toBeVisible()
-      //disconnect dapp from Argent X
+      //disconnect dapp from Ready
       await extension.dapps.disconnect().click()
       await expect(extension.dapps.connected()).toBeHidden()
 
