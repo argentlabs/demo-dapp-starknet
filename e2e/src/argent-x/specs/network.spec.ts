@@ -13,7 +13,7 @@ test.describe(`Network`, () => {
       browserContext,
       useStarknetKitModal: true,
     })
-    //accept connection from Argent X
+    //accept connection from Ready
     await extension.dapps.accept.click()
 
     await extension.dapps.network({
@@ -41,7 +41,7 @@ test.describe(`Network`, () => {
       browserContext,
       useStarknetKitModal: true,
     })
-    //accept connection from Argent X
+    //accept connection from Ready
     await extension.dapps.accept.click()
 
     await extension.dapps.network({

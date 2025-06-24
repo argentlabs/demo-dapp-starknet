@@ -79,14 +79,16 @@ export default class Dapps extends Navigation {
       await this.dApp.getByRole("button", { name: "Starknetkit Modal" }).click()
       await this.dApp
         .locator("#starknetkit-modal-container")
-        .getByRole("button", { name: "Argent X" })
+        .getByRole("button", { name: "Ready Wallet (formerly Argent)" })
         .click()
     } else {
       await expect(
-        this.dApp.locator('button :text-is("Argent X")'),
+        this.dApp.locator('button :text-is("Ready Wallet (formerly Argent)")'),
       ).toBeVisible()
     }
-    await this.dApp.locator('button :text-is("Argent X")').click()
+    await this.dApp
+      .locator('button :text-is("Ready Wallet (formerly Argent)")')
+      .click()
   }
 
   async sendERC20transaction({
