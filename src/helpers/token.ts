@@ -1,4 +1,4 @@
-import { num, uint256 } from "starknet"
+import { uint256, BigNumberish } from "starknet"
 
 export interface BigDecimal {
   value: bigint
@@ -36,7 +36,7 @@ export const parseUnits = (value: string, decimals: number): BigDecimal => {
   }
 }
 
-export const getUint256CalldataFromBN = (bn: num.BigNumberish) =>
+export const getUint256CalldataFromBN = (bn: BigNumberish) =>
   uint256.bnToUint256(bn)
 
 export const parseInputAmountToUint256 = (
