@@ -123,7 +123,7 @@ export default class Account extends Activity {
   }
 
   get createWithArgent() {
-    return this.page.locator('[aria-label="Create with Argent"]')
+    return this.page.locator('[aria-label="Create with Ready"]')
   }
 
   get createNewMultisig() {
@@ -135,7 +135,7 @@ export default class Account extends Activity {
   }
 
   get joinWithArgent() {
-    return this.page.locator('[aria-label="Join with Argent"]')
+    return this.page.locator('[aria-label="Join with Ready"]')
   }
 
   get assetsList() {

@@ -6,15 +6,18 @@ import {
   useSendTransaction,
 } from "@starknet-react/core"
 import { useState } from "react"
-import { Button } from "../../ui/Button"
-import { erco20TransferAbi } from "../../../abi/erc20TransferAbi"
 import { CallData } from "starknet"
+import { erco20TransferAbi } from "../../../abi/erc20TransferAbi"
+import { Button } from "../../ui/Button"
 
-const SendERC20 = () => {
+const SendERC20 = ({
+  setLastTxError,
+}: {
+  setLastTxError: (error: string) => void
+}) => {
   const { account } = useAccount()
 
   const [lastTxStatus, setLastTxStatus] = useState("idle")
-  const [lastTxError, setLastTxError] = useState("")
 
   const { contract } = useContract({
     abi: erco20TransferAbi,
@@ -65,9 +68,6 @@ const SendERC20 = () => {
       >
         {lastTxStatus === "approve" ? "Waiting for transaction" : "Send ERC20"}
       </Button>
-      {lastTxError ? (
-        <span style={{ color: "red" }}>Error: {lastTxError}</span>
-      ) : null}
     </div>
   )
 }

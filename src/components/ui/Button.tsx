@@ -24,7 +24,7 @@ const Button: FC<ButtonProps> = ({
       ...style,
     }}
     {...props}
-    className={`${props.className} ${selected ? "selected" : ""} ${props.disabled ? "disabled" : "md:hover:bg-charcoal md:hover:text-light-grey"}`}
+    className={`${props.className} ${selected ? "selected" : ""} ${props.disabled ? "disabled" : "text-white md:hover:bg-charcoal md:bg-raisin-black "}`}
     onClick={onClick}
   >
     <div className="flex items-center gap-2">
