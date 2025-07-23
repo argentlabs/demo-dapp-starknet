@@ -17,21 +17,21 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@argent/x-sessions": "7.0.0",
+    "@argent/x-sessions": "8.0.1",
     "@starknet-io/get-starknet-core": "4.0.4",
     "@starknet-react/chains": "^3.1.2",
     "@starknet-react/core": "^3.7.2",
     "next": "15.2.2",
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-dom": "19.0.0-rc-02c0e824-20241028",
-    "starknet": "^6.21.1",
-    "starknetkit": "^2.12.0"
+    "starknet": "7.5.1",
+    "starknetkit": "3.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
     "@playwright/test": "^1.48.2",
-    "@starknet-io/types-js": "^0.7.7",
+    "@starknet-io/types-js": "0.8.4",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
