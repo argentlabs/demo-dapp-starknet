@@ -126,7 +126,7 @@ export default class Settings extends Navigation {
   }
 
   async signIn(email: string, pin: string = "111111") {
-    await this.page.getByRole("button", { name: "Sign in to Argent" }).click()
+    await this.page.getByRole("button", { name: "Sign in to Ready" }).click()
     await this.page.getByTestId("email-input").fill(email)
     await this.nextLocator.click()
     //avoid BE error PIN not requested

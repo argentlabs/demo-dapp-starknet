@@ -29,6 +29,7 @@ export default {
         charcoal: "#464C5E",
         "raisin-black": "#262933",
         "light-blue": "#aecbfc",
+        "horizon-blue": "#85B6FF",
         "dark-grey": "#646876",
         "medium-grey": "#6f727c",
         "nebula-from": "#EC796B",

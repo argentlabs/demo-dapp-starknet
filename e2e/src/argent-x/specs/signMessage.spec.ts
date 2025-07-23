@@ -4,7 +4,6 @@ import test from "../test"
 import config from "../../../config"
 
 test.describe("Sign message", () => {
-
   test(`sign a message from testDapp`, async ({
     extension,
     browserContext,
@@ -19,7 +18,7 @@ test.describe("Sign message", () => {
       browserContext,
       useStarknetKitModal: true,
     })
-    //accept connection from Argent X
+    //accept connection from Ready
     await extension.dapps.accept.click()
 
     await extension.dapps.signMessage({

@@ -1,3 +1,4 @@
+import { ErrorText } from "@/components/ui/Error"
 import { useAccount, useSignTypedData } from "@starknet-react/core"
 import { useState } from "react"
 import { stark } from "starknet"
@@ -110,9 +111,7 @@ const UniversalSign = () => {
           </div>
         </form>
       </div>
-      {lastSigError ? (
-        <span style={{ color: "red" }}>Error: {lastSigError}</span>
-      ) : null}
+      {lastSigError ? <ErrorText>Error: {lastSigError}</ErrorText> : null}
       <div className="flex column p-1 gap-3" style={{ flex: "1" }}>
         {lastSig && lastSig.length > 0 && (
           <>

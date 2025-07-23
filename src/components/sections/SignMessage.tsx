@@ -5,11 +5,13 @@ import { constants, stark } from "starknet"
 import { Button } from "../ui/Button"
 import { SectionLayout } from "./SectionLayout"
 import { SigningIcon } from "../icons/SigningIcon"
+import { ErrorText } from "../ui/Error"
 
 const SignMessage = () => {
   const { account, address, chainId } = useAccount()
   const [shortText, setShortText] = useState("")
   const [lastSig, setLastSig] = useState<string[]>([])
+  const [lastSigError, setLastSigError] = useState("")
 
   const hexChainId = toHexChainid(chainId)
 
@@ -37,13 +39,16 @@ const SignMessage = () => {
 
   const handleSignSubmit = async () => {
     try {
+      setLastSigError("")
       if (!account) {
         throw new Error("Account not connected")
       }
+
       const result = await signTypedDataAsync()
       setLastSig(stark.formatSignature(result))
     } catch (e) {
       console.error(e)
+      setLastSigError((e as Error).message)
     }
   }
 
@@ -185,6 +190,7 @@ const SignMessage = () => {
           </>
         )}
       </div>
+      {lastSigError ? <ErrorText>{lastSigError}</ErrorText> : null}
     </SectionLayout>
   )
 }

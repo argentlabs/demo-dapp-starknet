@@ -15,7 +15,7 @@ test.describe(`Transactions`, () => {
       browserContext,
       useStarknetKitModal: true,
     })
-    //accept connection from Argent X
+    //accept connection from Ready
     await extension.dapps.accept.click()
 
     await extension.dapps.sendERC20transaction({
@@ -40,7 +40,7 @@ test.describe(`Transactions`, () => {
       browserContext,
       useStarknetKitModal: true,
     })
-    //accept connection from Argent X
+    //accept connection from Ready
     await extension.dapps.accept.click()
 
     await extension.dapps.sendERC20transaction({
