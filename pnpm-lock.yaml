@@ -34,7 +34,7 @@ importers:
         version: 7.5.1
       starknetkit:
         specifier: 3.0.0
-        version: 3.0.0(@argent/x-shared@1.53.2(@scure/base@1.2.6)(@scure/bip39@1.6.0)(async-retry@1.3.3)(lodash-es@4.17.21)(typescript@5.8.3)(ua-parser-js@2.0.4)(url-join@4.0.1)(zod@3.25.76))(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@metamask/sdk@0.32.1(bufferutil@4.0.9)(utf-8-validate@5.0.10))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@scure/bip39@1.6.0)(@solana/web3.js@1.98.2(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(@types/react@18.3.23)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(bufferutil@4.0.9)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028))(embla-carousel-wheel-gestures@8.0.2(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(object-hash@3.0.0)(open@7.4.2)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.0-rc-02c0e824-20241028))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-router-dom@7.6.3(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.2.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0))(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.12(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0)(zdog@1.1.3))(react-virtuoso@4.13.0(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(starknet@7.5.1)(swr@2.3.4(react@19.0.0-rc-02c0e824-20241028))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(typescript@5.8.3)(url-join@4.0.1)(utf-8-validate@5.0.10)(zod@3.25.76)
+        version: 3.0.0(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@metamask/sdk@0.32.1(bufferutil@4.0.9)(utf-8-validate@5.0.10))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@scure/bip39@1.6.0)(@solana/web3.js@1.98.2(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(@types/react@18.3.23)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(bufferutil@4.0.9)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028))(embla-carousel-wheel-gestures@8.0.2(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(object-hash@3.0.0)(open@7.4.2)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.0-rc-02c0e824-20241028))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-router-dom@7.6.3(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.2.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0))(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.12(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0)(zdog@1.1.3))(react-virtuoso@4.13.0(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(starknet@7.5.1)(swr@2.3.4(react@19.0.0-rc-02c0e824-20241028))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(typescript@5.8.3)(url-join@4.0.1)(utf-8-validate@5.0.10)(zod@3.25.76)
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.5.0
@@ -177,31 +177,14 @@ packages:
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
 
-  '@argent/x-multicall@7.1.0':
-    resolution: {integrity: sha512-65y2pXtsjACIYqyjJ75FMbQcnv/5MnONyS3yN+0JgLLNqCEiGrLbGwEZ/E+Esy0qPF1WBqzdx8l3izj5l2zAwQ==}
-    peerDependencies:
-      typescript: ^5.0.0
-
   '@argent/x-sessions@8.0.1':
     resolution: {integrity: sha512-lWySyk3lhmGOwMAi184aWgr3Lry56NiiY6quWKjbtcaMp/zWzINIfHxmUMpvtqZlAo7pFbthv91A7Yu6XGcI5Q==}
     peerDependencies:
       starknet: 7.5.1
 
-  '@argent/x-shared@1.53.2':
-    resolution: {integrity: sha512-+UotwZhe13t4YH9IthXyA6s3ZRScgkhmR5iDMkOwhz8CKI0phxYJQrnFs9tcUkws1M4THDSHXRPBvdu6exp9rw==}
+  '@argent/x-ui@1.109.0':
+    resolution: {integrity: sha512-/H4wPDt4plqq7Fvv7VRci4UZZcu08othzd/XPvqfSh0wMCJvv0RpMnDUg2+151k3ccp9/kxl4l1hSDL/tJQVHw==}
     peerDependencies:
-      '@scure/base': ^1.1.1
-      '@scure/bip39': ^1.2.1
-      async-retry: ^1.3.3
-      lodash-es: ^4.17.21
-      ua-parser-js: ^1.0.38 || ^2.0.0
-      url-join: ^5.0.0
-      zod: ^3.23.8
-
-  '@argent/x-ui@1.108.0':
-    resolution: {integrity: sha512-FH7hbVDW6FJxkmL2/0orkQ62Od4gASGrEUDusiA0EmWeP3U3ezMG5hMDLBdd+VobX8mrClLEA20AlsRd3OgJeQ==}
-    peerDependencies:
-      '@argent/x-shared': 1.72.0
       '@chakra-ui/react': ^2.8.2
       '@emotion/react': ^11.11.3
       '@emotion/styled': ^11.11.0
@@ -238,7 +221,7 @@ packages:
       tailwindcss: 3.4.17
       tailwindcss-animate: ^1.0.7
       url-join: 5.0.0
-      zod: ^3.23.8
+      zod: 4.0.5
 
   '@babel/code-frame@7.27.1':
     resolution: {integrity: sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg==}
@@ -649,12 +632,6 @@ packages:
     resolution: {integrity: sha512-zQ0IqbdX8FZ9aw11vP+dZkKDkS+kgIvQPHnSAXzP9pLu+Rfu3D3XEeLbicvoXJTYnhZiPmsZUxgdzXwNKxRPbA==}
     engines: {node: '>=14'}
 
-  '@ethersproject/bytes@5.8.0':
-    resolution: {integrity: sha512-vTkeohgJVCPVHu5c25XWaWQOZ4v+DkGoC42/TS2ond+PARCxTJvgTFUNDZovyQ/uAQ4EcpqqowKydcdmRKjg7A==}
-
-  '@ethersproject/logger@5.8.0':
-    resolution: {integrity: sha512-Qe6knGmY+zPPWTC+wQrpitodgBfH7XoceCGL5bJVejmH+yCS3R8jJm8iiWuvWbG76RUmyEG53oqv6GMVWqunjA==}
-
   '@hpke/chacha20poly1305@1.6.3':
     resolution: {integrity: sha512-74fKTe/hj1gB9Izi0cALZwnVDgGhNji3az/q38yXYi3wePdjKo6lFTo+HTTTp6Fmk0j4Z3u4+X8POge8cmjiOA==}
     engines: {node: '>=16.0.0'}
@@ -990,9 +967,6 @@ packages:
     resolution: {integrity: sha512-2I0gnIVPtfnMw9ee9h1dJG7tp81+8Ob3OJb3Mv37rx5L40/b0i7djjCVvGOVqc9AEIQyvyu1i6ypKdFw8R8gQw==}
     engines: {node: ^14.21.3 || >=16}
 
-  '@noble/curves@1.0.0':
-    resolution: {integrity: sha512-2upgEu0iLiDVDZkNLeFV2+ht0BAVgQnEmCk6JsOch9Rp8xfkMCbvbAZlA2pBHQc73dbl+vFOXfqkf4uemdn0bw==}
-
   '@noble/curves@1.2.0':
     resolution: {integrity: sha512-oYclrNgRaM9SsBUBVbb8M6DTV7ZHRTKugureoYEncY5c65HOmRzvSiTE3y5CYaPYJA/GVkrhXEoF0M3Ya9PMnw==}
 
@@ -1025,12 +999,6 @@ packages:
     resolution: {integrity: sha512-HxngEd2XUcg9xi20JkwlLCtYwfoFw4JGkuZpT+WlsPD4gB/cxkvTD8fSsoAnphGZhFdZYKeQIPCuFlWPm1uE0g==}
     engines: {node: ^14.21.3 || >=16}
 
-  '@noble/hashes@1.2.0':
-    resolution: {integrity: sha512-FZfhjEDbT5GRswV3C6uvLPHMiVD6lQBmpoX5+eSiPaMTXte/IKqI5dykDxzZB/WBeK/CDuQRBWarPdi3FNY2zQ==}
-
-  '@noble/hashes@1.3.0':
-    resolution: {integrity: sha512-ilHEACi9DwqJB0pw7kv+Apvh50jiiSyR/cQ3y4W7lOR5mhvn/50FLUfsnfJz0BDZtl/RR16kXvptiv6q1msYZg==}
-
   '@noble/hashes@1.3.2':
     resolution: {integrity: sha512-MVC8EAQp7MvEcm30KWENFjgR+Mkmf+D189XJTkFIlwohU5hcBbn1ZkKq7KVTi2Hme3PMGF390DaL52beVrIihQ==}
     engines: {node: '>= 16'}
@@ -1058,9 +1026,6 @@ packages:
   '@noble/hashes@1.8.0':
     resolution: {integrity: sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A==}
     engines: {node: ^14.21.3 || >=16}
-
-  '@noble/secp256k1@1.7.1':
-    resolution: {integrity: sha512-hOUk6AyBFmqVrv7k5WAw/LpszxVbj9gGN4JRkIX52fdFAj1UA61KXmZDvqVEm+pOyec3+fIeZB02LYa/pWOArw==}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1297,9 +1262,6 @@ packages:
   '@scure/base@1.2.6':
     resolution: {integrity: sha512-g/nm5FgUa//MCj1gV09zTJTaM6KBAHqLN907YVQqf7zC49+DcO4B1so4ZX07Ef10Twr6nuqYEH9GEggFXA4Fmg==}
 
-  '@scure/bip32@1.1.5':
-    resolution: {integrity: sha512-XyNh1rB0SkEqd3tXcXMi+Xe1fvg+kUIcoRIEujP1Jgv7DqW2r9lg3Ah0NkFaCs9sTkQAQA8kw7xiRXzENi9Rtw==}
-
   '@scure/bip32@1.4.0':
     resolution: {integrity: sha512-sVUpc0Vq3tXCkDGYVWGIZTRfnvu8LoTDaev7vbwh0omSvVORONr960MQWdKqJDCReIEmTj3PAr73O3aoxz7OPg==}
 
@@ -1308,9 +1270,6 @@ packages:
 
   '@scure/bip32@1.7.0':
     resolution: {integrity: sha512-E4FFX/N3f4B80AKWp5dP6ow+flD1LQZo/w8UnLGYZO674jS6YnYeepycOOksv+vLPSpgN35wgKgy+ybfTb2SMw==}
-
-  '@scure/bip39@1.1.1':
-    resolution: {integrity: sha512-t+wDck2rVkh65Hmv280fYdVdY25J9YeEUIgn2LG1WM6gxFkGzcksoDiUkWVpVp3Oex9xGC68JU2dSbUfwZ2jPg==}
 
   '@scure/bip39@1.3.0':
     resolution: {integrity: sha512-disdg7gHuTDZtY+ZdkmLpPCk7fxZSu3gBiEGuoC1XYxv9cGx3Z6cpTggCgW6odSOOIXCiDjuGejW+aJKCY/pIQ==}
@@ -1533,9 +1492,6 @@ packages:
 
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
-
-  '@types/node-fetch@2.6.12':
-    resolution: {integrity: sha512-8nneRWKCg3rMtF69nLQJnOYUcbafYeFSjqkw3jCRLsqkWFlHaoQrr5mXmofFGOx3DKn7UfmBMyov8ySvLRVldA==}
 
   '@types/node@12.20.55':
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
@@ -2035,9 +1991,6 @@ packages:
   async-mutex@0.5.0:
     resolution: {integrity: sha512-1A94B18jkJ3DYq284ohPxoXbfTA5HsQ7/Mf4DEhcyLx3Bz27Rh59iScbB6EPiP+B+joue6YCxcMXSbFC1tZKwA==}
 
-  async-retry@1.3.3:
-    resolution: {integrity: sha512-wfr/jstw9xNi/0teMHrRW7dsz3Lt5ARhYNZ2ewpadnhaIp5mbALhOAP+EAdsC7t4Z6wqsDVv9+W6gm1Dk9mEyw==}
-
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
@@ -2121,18 +2074,12 @@ packages:
   big.js@6.2.2:
     resolution: {integrity: sha512-y/ie+Faknx7sZA5MfGA2xKlu0GDv8RWrXGsmlteyJQ2lvoKv9GBK/fpRMc2qlSoBAgNxrixICFCBefIq8WCQpQ==}
 
-  bignumber.js@9.3.0:
-    resolution: {integrity: sha512-EM7aMFTXbptt/wZdMlBv2t8IViwQL+h6SLHosp8Yf0dqJMTnY6iL32opnAB6kAdL0SZPuvcAzFr31o0c/R3/RA==}
-
   binary-extensions@2.3.0:
     resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
     engines: {node: '>=8'}
 
   blakejs@1.2.1:
     resolution: {integrity: sha512-QXUSXI3QVc/gJME0dBpXrag1kbzOqCjCX8/b54ntNyW6sjtoqxqRk3LTmXzaJoh71zMsDCjM+47jS7XiwN/+fQ==}
-
-  bn.js@4.12.2:
-    resolution: {integrity: sha512-n4DSx829VRTRByMRGdjQ9iqsN0Bh4OolPsFnaZBLcbi8iXcB+kJ9s7EnRt4wILZNV3kPLHkRVfOc/HvhC3ovDw==}
 
   bn.js@5.2.2:
     resolution: {integrity: sha512-v2YAxEmKaBLahNwE1mjp4WON6huMNeuDvagFZW+ASCuA/ku0bXR9hSMw0XpiqMoA3+rmnyck/tPRSFQkoC9Cuw==}
@@ -2158,9 +2105,6 @@ packages:
 
   broadcast-channel@3.7.0:
     resolution: {integrity: sha512-cIAKJXAxGJceNZGTZSBzMxzyOn72cVgPnKx4dc6LRjQgbaJUQqhy5rzL3zbMxkMWsGKkv2hSFkPRMEXfoMZ2Mg==}
-
-  brorand@1.1.0:
-    resolution: {integrity: sha512-cKV8tMCEpQs4hK/ik71d6LrPOnpkpGBR0wzxqr68g2m/LB2GxVYQroAjMJZRVM1Y4BCjCKc3vAamxSzOY2RP+w==}
 
   browserslist@4.25.1:
     resolution: {integrity: sha512-KGj0KoOMXLpSNkkEI6Z6mShmQy0bc1I+T7K9N81k4WWMrfz+6fQ6es80B/YLAeRoKvjYE1YSHHOW1qe9xIVzHw==}
@@ -2464,9 +2408,6 @@ packages:
     resolution: {integrity: sha512-BS8PfmtDGnrgYdOonGZQdLZslWIeCGFP9tpan0hi1Co2Zr2NKADsvGYA8XxuG/4UWgJ6Cjtv+YJnB6MM69QGlQ==}
     engines: {node: '>= 0.4'}
 
-  dataloader@2.2.3:
-    resolution: {integrity: sha512-y2krtASINtPFS1rSDjacrFgn1dcUuoREVabwlOGOe4SdxenREqwjwjElAdwvbGM7kgZz9a3KVicWR7vcz8rnzA==}
-
   date-fns@2.30.0:
     resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
     engines: {node: '>=0.11'}
@@ -2565,9 +2506,6 @@ packages:
   detect-browser@5.3.0:
     resolution: {integrity: sha512-53rsFbGdwMwlF7qvCt0ypLM5V5/Mbl0szB7GPN8y9NCcbknYOeVVXdrXEq+90IwAfrrzt6Hd+u2E2ntakICU8w==}
 
-  detect-europe-js@0.1.2:
-    resolution: {integrity: sha512-lgdERlL3u0aUdHocoouzT10d9I89VVhk0qNRmll7mXdGfJT1/wqZ2ZLA4oJAjeACPY5fT1wsbq2AT+GkuInsow==}
-
   detect-libc@2.0.4:
     resolution: {integrity: sha512-3UDv+G9CsCKO1WKMGw9fwq/SWJYbI0c5Y7LU1AXYoDdbhE2AHQ6N6Nb34sG8Fj7T5APy8qXDCKuuIHd1BR0tVA==}
     engines: {node: '>=8'}
@@ -2635,9 +2573,6 @@ packages:
 
   electron-to-chromium@1.5.182:
     resolution: {integrity: sha512-Lv65Btwv9W4J9pyODI6EWpdnhfvrve/us5h1WspW8B2Fb0366REPtY3hX7ounk1CkV/TBjWCEvCBBbYbmV0qCA==}
-
-  elliptic@6.6.1:
-    resolution: {integrity: sha512-RaddvvMatK2LJHqFJ+YA4WysVN5Ita9E35botqIYspQ4TkRAlCicdzKOjlyv/1Za5RyTNn7di//eEV0uTAfe3g==}
 
   embla-carousel-react@8.6.0:
     resolution: {integrity: sha512-0/PjqU7geVmo6F734pmPqpyHqiM99olvyecY7zdweCw+6tKEXnrE90pBiBbMMU8s5tICemzpQ3hi5EpxzGW+JA==}
@@ -2896,9 +2831,6 @@ packages:
 
   eth-rpc-errors@4.0.3:
     resolution: {integrity: sha512-Z3ymjopaoft7JDoxZcEb3pwdGh7yiYMhOwm2doUt6ASXlMavpNlK6Cre0+IMl2VSGyEU9rkiperQhp5iRxn5Pg==}
-
-  ethereum-cryptography@1.2.0:
-    resolution: {integrity: sha512-6yFQC9b5ug6/17CQpCyE3k9eKBMdhyVjzUy1WkiuY/E4vj/SXDBbCw8QEIaXqf0Mf2SnY6RmpDcwlUmBSS0EJw==}
 
   ethereum-cryptography@2.2.1:
     resolution: {integrity: sha512-r/W8lkHSiTLxUxW8Rf3u4HGB0xQweG2RyETjywylKZSzLWoWAijRz8WCuOtJ6wah+avllXBqZuk29HCCvhEIRg==}
@@ -3229,9 +3161,6 @@ packages:
     resolution: {integrity: sha512-NqADB8VjPFLM2V0VvHUewwwsw0ZWBaIdgo+ieHtK3hasLz4qeCRjYcqfB6AQrBggRKppKF8L52/VqdVsO47Dlw==}
     engines: {node: '>= 0.4'}
 
-  hash.js@1.1.7:
-    resolution: {integrity: sha512-taOaskGt4z4SOANNseOviYDvjEJinIkRgmp7LbKP2YTTmVxWBl87s/uzK9r+44BclBSp2X7K1hqeNfz9JbBeXA==}
-
   hasown@2.0.2:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
@@ -3257,9 +3186,6 @@ packages:
 
   history@5.3.0:
     resolution: {integrity: sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==}
-
-  hmac-drbg@1.0.1:
-    resolution: {integrity: sha512-Tti3gMqLdZfhOQY1Mzf/AanLiqh1WTiJgEj26ZuYQ9fbkLomzGchCws4FyrSd4VkpBfiNhaE1On+lOz894jvXg==}
 
   hoist-non-react-statics@3.3.2:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
@@ -3505,9 +3431,6 @@ packages:
     resolution: {integrity: sha512-ISWac8drv4ZGfwKl5slpHG9OwPNty4jOWPRIhBpxOoD+hqITiwuipOQ2bNthAzwA3B4fIjO4Nln74N0S9byq8A==}
     engines: {node: '>= 0.4'}
 
-  is-standalone-pwa@0.1.1:
-    resolution: {integrity: sha512-9Cbovsa52vNQCjdXOzeQq5CnCbAcRk05aU62K20WO372NrTv0NxibLFCK6lQ4/iZEFdEA3p3t2VNOn8AJ53F5g==}
-
   is-stream@2.0.1:
     resolution: {integrity: sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==}
     engines: {node: '>=8'}
@@ -3674,9 +3597,6 @@ packages:
     engines: {node: '>=6'}
     hasBin: true
 
-  json-bigint@1.0.0:
-    resolution: {integrity: sha512-SiPv/8VpZuWbvLSMtTDU8hEfrZWg/mH/nV/b4o0CYbSxu1UIQPLdwKOCIyLQX+VIPO5vrLX3i8qtqFyhdPSUSQ==}
-
   json-buffer@3.0.1:
     resolution: {integrity: sha512-4bV5BfR2mqfQTJm+V5tPPdf+ZpuhiIvTuAB5g8kcrXOZpTT/QwwVRWBywX1ozr6lEuPdbHxwaJlm9G6mI2sfSQ==}
 
@@ -3841,9 +3761,6 @@ packages:
     resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
     hasBin: true
 
-  lossless-json@2.0.11:
-    resolution: {integrity: sha512-BP0vn+NGYvzDielvBZaFain/wgeJ1hTvURCqtKvhr1SCPePdaaTanmmcplrHfEJSJOUql7hk4FHwToNJjWRY3g==}
-
   lossless-json@4.1.1:
     resolution: {integrity: sha512-HusN80C0ohtT9kOHQH7EuUaqzRQsnekpa+2ot8OzvW0iC08dq/YtM/7uKwwajldQsCrHyC8q9fz3t3L+TmDltA==}
 
@@ -3947,9 +3864,6 @@ packages:
   micro-ftch@0.3.1:
     resolution: {integrity: sha512-/0LLxhzP0tfiR5hcQebtudP56gUurs2CLkGarnCiB/OqEyUFQ6U3paQi/tgLv0hBJYt2rnr9MNpxz4fiiugstg==}
 
-  micro-starknet@0.2.3:
-    resolution: {integrity: sha512-6XBcC+GerlwJSR4iA0VaeXtS2wrayWFcA4PEzrJPMuFmWCaUtuGIq5K/DB5F/XgnL54/zl2Bxo690Lj7mYVA8A==}
-
   micromatch@4.0.8:
     resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
     engines: {node: '>=8.6'}
@@ -3980,9 +3894,6 @@ packages:
 
   minimalistic-assert@1.0.1:
     resolution: {integrity: sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A==}
-
-  minimalistic-crypto-utils@1.0.1:
-    resolution: {integrity: sha512-JIYlbt6g8i5jKfJ3xz7rF0LXmv2TkDxBLUkiBeZ7bAx4GnnNMr8xFpGnOxn6GhTEHx3SjRrZEoU+j04prX1ktg==}
 
   minimatch@3.1.2:
     resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
@@ -4783,10 +4694,6 @@ packages:
     resolution: {integrity: sha512-oMA2dcrw6u0YfxJQXm342bFKX/E4sG9rbTzO9ptUcR/e8A33cHuvStiYOwH7fszkZlZ1z/ta9AAoPk2F4qIOHA==}
     engines: {node: '>=18'}
 
-  retry@0.13.1:
-    resolution: {integrity: sha512-XQBQ3I8W1Cge0Seh+6gjj03LbmRFWuoszgK9ooCpwYIrhhoO80pfq4cUkU5DkknwfOfFteRwlZ56PYOGYyFWdg==}
-    engines: {node: '>= 4'}
-
   reusify@1.1.0:
     resolution: {integrity: sha512-g6QUff04oZpHs0eG5p83rFLhHeV00ug/Yf9nZM6fLeUrPguBTkTQOdpAWWspMh55TZfVQDPaN3NQJfbVRAxdIw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
@@ -4998,12 +4905,6 @@ packages:
   stacktrace-parser@0.1.11:
     resolution: {integrity: sha512-WjlahMgHmCJpqzU8bIBy4qtsZdU9lRlcZE3Lvyej6t4tuOuv1vk57OW3MBrj6hXBFx/nNoC9MPMTcr5YA7NQbg==}
     engines: {node: '>=6'}
-
-  starknet@4.4.0:
-    resolution: {integrity: sha512-e/LaLbi9M3ByUq/YJw7VLN6axwHSEF4I3lAJ7s6MkI4aXmeSG771Qid+kNAcXsF+Z7HYtuuYz+eImSSjR0r7bA==}
-
-  starknet@5.25.0:
-    resolution: {integrity: sha512-ja5pV610voxTCw/MzXhZoZcwe+XZ5RVWkpa/Fhxsy0OP635DxKDbnPQSKCLWXmSi/BkfkpeefXXv4IUvYJo4kw==}
 
   starknet@6.11.0:
     resolution: {integrity: sha512-u50KrGDi9fbu1Ogu7ynwF/tSeFlp3mzOg1/Y5x50tYFICImo3OfY4lOz9OtYDk404HK4eUujKkhov9tG7GAKlg==}
@@ -5284,10 +5185,6 @@ packages:
     peerDependencies:
       typescript: '>=4.8.4'
 
-  ts-custom-error@3.3.1:
-    resolution: {integrity: sha512-5OX1tzOjxWEgsr/YEUWSuPrQ00deKLh6D7OTWcvNHm12/7QPyRh8SYpyWvA4IZv8H/+GQWQEh/kwo95Q9OVW1A==}
-    engines: {node: '>=14.0.0'}
-
   ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
 
@@ -5344,13 +5241,6 @@ packages:
   typescript@5.8.3:
     resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
     engines: {node: '>=14.17'}
-    hasBin: true
-
-  ua-is-frozen@0.1.2:
-    resolution: {integrity: sha512-RwKDW2p3iyWn4UbaxpP2+VxwqXh0jpvdxsYpZ5j/MLLiQOfbsV5shpgQiw93+KMYQPcteeMQ289MaAFzs3G9pw==}
-
-  ua-parser-js@2.0.4:
-    resolution: {integrity: sha512-XiBOnM/UpUq21ZZ91q2AVDOnGROE6UQd37WrO9WBgw4u2eGvUCNOheMmZ3EfEUj7DLHr8tre+Um/436Of/Vwzg==}
     hasBin: true
 
   uc.micro@2.1.0:
@@ -5818,40 +5708,13 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.12
       '@jridgewell/trace-mapping': 0.3.29
 
-  '@argent/x-multicall@7.1.0(typescript@5.8.3)':
-    dependencies:
-      dataloader: 2.2.3
-      typescript: 5.8.3
-
   '@argent/x-sessions@8.0.1(starknet@7.5.1)':
     dependencies:
       minimalistic-assert: 1.0.1
       starknet: 7.5.1
 
-  '@argent/x-shared@1.53.2(@scure/base@1.2.6)(@scure/bip39@1.6.0)(async-retry@1.3.3)(lodash-es@4.17.21)(typescript@5.8.3)(ua-parser-js@2.0.4)(url-join@4.0.1)(zod@3.25.76)':
-    dependencies:
-      '@argent/x-multicall': 7.1.0(typescript@5.8.3)
-      '@noble/hashes': 1.8.0
-      '@scure/base': 1.2.6
-      '@scure/bip39': 1.6.0
-      '@starknet-io/types-js': 0.7.10
-      async-retry: 1.3.3
-      big-decimal-number: bignumber.js@9.3.0
-      lodash-es: 4.17.21
-      micro-starknet: 0.2.3
-      starknet: 6.11.0
-      starknet4-deprecated: starknet@4.4.0
-      starknet5: starknet@5.25.0
-      ua-parser-js: 2.0.4
-      url-join: 4.0.1
-      zod: 3.25.76
-    transitivePeerDependencies:
-      - encoding
-      - typescript
-
-  ? '@argent/x-ui@1.108.0(@argent/x-shared@1.53.2(@scure/base@1.2.6)(@scure/bip39@1.6.0)(async-retry@1.3.3)(lodash-es@4.17.21)(typescript@5.8.3)(ua-parser-js@2.0.4)(url-join@4.0.1)(zod@3.25.76))(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@scure/bip39@1.6.0)(@starknet-io/types-js@0.8.4)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028))(embla-carousel-wheel-gestures@8.0.2(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(lodash-es@4.17.21)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.0-rc-02c0e824-20241028))(react-dom@18.3.1(react@18.3.1))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028))(react-router-dom@7.6.3(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.2.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0))(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.12(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0)(zdog@1.1.3))(react-virtuoso@4.13.0(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react@18.3.1)(starknet@7.5.1)(swr@2.3.4(react@19.0.0-rc-02c0e824-20241028))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(url-join@4.0.1)(zod@3.25.76)'
+  ? '@argent/x-ui@1.109.0(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@scure/bip39@1.6.0)(@starknet-io/types-js@0.8.4)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028))(embla-carousel-wheel-gestures@8.0.2(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(lodash-es@4.17.21)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.0-rc-02c0e824-20241028))(react-dom@18.3.1(react@18.3.1))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028))(react-router-dom@7.6.3(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.2.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0))(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.12(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0)(zdog@1.1.3))(react-virtuoso@4.13.0(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react@18.3.1)(starknet@7.5.1)(swr@2.3.4(react@19.0.0-rc-02c0e824-20241028))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(url-join@4.0.1)(zod@3.25.76)'
   : dependencies:
-      '@argent/x-shared': 1.53.2(@scure/base@1.2.6)(@scure/bip39@1.6.0)(async-retry@1.3.3)(lodash-es@4.17.21)(typescript@5.8.3)(ua-parser-js@2.0.4)(url-join@4.0.1)(zod@3.25.76)
       '@chakra-ui/react': 2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
       '@emotion/react': 11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
       '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
@@ -6071,7 +5934,7 @@ snapshots:
 
   '@cartridge/account-wasm@0.7.13': {}
 
-  ? '@cartridge/controller@0.7.13(@metamask/sdk@0.32.1(bufferutil@4.0.9)(utf-8-validate@5.0.10))(@solana/web3.js@1.98.2(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(@types/react@18.3.23)(bufferutil@4.0.9)(open@7.4.2)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@18.3.1)(starknet@7.5.1)(starknetkit@3.0.0(@argent/x-shared@1.53.2(@scure/base@1.2.6)(@scure/bip39@1.6.0)(async-retry@1.3.3)(lodash-es@4.17.21)(typescript@5.8.3)(ua-parser-js@2.0.4)(url-join@4.0.1)(zod@3.25.76))(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@metamask/sdk@0.32.1(bufferutil@4.0.9)(utf-8-validate@5.0.10))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@scure/bip39@1.6.0)(@solana/web3.js@1.98.2(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(@types/react@18.3.23)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(bufferutil@4.0.9)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028))(embla-carousel-wheel-gestures@8.0.2(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(object-hash@3.0.0)(open@7.4.2)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.0-rc-02c0e824-20241028))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-router-dom@7.6.3(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.2.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0))(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.12(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0)(zdog@1.1.3))(react-virtuoso@4.13.0(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(starknet@7.5.1)(swr@2.3.4(react@19.0.0-rc-02c0e824-20241028))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(typescript@5.8.3)(url-join@4.0.1)(utf-8-validate@5.0.10)(zod@3.25.76))(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.25.76)'
+  ? '@cartridge/controller@0.7.13(@metamask/sdk@0.32.1(bufferutil@4.0.9)(utf-8-validate@5.0.10))(@solana/web3.js@1.98.2(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(@types/react@18.3.23)(bufferutil@4.0.9)(open@7.4.2)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@18.3.1)(starknet@7.5.1)(starknetkit@3.0.0(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@metamask/sdk@0.32.1(bufferutil@4.0.9)(utf-8-validate@5.0.10))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@scure/bip39@1.6.0)(@solana/web3.js@1.98.2(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(@types/react@18.3.23)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(bufferutil@4.0.9)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028))(embla-carousel-wheel-gestures@8.0.2(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(object-hash@3.0.0)(open@7.4.2)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.0-rc-02c0e824-20241028))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-router-dom@7.6.3(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.2.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0))(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.12(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0)(zdog@1.1.3))(react-virtuoso@4.13.0(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(starknet@7.5.1)(swr@2.3.4(react@19.0.0-rc-02c0e824-20241028))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(typescript@5.8.3)(url-join@4.0.1)(utf-8-validate@5.0.10)(zod@3.25.76))(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.25.76)'
   : dependencies:
       '@cartridge/account-wasm': 0.7.13
       '@cartridge/penpal': 6.2.4
@@ -6087,7 +5950,7 @@ snapshots:
       mipd: 0.0.7(typescript@5.8.3)
       open: 7.4.2
       starknet: 7.5.1
-      starknetkit: 3.0.0(@argent/x-shared@1.53.2(@scure/base@1.2.6)(@scure/bip39@1.6.0)(async-retry@1.3.3)(lodash-es@4.17.21)(typescript@5.8.3)(ua-parser-js@2.0.4)(url-join@4.0.1)(zod@3.25.76))(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@metamask/sdk@0.32.1(bufferutil@4.0.9)(utf-8-validate@5.0.10))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@scure/bip39@1.6.0)(@solana/web3.js@1.98.2(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(@types/react@18.3.23)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(bufferutil@4.0.9)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028))(embla-carousel-wheel-gestures@8.0.2(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(object-hash@3.0.0)(open@7.4.2)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.0-rc-02c0e824-20241028))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-router-dom@7.6.3(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.2.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0))(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.12(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0)(zdog@1.1.3))(react-virtuoso@4.13.0(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(starknet@7.5.1)(swr@2.3.4(react@19.0.0-rc-02c0e824-20241028))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(typescript@5.8.3)(url-join@4.0.1)(utf-8-validate@5.0.10)(zod@3.25.76)
+      starknetkit: 3.0.0(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@metamask/sdk@0.32.1(bufferutil@4.0.9)(utf-8-validate@5.0.10))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@scure/bip39@1.6.0)(@solana/web3.js@1.98.2(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(@types/react@18.3.23)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(bufferutil@4.0.9)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028))(embla-carousel-wheel-gestures@8.0.2(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(object-hash@3.0.0)(open@7.4.2)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.0-rc-02c0e824-20241028))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-router-dom@7.6.3(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.2.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0))(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.12(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0)(zdog@1.1.3))(react-virtuoso@4.13.0(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(starknet@7.5.1)(swr@2.3.4(react@19.0.0-rc-02c0e824-20241028))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(typescript@5.8.3)(url-join@4.0.1)(utf-8-validate@5.0.10)(zod@3.25.76)
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -6470,12 +6333,6 @@ snapshots:
       '@ethereumjs/rlp': 4.0.1
       ethereum-cryptography: 2.2.1
       micro-ftch: 0.3.1
-
-  '@ethersproject/bytes@5.8.0':
-    dependencies:
-      '@ethersproject/logger': 5.8.0
-
-  '@ethersproject/logger@5.8.0': {}
 
   '@hpke/chacha20poly1305@1.6.3':
     dependencies:
@@ -6867,10 +6724,6 @@ snapshots:
 
   '@noble/ciphers@1.3.0': {}
 
-  '@noble/curves@1.0.0':
-    dependencies:
-      '@noble/hashes': 1.3.0
-
   '@noble/curves@1.2.0':
     dependencies:
       '@noble/hashes': 1.3.2
@@ -6907,10 +6760,6 @@ snapshots:
     dependencies:
       '@noble/hashes': 1.8.0
 
-  '@noble/hashes@1.2.0': {}
-
-  '@noble/hashes@1.3.0': {}
-
   '@noble/hashes@1.3.2': {}
 
   '@noble/hashes@1.3.3': {}
@@ -6924,8 +6773,6 @@ snapshots:
   '@noble/hashes@1.7.1': {}
 
   '@noble/hashes@1.8.0': {}
-
-  '@noble/secp256k1@1.7.1': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -7401,12 +7248,6 @@ snapshots:
 
   '@scure/base@1.2.6': {}
 
-  '@scure/bip32@1.1.5':
-    dependencies:
-      '@noble/hashes': 1.2.0
-      '@noble/secp256k1': 1.7.1
-      '@scure/base': 1.1.9
-
   '@scure/bip32@1.4.0':
     dependencies:
       '@noble/curves': 1.4.2
@@ -7424,11 +7265,6 @@ snapshots:
       '@noble/curves': 1.9.2
       '@noble/hashes': 1.8.0
       '@scure/base': 1.2.6
-
-  '@scure/bip39@1.1.1':
-    dependencies:
-      '@noble/hashes': 1.2.0
-      '@scure/base': 1.1.9
 
   '@scure/bip39@1.3.0':
     dependencies:
@@ -7757,11 +7593,6 @@ snapshots:
       iconv-lite: 0.6.3
 
   '@types/ms@2.1.0': {}
-
-  '@types/node-fetch@2.6.12':
-    dependencies:
-      '@types/node': 22.16.3
-      form-data: 4.0.3
 
   '@types/node@12.20.55': {}
 
@@ -8712,10 +8543,6 @@ snapshots:
     dependencies:
       tslib: 2.8.1
 
-  async-retry@1.3.3:
-    dependencies:
-      retry: 0.13.1
-
   asynckit@0.4.0: {}
 
   atomic-sleep@1.0.0: {}
@@ -8827,13 +8654,9 @@ snapshots:
 
   big.js@6.2.2: {}
 
-  bignumber.js@9.3.0: {}
-
   binary-extensions@2.3.0: {}
 
   blakejs@1.2.1: {}
-
-  bn.js@4.12.2: {}
 
   bn.js@5.2.2: {}
 
@@ -8870,8 +8693,6 @@ snapshots:
       oblivious-set: 1.0.0
       rimraf: 3.0.2
       unload: 2.2.0
-
-  brorand@1.1.0: {}
 
   browserslist@4.25.1:
     dependencies:
@@ -9214,8 +9035,6 @@ snapshots:
       es-errors: 1.3.0
       is-data-view: 1.0.2
 
-  dataloader@2.2.3: {}
-
   date-fns@2.30.0:
     dependencies:
       '@babel/runtime': 7.27.6
@@ -9277,8 +9096,6 @@ snapshots:
   destroy@1.2.0: {}
 
   detect-browser@5.3.0: {}
-
-  detect-europe-js@0.1.2: {}
 
   detect-libc@2.0.4:
     optional: true
@@ -9350,16 +9167,6 @@ snapshots:
   ee-first@1.1.1: {}
 
   electron-to-chromium@1.5.182: {}
-
-  elliptic@6.6.1:
-    dependencies:
-      bn.js: 4.12.2
-      brorand: 1.1.0
-      hash.js: 1.1.7
-      hmac-drbg: 1.0.1
-      inherits: 2.0.4
-      minimalistic-assert: 1.0.1
-      minimalistic-crypto-utils: 1.0.1
 
   embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028):
     dependencies:
@@ -9751,13 +9558,6 @@ snapshots:
     dependencies:
       fast-safe-stringify: 2.1.1
 
-  ethereum-cryptography@1.2.0:
-    dependencies:
-      '@noble/hashes': 1.2.0
-      '@noble/secp256k1': 1.7.1
-      '@scure/bip32': 1.1.5
-      '@scure/bip39': 1.1.1
-
   ethereum-cryptography@2.2.1:
     dependencies:
       '@noble/curves': 1.4.2
@@ -10116,11 +9916,6 @@ snapshots:
     dependencies:
       has-symbols: 1.1.0
 
-  hash.js@1.1.7:
-    dependencies:
-      inherits: 2.0.4
-      minimalistic-assert: 1.0.1
-
   hasown@2.0.2:
     dependencies:
       function-bind: 1.1.2
@@ -10144,12 +9939,6 @@ snapshots:
   history@5.3.0:
     dependencies:
       '@babel/runtime': 7.27.6
-
-  hmac-drbg@1.0.1:
-    dependencies:
-      hash.js: 1.1.7
-      minimalistic-assert: 1.0.1
-      minimalistic-crypto-utils: 1.0.1
 
   hoist-non-react-statics@3.3.2:
     dependencies:
@@ -10400,8 +10189,6 @@ snapshots:
     dependencies:
       call-bound: 1.0.4
 
-  is-standalone-pwa@0.1.1: {}
-
   is-stream@2.0.1: {}
 
   is-stream@3.0.0: {}
@@ -10619,10 +10406,6 @@ snapshots:
 
   jsesc@3.1.0: {}
 
-  json-bigint@1.0.0:
-    dependencies:
-      bignumber.js: 9.3.0
-
   json-buffer@3.0.1: {}
 
   json-parse-better-errors@1.0.2: {}
@@ -10796,8 +10579,6 @@ snapshots:
   loose-envify@1.4.0:
     dependencies:
       js-tokens: 4.0.0
-
-  lossless-json@2.0.11: {}
 
   lossless-json@4.1.1: {}
 
@@ -11024,11 +10805,6 @@ snapshots:
 
   micro-ftch@0.3.1: {}
 
-  micro-starknet@0.2.3:
-    dependencies:
-      '@noble/curves': 1.0.0
-      '@noble/hashes': 1.3.3
-
   micromatch@4.0.8:
     dependencies:
       braces: 3.0.3
@@ -11049,8 +10825,6 @@ snapshots:
   mimic-function@5.0.1: {}
 
   minimalistic-assert@1.0.1: {}
-
-  minimalistic-crypto-utils@1.0.1: {}
 
   minimatch@3.1.2:
     dependencies:
@@ -11925,8 +11699,6 @@ snapshots:
       onetime: 7.0.0
       signal-exit: 4.1.0
 
-  retry@0.13.1: {}
-
   reusify@1.1.0: {}
 
   rfdc@1.4.1: {}
@@ -12193,34 +11965,6 @@ snapshots:
     dependencies:
       type-fest: 0.7.1
 
-  starknet@4.4.0:
-    dependencies:
-      '@ethersproject/bytes': 5.8.0
-      bn.js: 5.2.2
-      elliptic: 6.6.1
-      ethereum-cryptography: 1.2.0
-      hash.js: 1.1.7
-      isomorphic-fetch: 3.0.0
-      json-bigint: 1.0.0
-      minimalistic-assert: 1.0.1
-      pako: 2.1.0
-      ts-custom-error: 3.3.1
-      url-join: 4.0.1
-    transitivePeerDependencies:
-      - encoding
-
-  starknet@5.25.0:
-    dependencies:
-      '@noble/curves': 1.3.0
-      '@scure/base': 1.1.9
-      '@scure/starknet': 1.0.0
-      isomorphic-fetch: 3.0.0
-      lossless-json: 2.0.11
-      pako: 2.1.0
-      url-join: 4.0.1
-    transitivePeerDependencies:
-      - encoding
-
   starknet@6.11.0:
     dependencies:
       '@noble/curves': 1.4.2
@@ -12268,10 +12012,10 @@ snapshots:
       pako: 2.1.0
       ts-mixer: 6.0.4
 
-  ? starknetkit@3.0.0(@argent/x-shared@1.53.2(@scure/base@1.2.6)(@scure/bip39@1.6.0)(async-retry@1.3.3)(lodash-es@4.17.21)(typescript@5.8.3)(ua-parser-js@2.0.4)(url-join@4.0.1)(zod@3.25.76))(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@metamask/sdk@0.32.1(bufferutil@4.0.9)(utf-8-validate@5.0.10))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@scure/bip39@1.6.0)(@solana/web3.js@1.98.2(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(@types/react@18.3.23)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(bufferutil@4.0.9)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028))(embla-carousel-wheel-gestures@8.0.2(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(object-hash@3.0.0)(open@7.4.2)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.0-rc-02c0e824-20241028))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-router-dom@7.6.3(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.2.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0))(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.12(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0)(zdog@1.1.3))(react-virtuoso@4.13.0(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(starknet@7.5.1)(swr@2.3.4(react@19.0.0-rc-02c0e824-20241028))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(typescript@5.8.3)(url-join@4.0.1)(utf-8-validate@5.0.10)(zod@3.25.76)
+  ? starknetkit@3.0.0(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@metamask/sdk@0.32.1(bufferutil@4.0.9)(utf-8-validate@5.0.10))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@scure/bip39@1.6.0)(@solana/web3.js@1.98.2(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(@types/react@18.3.23)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(bufferutil@4.0.9)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028))(embla-carousel-wheel-gestures@8.0.2(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(object-hash@3.0.0)(open@7.4.2)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.0-rc-02c0e824-20241028))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-router-dom@7.6.3(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.2.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0))(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.12(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0)(zdog@1.1.3))(react-virtuoso@4.13.0(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(starknet@7.5.1)(swr@2.3.4(react@19.0.0-rc-02c0e824-20241028))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(typescript@5.8.3)(url-join@4.0.1)(utf-8-validate@5.0.10)(zod@3.25.76)
   : dependencies:
-      '@argent/x-ui': 1.108.0(@argent/x-shared@1.53.2(@scure/base@1.2.6)(@scure/bip39@1.6.0)(async-retry@1.3.3)(lodash-es@4.17.21)(typescript@5.8.3)(ua-parser-js@2.0.4)(url-join@4.0.1)(zod@3.25.76))(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@scure/bip39@1.6.0)(@starknet-io/types-js@0.8.4)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028))(embla-carousel-wheel-gestures@8.0.2(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(lodash-es@4.17.21)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.0-rc-02c0e824-20241028))(react-dom@18.3.1(react@18.3.1))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028))(react-router-dom@7.6.3(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.2.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0))(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.12(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0)(zdog@1.1.3))(react-virtuoso@4.13.0(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react@18.3.1)(starknet@7.5.1)(swr@2.3.4(react@19.0.0-rc-02c0e824-20241028))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(url-join@4.0.1)(zod@3.25.76)
-      '@cartridge/controller': 0.7.13(@metamask/sdk@0.32.1(bufferutil@4.0.9)(utf-8-validate@5.0.10))(@solana/web3.js@1.98.2(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(@types/react@18.3.23)(bufferutil@4.0.9)(open@7.4.2)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@18.3.1)(starknet@7.5.1)(starknetkit@3.0.0(@argent/x-shared@1.53.2(@scure/base@1.2.6)(@scure/bip39@1.6.0)(async-retry@1.3.3)(lodash-es@4.17.21)(typescript@5.8.3)(ua-parser-js@2.0.4)(url-join@4.0.1)(zod@3.25.76))(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@metamask/sdk@0.32.1(bufferutil@4.0.9)(utf-8-validate@5.0.10))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@scure/bip39@1.6.0)(@solana/web3.js@1.98.2(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(@types/react@18.3.23)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(bufferutil@4.0.9)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028))(embla-carousel-wheel-gestures@8.0.2(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(object-hash@3.0.0)(open@7.4.2)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.0-rc-02c0e824-20241028))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-router-dom@7.6.3(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.2.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0))(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.12(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0)(zdog@1.1.3))(react-virtuoso@4.13.0(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(starknet@7.5.1)(swr@2.3.4(react@19.0.0-rc-02c0e824-20241028))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(typescript@5.8.3)(url-join@4.0.1)(utf-8-validate@5.0.10)(zod@3.25.76))(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.25.76)
+      '@argent/x-ui': 1.109.0(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@scure/bip39@1.6.0)(@starknet-io/types-js@0.8.4)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028))(embla-carousel-wheel-gestures@8.0.2(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(lodash-es@4.17.21)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.0-rc-02c0e824-20241028))(react-dom@18.3.1(react@18.3.1))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028))(react-router-dom@7.6.3(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.2.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0))(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.12(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0)(zdog@1.1.3))(react-virtuoso@4.13.0(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react@18.3.1)(starknet@7.5.1)(swr@2.3.4(react@19.0.0-rc-02c0e824-20241028))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(url-join@4.0.1)(zod@3.25.76)
+      '@cartridge/controller': 0.7.13(@metamask/sdk@0.32.1(bufferutil@4.0.9)(utf-8-validate@5.0.10))(@solana/web3.js@1.98.2(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(@types/react@18.3.23)(bufferutil@4.0.9)(open@7.4.2)(react-dom@18.3.1(react@18.3.1))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@18.3.1)(starknet@7.5.1)(starknetkit@3.0.0(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@metamask/sdk@0.32.1(bufferutil@4.0.9)(utf-8-validate@5.0.10))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@scure/bip39@1.6.0)(@solana/web3.js@1.98.2(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10))(@types/react@18.3.23)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(bufferutil@4.0.9)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028))(embla-carousel-wheel-gestures@8.0.2(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.3.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(object-hash@3.0.0)(open@7.4.2)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.0-rc-02c0e824-20241028))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-router-dom@7.6.3(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.2.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0))(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.12(@types/react@18.3.23)(konva@9.3.22)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.80.1(@babel/core@7.28.0)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.178.0)(zdog@1.1.3))(react-virtuoso@4.13.0(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(starknet@7.5.1)(swr@2.3.4(react@19.0.0-rc-02c0e824-20241028))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(typescript@5.8.3)(url-join@4.0.1)(utf-8-validate@5.0.10)(zod@3.25.76))(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.25.76)
       '@starknet-io/get-starknet': 4.0.7
       '@starknet-io/get-starknet-core': 4.0.7
       '@starknet-io/types-js': 0.8.4
@@ -12289,7 +12033,6 @@ snapshots:
       svelte-forms: 2.3.1
       trpc-browser: 1.4.4(@trpc/client@10.45.2(@trpc/server@10.45.2))(@trpc/server@10.45.2)
     transitivePeerDependencies:
-      - '@argent/x-shared'
       - '@azure/app-configuration'
       - '@azure/cosmos'
       - '@azure/data-tables'
@@ -12644,8 +12387,6 @@ snapshots:
     dependencies:
       typescript: 5.8.3
 
-  ts-custom-error@3.3.1: {}
-
   ts-interface-checker@0.1.13: {}
 
   ts-mixer@6.0.4: {}
@@ -12709,18 +12450,6 @@ snapshots:
       reflect.getprototypeof: 1.0.10
 
   typescript@5.8.3: {}
-
-  ua-is-frozen@0.1.2: {}
-
-  ua-parser-js@2.0.4:
-    dependencies:
-      '@types/node-fetch': 2.6.12
-      detect-europe-js: 0.1.2
-      is-standalone-pwa: 0.1.1
-      node-fetch: 2.7.0
-      ua-is-frozen: 0.1.2
-    transitivePeerDependencies:
-      - encoding
 
   uc.micro@2.1.0: {}
 
