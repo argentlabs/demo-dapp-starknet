@@ -1,4 +1,12 @@
+import { SessionKeysIcon } from "@/components/icons/SessionKesIcon"
 import { Button } from "@/components/ui/Button"
+import { ErrorText } from "@/components/ui/Error"
+import {
+  ARGENT_SESSION_SERVICE_BASE_URL,
+  AVNU_PAYMASTER_API_KEY,
+  CHAIN_ID,
+  provider,
+} from "@/constants"
 import { toHexChainid } from "@/helpers/chainId"
 import {
   allowedMethods,
@@ -17,12 +25,10 @@ import { useAccount, useSignTypedData } from "@starknet-react/core"
 import { useState } from "react"
 import { Account, AccountInterface, constants } from "starknet"
 import { SectionLayout } from "../SectionLayout"
-import { ARGENT_SESSION_SERVICE_BASE_URL, provider } from "@/constants"
 import { SessionKeysExecute } from "./SessionKeysExecute"
 import { SessionKeysExecuteOutside } from "./SessionKeysExecuteOutside"
+import { SessionKeysExecutePaymaster } from "./SessionKeysExecutePaymaster"
 import { SessionKeysTypedDataOutside } from "./SessionKeysTypedDataOutside"
-import { SessionKeysIcon } from "@/components/icons/SessionKesIcon"
-import { ErrorText } from "@/components/ui/Error"
 
 const SessionKeysSign = () => {
   const { address, chainId } = useAccount()
@@ -94,6 +100,12 @@ const SessionKeysSign = () => {
         session={session}
         sessionAccount={sessionAccount}
       />
+      {AVNU_PAYMASTER_API_KEY && CHAIN_ID === "SN_SEPOLIA" && (
+        <SessionKeysExecutePaymaster
+          session={session}
+          sessionAccount={sessionAccount}
+        />
+      )}
       {sessionError ? <ErrorText>{sessionError}</ErrorText> : null}
     </SectionLayout>
   )
