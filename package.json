@@ -19,13 +19,13 @@
   "dependencies": {
     "@argent/x-sessions": "8.0.1",
     "@starknet-io/get-starknet-core": "4.0.4",
-    "@starknet-react/chains": "^3.1.2",
-    "@starknet-react/core": "^3.7.2",
-    "next": "15.2.2",
+    "@starknet-react/chains": "^5.0.2",
+    "@starknet-react/core": "^5.0.2",
+    "next": "15.4.7",
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-dom": "19.0.0-rc-02c0e824-20241028",
-    "starknet": "7.5.1",
-    "starknetkit": "3.0.0"
+    "starknet": "^8.5.2",
+    "starknetkit": "3.1.0-beta.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
