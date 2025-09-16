@@ -132,7 +132,8 @@ const initBrowserWithExtension = async (
     .locator('[id="extension-id"]')
     .first()
     .textContent()
-    .then((text) => text?.replace("ID: ", ""))
+    .then((text) => text?.replace("ID: ", "").replace(/[\n\s]/g, ""))
+
 
   const extensionURL = `chrome-extension://${extensionId}/index.html`
   await page.goto(extensionURL)

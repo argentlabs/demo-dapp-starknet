@@ -26,7 +26,6 @@ test.describe("Connect", () => {
       await extension.navigation.showSettingsLocator.click()
       await extension.settings.account(extension.account.accountName1).click()
       await extension.page
-        // .locator(`//a//*[text()="Authorized dapps"]`)
         .getByRole("button", { name: "Connected dapps" })
         .click()
 
