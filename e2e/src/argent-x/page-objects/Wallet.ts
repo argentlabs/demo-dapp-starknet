@@ -21,7 +21,7 @@ export default class Wallet extends Navigation {
     return this.page.locator(`button:text-is("${lang.wallet.createButton}")`)
   }
   get restoreExistingWallet() {
-    return this.page.locator(`button:text-is("${lang.wallet.restoreButton}")`)
+    return this.page.getByTestId('have-a-wallet')
   }
 
   //second screen
@@ -55,14 +55,10 @@ export default class Wallet extends Navigation {
     return this.page.locator(`div p:text-is("${lang.wallet.desc3}")`)
   }
   get password() {
-    return this.page.locator(
-      `input[name="password"][placeholder="${lang.wallet.password}"]`,
-    )
+    return this.page.getByRole('textbox', { name: 'Password', exact: true })
   }
   get repeatPassword() {
-    return this.page.locator(
-      `input[name="repeatPassword"][placeholder="${lang.wallet.repeatPassword}"]`,
-    )
+    return this.page.getByRole('textbox', { name: 'Repeat password', exact: true })
   }
   get createWallet() {
     return this.page.locator(`button:text-is("${lang.wallet.createWallet}")`)
