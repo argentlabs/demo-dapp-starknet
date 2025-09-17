@@ -41,9 +41,7 @@ export default class Navigation extends Clipboard {
   }
 
   get continueLocator() {
-    return this.page
-      .locator(`button:text-is("${lang.common.continue}")`)
-      .first()
+    return this.page.getByTestId('continue').first()
   }
 
   get yesLocator() {

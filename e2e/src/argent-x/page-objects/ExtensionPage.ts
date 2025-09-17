@@ -95,7 +95,6 @@ export default class ExtensionPage {
     await this.page.setViewportSize({ width: 1080, height: 720 })
 
     await this.wallet.restoreExistingWallet.click()
-    await this.wallet.agreeLoc.click()
     await this.clipboard.setClipboardText(seed)
     await this.pasteSeed()
     await this.navigation.continueLocator.click()
@@ -108,6 +107,7 @@ export default class ExtensionPage {
       expect(this.wallet.finish).toBeVisible(),
       expect(this.page.getByText("Your account is ready!")).toBeVisible(),
       expect(this.page.getByText("Your smart account is ready!")).toBeVisible(),
+      expect(this.page.getByTestId('get-started')).toBeVisible(),
     ])
 
     await this.open()
