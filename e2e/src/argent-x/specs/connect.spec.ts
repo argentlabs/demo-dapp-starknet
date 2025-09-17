@@ -26,7 +26,6 @@ test.describe("Connect", () => {
       await extension.navigation.showSettingsLocator.click()
       await extension.settings.account(extension.account.accountName1).click()
       await extension.page
-        // .locator(`//a//*[text()="Authorized dapps"]`)
         .getByRole("button", { name: "Connected dapps" })
         .click()
 
@@ -34,9 +33,11 @@ test.describe("Connect", () => {
       //disconnect dapp from Ready
       await extension.dapps.disconnect().click()
       await expect(extension.dapps.connected()).toBeHidden()
-
+      await extension.page
+        .getByRole("button", { name: "Connected dapps" })
+        .click()
       await expect(
-        extension.page.getByRole("heading", { name: "No authorized dapps" }),
+        extension.page.getByText("No authorized dapps"),
       ).toBeVisible()
     })
   }

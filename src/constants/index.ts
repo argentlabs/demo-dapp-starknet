@@ -22,8 +22,8 @@ export const CHAIN_ID =
 
 const NODE_URL =
   process.env.NEXT_PUBLIC_CHAIN_ID === constants.NetworkName.SN_MAIN
-    ? "https://starknet-mainnet.public.blastapi.io/rpc/v0_8"
-    : "https://starknet-sepolia.public.blastapi.io/rpc/v0_8"
+    ? "https://starknet-mainnet.public.blastapi.io/rpc/v0_9"
+    : "https://starknet-sepolia.public.blastapi.io/rpc/v0_9"
 
 const STARKNET_CHAIN_ID =
   process.env.NEXT_PUBLIC_CHAIN_ID === constants.NetworkName.SN_MAIN

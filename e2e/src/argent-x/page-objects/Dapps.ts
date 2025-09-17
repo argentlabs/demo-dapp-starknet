@@ -60,6 +60,18 @@ export default class Dapps extends Navigation {
     )
   }
 
+  get connectReadyWalletButton() {
+    return this.dApp.getByRole("button", {
+      name: "Ready Wallet (formerly Argent",
+    })
+  }
+
+  get connectReadyWalletButtonStarknetKitModal() {
+    return this.dApp
+      .locator("#starknetkit-modal-container")
+      .getByRole("button", { name: "Ready Wallet (formerly Argent" })
+  }
+
   async requestConnectionFromDapp({
     browserContext,
     useStarknetKitModal = false,
@@ -77,18 +89,11 @@ export default class Dapps extends Navigation {
     await this.dApp.getByRole("button", { name: "Connection" }).click()
     if (useStarknetKitModal) {
       await this.dApp.getByRole("button", { name: "Starknetkit Modal" }).click()
-      await this.dApp
-        .locator("#starknetkit-modal-container")
-        .getByRole("button", { name: "Ready Wallet (formerly Argent)" })
-        .click()
+      await this.connectReadyWalletButtonStarknetKitModal.click()
     } else {
-      await expect(
-        this.dApp.locator('button :text-is("Ready Wallet (formerly Argent)")'),
-      ).toBeVisible()
+      await expect(this.connectReadyWalletButton).toBeVisible()
+      await this.connectReadyWalletButton.click()
     }
-    await this.dApp
-      .locator('button :text-is("Ready Wallet (formerly Argent)")')
-      .click()
   }
 
   async sendERC20transaction({
