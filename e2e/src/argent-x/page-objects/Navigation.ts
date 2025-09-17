@@ -41,7 +41,7 @@ export default class Navigation extends Clipboard {
   }
 
   get continueLocator() {
-    return this.page.getByTestId('continue').first()
+    return this.page.getByTestId("continue").first()
   }
 
   get yesLocator() {

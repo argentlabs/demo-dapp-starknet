@@ -9,6 +9,7 @@ import {
 } from "starknetkit/braavosMobile"
 import { InjectedConnector } from "starknetkit/injected"
 import { WebWalletConnector } from "starknetkit/webwallet"
+import { ControllerConnector } from "starknetkit/controller"
 import { getStarknet } from "@starknet-io/get-starknet-core"
 
 const isMobileDevice = () => {
@@ -51,6 +52,7 @@ export const availableConnectors = () => {
     new InjectedConnector({ options: { id: "argentX" } }),
     new InjectedConnector({ options: { id: "braavos" } }),
     new InjectedConnector({ options: { id: "metamask" } }),
+    new ControllerConnector(),
     ArgentMobileConnector.init({
       options: {
         url: typeof window !== "undefined" ? window.location.href : "",

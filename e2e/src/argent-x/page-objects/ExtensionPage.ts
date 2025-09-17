@@ -107,7 +107,7 @@ export default class ExtensionPage {
       expect(this.wallet.finish).toBeVisible(),
       expect(this.page.getByText("Your account is ready!")).toBeVisible(),
       expect(this.page.getByText("Your smart account is ready!")).toBeVisible(),
-      expect(this.page.getByTestId('get-started')).toBeVisible(),
+      expect(this.page.getByTestId("get-started")).toBeVisible(),
     ])
 
     await this.open()

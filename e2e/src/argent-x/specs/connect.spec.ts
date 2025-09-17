@@ -34,8 +34,8 @@ test.describe("Connect", () => {
       await extension.dapps.disconnect().click()
       await expect(extension.dapps.connected()).toBeHidden()
       await extension.page
-      .getByRole("button", { name: "Connected dapps" })
-      .click()
+        .getByRole("button", { name: "Connected dapps" })
+        .click()
       await expect(
         extension.page.getByText("No authorized dapps"),
       ).toBeVisible()
