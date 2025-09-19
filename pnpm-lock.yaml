@@ -15,11 +15,11 @@ importers:
         specifier: 4.0.7
         version: 4.0.7
       '@starknet-react/chains':
-        specifier: ^5.0.2
-        version: 5.0.2
+        specifier: ^5.0.3
+        version: 5.0.3
       '@starknet-react/core':
-        specifier: ^5.0.2
-        version: 5.0.2(bufferutil@4.0.9)(get-starknet-core@4.0.0)(react@19.0.0-rc-02c0e824-20241028)(starknet@8.5.2)(typescript@5.8.3)(utf-8-validate@5.0.10)
+        specifier: ^5.0.3
+        version: 5.0.3(bufferutil@4.0.9)(get-starknet-core@4.0.0)(react@19.0.0-rc-02c0e824-20241028)(starknet@8.5.2)(typescript@5.8.3)(utf-8-validate@5.0.10)
       next:
         specifier: 15.4.7
         version: 15.4.7(@babel/core@7.28.0)(@playwright/test@1.54.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
@@ -1235,11 +1235,11 @@ packages:
   '@starknet-io/types-js@0.9.1':
     resolution: {integrity: sha512-ngLjOFuWOI4EFij8V+nl5tgHVACr6jqgLNUQbgD+AgnTcAN33SemBPXDIsovwK1Mz1U04Cz3qjDOnTq7067ZQw==}
 
-  '@starknet-react/chains@5.0.2':
-    resolution: {integrity: sha512-+Q21eEhsLM9AnUz63wQXhDzvHVz0MOF9zyhzXVdetMCq88XxJWRC7bVd7ROwfPajRGAsg2h9Ddg/A9aTiPreQQ==}
+  '@starknet-react/chains@5.0.3':
+    resolution: {integrity: sha512-TxP391OTWgaqujT9Hu1Siljye54IHjEXrgkUuhMfxzf9sCu5q42ZzZgu9hLm0NcJgg9Fx2t75J0WB6eYmQ26fw==}
 
-  '@starknet-react/core@5.0.2':
-    resolution: {integrity: sha512-erBJIfpa4cSnwdp9RH8P4XH5wCEx6WfRBdaagL8BtmJ3TvMOA9YSO6+1oa+gs9+MdnMbaFqxQnQjBFh2DHIhoQ==}
+  '@starknet-react/core@5.0.3':
+    resolution: {integrity: sha512-BxtcYL+SPqqDo1cpzfNYcYmSY4Ifjz1O5vq5vDdjx2iHEvHYzxBMjnyacJ+JsdRlQiuLNRGInooC/yzFkMrHAQ==}
     peerDependencies:
       get-starknet-core: ^4.0.0
       react: ^18.0
@@ -6800,12 +6800,12 @@ snapshots:
 
   '@starknet-io/types-js@0.9.1': {}
 
-  '@starknet-react/chains@5.0.2': {}
+  '@starknet-react/chains@5.0.3': {}
 
-  '@starknet-react/core@5.0.2(bufferutil@4.0.9)(get-starknet-core@4.0.0)(react@19.0.0-rc-02c0e824-20241028)(starknet@8.5.2)(typescript@5.8.3)(utf-8-validate@5.0.10)':
+  '@starknet-react/core@5.0.3(bufferutil@4.0.9)(get-starknet-core@4.0.0)(react@19.0.0-rc-02c0e824-20241028)(starknet@8.5.2)(typescript@5.8.3)(utf-8-validate@5.0.10)':
     dependencies:
       '@starknet-io/types-js': 0.7.10
-      '@starknet-react/chains': 5.0.2
+      '@starknet-react/chains': 5.0.3
       '@tanstack/react-query': 5.82.0(react@19.0.0-rc-02c0e824-20241028)
       abi-wan-kanabi: 2.2.4
       eventemitter3: 5.0.1
