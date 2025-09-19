@@ -16,7 +16,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.48.2-jammy
+      image: mcr.microsoft.com/playwright:v1.54.1-jammy
     env:
       ARGENT_X_ENVIRONMENT: "hydrogen"
       E2E_REPO: ${{ secrets.E2E_REPO }}
@@ -73,7 +73,7 @@ jobs:
   test-argentX:
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.48.2-jammy
+      image: mcr.microsoft.com/playwright:v1.54.1-jammy
     needs: [build]
     env:
       ARGENT_X_ENVIRONMENT: "hydrogen"

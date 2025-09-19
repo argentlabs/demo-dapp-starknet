@@ -21,6 +21,7 @@ const SignMessage = () => {
         name: "Example DApp",
         chainId: hexChainId || constants.StarknetChainId.SN_SEPOLIA,
         version: "0.0.1",
+        // revision: "1", // Uncomment for SNIP-12 revision 1
       },
       types: {
         StarkNetDomain: [
@@ -28,6 +29,14 @@ const SignMessage = () => {
           { name: "chainId", type: "felt" },
           { name: "version", type: "felt" },
         ],
+        // SNIP-12 revision 1 domain separator (for testing purposes)
+        // See https://github.com/starknet-io/SNIPs/blob/main/SNIPS/snip-12.md#domain-separator
+        // StarknetDomain: [
+        //   { name: "name", type: "shortstring" },
+        //   { name: "version", type: "shortstring" },
+        //   { name: "chainId", type: "shortstring" },
+        //   { name: "revision", type: "shortstring" },
+        // ],
         Message: [{ name: "message", type: "felt" }],
       },
       primaryType: "Message",
