@@ -7,7 +7,11 @@ import {
   BraavosMobileConnector,
   isInBraavosMobileAppBrowser,
 } from "starknetkit/braavosMobile"
-import { InjectedConnector } from "starknetkit/injected"
+import { Fordefi } from "starknetkit/fordefi"
+import { MetaMask } from "starknetkit/metamask"
+import { Braavos } from "starknetkit/braavos"
+import { ArgentX } from "starknetkit/argentX"
+import { Xverse } from "starknetkit/xverse"
 import { WebWalletConnector } from "starknetkit/webwallet"
 import { ControllerConnector } from "starknetkit/controller"
 import { getStarknet } from "@starknet-io/get-starknet-core"
@@ -49,9 +53,11 @@ export const availableConnectors = () => {
   }
 
   return [
-    new InjectedConnector({ options: { id: "argentX" } }),
-    new InjectedConnector({ options: { id: "braavos" } }),
-    new InjectedConnector({ options: { id: "metamask" } }),
+    new ArgentX(),
+    new Braavos(),
+    new MetaMask(),
+    new Fordefi(),
+    new Xverse(),
     new ControllerConnector(),
     ArgentMobileConnector.init({
       options: {
