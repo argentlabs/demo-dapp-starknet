@@ -4,6 +4,10 @@ import {
   ArgentMobileConnector,
 } from "starknetkit/argentMobile"
 import {
+  isInKeplrMobileAppBrowser,
+  KeplrMobileConnector,
+} from "starknetkit/keplrMobile"
+import {
   BraavosMobileConnector,
   isInBraavosMobileAppBrowser,
 } from "starknetkit/braavosMobile"
@@ -42,6 +46,10 @@ export const availableConnectors = () => {
         },
       }),
     ]
+  }
+
+  if (isInKeplrMobileAppBrowser()) {
+    return [KeplrMobileConnector.init()]
   }
 
   if (isInBraavosMobileAppBrowser()) {
