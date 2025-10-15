@@ -25,7 +25,7 @@
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-dom": "19.0.0-rc-02c0e824-20241028",
     "starknet": "^8.5.2",
-    "starknetkit": "3.1.0"
+    "starknetkit": "3.3.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
