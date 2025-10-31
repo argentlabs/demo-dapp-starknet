@@ -60,6 +60,7 @@ export const availableConnectors = () => {
     new InjectedConnector({ options: { id: "argentX" } }),
     new InjectedConnector({ options: { id: "braavos" } }),
     new InjectedConnector({ options: { id: "metamask" } }),
+    new InjectedConnector({ options: { id: "xverse" } }),
     new ControllerConnector(),
     ArgentMobileConnector.init({
       options: {
