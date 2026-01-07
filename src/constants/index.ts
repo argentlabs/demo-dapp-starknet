@@ -22,15 +22,19 @@ export const CHAIN_ID =
 
 const NODE_URL =
   process.env.NEXT_PUBLIC_CHAIN_ID === constants.NetworkName.SN_MAIN
-    ? "https://starknet-mainnet.public.blastapi.io/rpc/v0_9"
-    : "https://starknet-sepolia.public.blastapi.io/rpc/v0_9"
+    ? "https://rpc.starknet.lava.build"
+    : "https://rpc.starknet-sepolia.lava.build"
 
 const STARKNET_CHAIN_ID =
   process.env.NEXT_PUBLIC_CHAIN_ID === constants.NetworkName.SN_MAIN
     ? constants.StarknetChainId.SN_MAIN
     : constants.StarknetChainId.SN_SEPOLIA
 
+export const IS_MAINNET =
+  process.env.NEXT_PUBLIC_CHAIN_ID === constants.NetworkName.SN_MAIN
+
 export const provider = new RpcProvider({
+  specVersion: "0.9.0",
   nodeUrl: NODE_URL,
   chainId: STARKNET_CHAIN_ID,
 })

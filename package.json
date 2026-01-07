@@ -24,7 +24,7 @@
     "next": "15.4.10",
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-dom": "19.0.0-rc-02c0e824-20241028",
-    "starknet": "^8.5.2",
+    "starknet": "9.2.1",
     "starknetkit": "3.4.2"
   },
   "devDependencies": {
