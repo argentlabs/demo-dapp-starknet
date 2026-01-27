@@ -21,9 +21,9 @@
     "@starknet-io/get-starknet-core": "4.0.7",
     "@starknet-react/chains": "^5.0.3",
     "@starknet-react/core": "^5.0.3",
-    "next": "15.4.10",
-    "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028",
+    "next": "15.5.10",
+    "react": "19.0.4",
+    "react-dom": "19.0.4",
     "starknet": "9.2.1",
     "starknetkit": "3.4.2"
   },

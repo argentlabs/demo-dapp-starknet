@@ -19,22 +19,22 @@ importers:
         version: 5.0.3
       '@starknet-react/core':
         specifier: ^5.0.3
-        version: 5.0.3(bufferutil@4.0.9)(get-starknet-core@4.0.0)(react@19.0.0-rc-02c0e824-20241028)(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))(typescript@5.8.3)(utf-8-validate@5.0.10)
+        version: 5.0.3(bufferutil@4.0.9)(get-starknet-core@4.0.0)(react@19.0.4)(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))(typescript@5.8.3)(utf-8-validate@5.0.10)
       next:
-        specifier: 15.4.10
-        version: 15.4.10(@babel/core@7.28.4)(@playwright/test@1.54.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
+        specifier: 15.5.10
+        version: 15.5.10(@babel/core@7.28.4)(@playwright/test@1.54.1)(react-dom@19.0.4(react@19.0.4))(react@19.0.4)
       react:
-        specifier: 19.0.0-rc-02c0e824-20241028
-        version: 19.0.0-rc-02c0e824-20241028
+        specifier: 19.0.4
+        version: 19.0.4
       react-dom:
-        specifier: 19.0.0-rc-02c0e824-20241028
-        version: 19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028)
+        specifier: 19.0.4
+        version: 19.0.4(react@19.0.4)
       starknet:
         specifier: 9.2.1
         version: 9.2.1(typescript@5.8.3)(zod@3.25.76)
       starknetkit:
         specifier: 3.4.2
-        version: 3.4.2(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@scure/bip39@1.6.0)(@types/react@18.3.23)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(bufferutil@4.0.9)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028))(embla-carousel-wheel-gestures@8.1.0(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.0-rc-02c0e824-20241028))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028))(react-router-dom@7.9.4(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0)(zdog@1.1.3))(react-virtuoso@4.14.1(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))(swr@1.3.0(react@19.0.0-rc-02c0e824-20241028))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(typescript@5.8.3)(url-join@4.0.1)(utf-8-validate@5.0.10)(zod@3.25.76)
+        version: 3.4.2(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.4))(@scure/bip39@1.6.0)(@types/react@18.3.23)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(bufferutil@4.0.9)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.4))(embla-carousel-wheel-gestures@8.1.0(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.4))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4))(react-router-dom@7.9.4(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.4)(three@0.180.0)(zdog@1.1.3))(react-virtuoso@4.14.1(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))(swr@1.3.0(react@19.0.4))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(typescript@5.8.3)(url-join@4.0.1)(utf-8-validate@5.0.10)(zod@3.25.76)
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.5.0
@@ -838,56 +838,56 @@ packages:
   '@napi-rs/wasm-runtime@0.2.12':
     resolution: {integrity: sha512-ZVWUcfwY4E/yPitQJl481FjFo3K22D6qF0DuFH6Y/nbnE11GY5uguDxZMGXPQ8WQ0128MXQD7TnfHyK4oWoIJQ==}
 
-  '@next/env@15.4.10':
-    resolution: {integrity: sha512-knhmoJ0Vv7VRf6pZEPSnciUG1S4bIhWx+qTYBW/AjxEtlzsiNORPk8sFDCEvqLfmKuey56UB9FL1UdHEV3uBrg==}
+  '@next/env@15.5.10':
+    resolution: {integrity: sha512-plg+9A/KoZcTS26fe15LHg+QxReTazrIOoKKUC3Uz4leGGeNPgLHdevVraAAOX0snnUs3WkRx3eUQpj9mreG6A==}
 
   '@next/eslint-plugin-next@15.0.2':
     resolution: {integrity: sha512-R9Jc7T6Ge0txjmqpPwqD8vx6onQjynO9JT73ArCYiYPvSrwYXepH/UY/WdKDY8JPWJl72sAE4iGMHPeQ5xdEWg==}
 
-  '@next/swc-darwin-arm64@15.4.8':
-    resolution: {integrity: sha512-Pf6zXp7yyQEn7sqMxur6+kYcywx5up1J849psyET7/8pG2gQTVMjU3NzgIt8SeEP5to3If/SaWmaA6H6ysBr1A==}
+  '@next/swc-darwin-arm64@15.5.7':
+    resolution: {integrity: sha512-IZwtxCEpI91HVU/rAUOOobWSZv4P2DeTtNaCdHqLcTJU4wdNXgAySvKa/qJCgR5m6KI8UsKDXtO2B31jcaw1Yw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@next/swc-darwin-x64@15.4.8':
-    resolution: {integrity: sha512-xla6AOfz68a6kq3gRQccWEvFC/VRGJmA/QuSLENSO7CZX5WIEkSz7r1FdXUjtGCQ1c2M+ndUAH7opdfLK1PQbw==}
+  '@next/swc-darwin-x64@15.5.7':
+    resolution: {integrity: sha512-UP6CaDBcqaCBuiq/gfCEJw7sPEoX1aIjZHnBWN9v9qYHQdMKvCKcAVs4OX1vIjeE+tC5EIuwDTVIoXpUes29lg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@next/swc-linux-arm64-gnu@15.4.8':
-    resolution: {integrity: sha512-y3fmp+1Px/SJD+5ntve5QLZnGLycsxsVPkTzAc3zUiXYSOlTPqT8ynfmt6tt4fSo1tAhDPmryXpYKEAcoAPDJw==}
+  '@next/swc-linux-arm64-gnu@15.5.7':
+    resolution: {integrity: sha512-NCslw3GrNIw7OgmRBxHtdWFQYhexoUCq+0oS2ccjyYLtcn1SzGzeM54jpTFonIMUjNbHmpKpziXnpxhSWLcmBA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-arm64-musl@15.4.8':
-    resolution: {integrity: sha512-DX/L8VHzrr1CfwaVjBQr3GWCqNNFgyWJbeQ10Lx/phzbQo3JNAxUok1DZ8JHRGcL6PgMRgj6HylnLNndxn4Z6A==}
+  '@next/swc-linux-arm64-musl@15.5.7':
+    resolution: {integrity: sha512-nfymt+SE5cvtTrG9u1wdoxBr9bVB7mtKTcj0ltRn6gkP/2Nu1zM5ei8rwP9qKQP0Y//umK+TtkKgNtfboBxRrw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-x64-gnu@15.4.8':
-    resolution: {integrity: sha512-9fLAAXKAL3xEIFdKdzG5rUSvSiZTLLTCc6JKq1z04DR4zY7DbAPcRvNm3K1inVhTiQCs19ZRAgUerHiVKMZZIA==}
+  '@next/swc-linux-x64-gnu@15.5.7':
+    resolution: {integrity: sha512-hvXcZvCaaEbCZcVzcY7E1uXN9xWZfFvkNHwbe/n4OkRhFWrs1J1QV+4U1BN06tXLdaS4DazEGXwgqnu/VMcmqw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-linux-x64-musl@15.4.8':
-    resolution: {integrity: sha512-s45V7nfb5g7dbS7JK6XZDcapicVrMMvX2uYgOHP16QuKH/JA285oy6HcxlKqwUNaFY/UC6EvQ8QZUOo19cBKSA==}
+  '@next/swc-linux-x64-musl@15.5.7':
+    resolution: {integrity: sha512-4IUO539b8FmF0odY6/SqANJdgwn1xs1GkPO5doZugwZ3ETF6JUdckk7RGmsfSf7ws8Qb2YB5It33mvNL/0acqA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-win32-arm64-msvc@15.4.8':
-    resolution: {integrity: sha512-KjgeQyOAq7t/HzAJcWPGA8X+4WY03uSCZ2Ekk98S9OgCFsb6lfBE3dbUzUuEQAN2THbwYgFfxX2yFTCMm8Kehw==}
+  '@next/swc-win32-arm64-msvc@15.5.7':
+    resolution: {integrity: sha512-CpJVTkYI3ZajQkC5vajM7/ApKJUOlm6uP4BknM3XKvJ7VXAvCqSjSLmM0LKdYzn6nBJVSjdclx8nYJSa3xlTgQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@next/swc-win32-x64-msvc@15.4.8':
-    resolution: {integrity: sha512-Exsmf/+42fWVnLMaZHzshukTBxZrSwuuLKFvqhGHJ+mC1AokqieLY/XzAl3jc/CqhXLqLY3RRjkKJ9YnLPcRWg==}
+  '@next/swc-win32-x64-msvc@15.5.7':
+    resolution: {integrity: sha512-gMzgBX164I6DN+9/PGA+9dQiwmTkE4TloBNx8Kv9UiGARsr9Nba7IpcBRA1iTV9vwlYnrE3Uy6I7Aj6qLjQuqw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -3732,8 +3732,8 @@ packages:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
     engines: {node: '>= 0.6'}
 
-  next@15.4.10:
-    resolution: {integrity: sha512-itVlc79QjpKMFMRhP+kbGKaSG/gZM6RCvwhEbwmCNF06CdDiNaoHcbeg0PqkEa2GOcn8KJ0nnc7+yL7EjoYLHQ==}
+  next@15.5.10:
+    resolution: {integrity: sha512-r0X65PNwyDDyOrWNKpQoZvOatw7BcsTPRKdwEqtc9cj3wv7mbBIk9tKed4klRaFXJdX0rugpuMTHslDrAU1bBg==}
     engines: {node: ^18.18.0 || ^19.8.0 || >= 20.0.0}
     hasBin: true
     peerDependencies:
@@ -4203,10 +4203,10 @@ packages:
     peerDependencies:
       react: ^18.3.1
 
-  react-dom@19.0.0-rc-02c0e824-20241028:
-    resolution: {integrity: sha512-LrZf3DfHL6Fs07wwlUCHrzFTCMM19yA99MvJpfLokN4I2nBAZvREGZjZAn8VPiSfN72+i9j1eL4wB8gC695F3Q==}
+  react-dom@19.0.4:
+    resolution: {integrity: sha512-JiVlwQwuINIQf2+XUjtRFtLxhTE6hcyX7ZyCmY0HM7I/Kgi7qyXThkzwzg6uCfu3rTg9Ofe1x8qWYrfqthIrzg==}
     peerDependencies:
-      react: 19.0.0-rc-02c0e824-20241028
+      react: ^19.0.4
 
   react-fast-compare@3.2.2:
     resolution: {integrity: sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==}
@@ -4359,8 +4359,8 @@ packages:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
     engines: {node: '>=0.10.0'}
 
-  react@19.0.0-rc-02c0e824-20241028:
-    resolution: {integrity: sha512-GbZ7hpPHQMiEu53BqEaPQVM/4GG4hARo+mqEEnx4rYporDvNvUjutiAFxYFSbu6sgHwcr7LeFv8htEOwALVA2A==}
+  react@19.0.4:
+    resolution: {integrity: sha512-6RpEg9/n0sThnO+2CaMLWuvL1iyctm9/lcSTwvmyCoJYD5eiIrwxevXtrMqrtUr96HCdQB8/Yf+oK1QGy8kXEQ==}
     engines: {node: '>=0.10.0'}
 
   read-cache@1.0.0:
@@ -4487,9 +4487,6 @@ packages:
 
   scheduler@0.25.0:
     resolution: {integrity: sha512-xFVuu11jh+xcO7JOAGJNOXld8/TcEHK/4CituBUeUb5hqxJLj9YuemAEuvm9gQ/+pgXYfbQuqAkiYu+u7YEsNA==}
-
-  scheduler@0.25.0-rc-02c0e824-20241028:
-    resolution: {integrity: sha512-GysnKjmMSaWcwsKTLzeJO0IhU3EyIiC0ivJKE6yDNLqt3IMxDByx8b6lSNXRNdN+ULUY0WLLjSPaZ0LuU/GnTg==}
 
   scheduler@0.26.0:
     resolution: {integrity: sha512-NlHwttCI/l5gCPR3D1nNXtWABUmBwvZpEQiD4IXSbIDq8BzLIK/7Ir5gTFSGZDUu37K5cMNp0hFtzO38sC7gWA==}
@@ -5369,12 +5366,12 @@ snapshots:
       minimalistic-assert: 1.0.1
       starknet: 9.2.1(typescript@5.8.3)(zod@3.25.76)
 
-  ? '@argent/x-ui@1.109.1(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@scure/bip39@1.6.0)(@starknet-io/types-js@0.8.4)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028))(embla-carousel-wheel-gestures@8.1.0(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(lodash-es@4.17.21)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.0-rc-02c0e824-20241028))(react-dom@18.3.1(react@18.3.1))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028))(react-router-dom@7.9.4(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0)(zdog@1.1.3))(react-virtuoso@4.14.1(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react@18.3.1)(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))(swr@1.3.0(react@19.0.0-rc-02c0e824-20241028))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(url-join@4.0.1)(zod@3.25.76)'
+  ? '@argent/x-ui@1.109.1(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.4))(@scure/bip39@1.6.0)(@starknet-io/types-js@0.8.4)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.4))(embla-carousel-wheel-gestures@8.1.0(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(lodash-es@4.17.21)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.4))(react-dom@18.3.1(react@18.3.1))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4))(react-router-dom@7.9.4(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.4)(three@0.180.0)(zdog@1.1.3))(react-virtuoso@4.14.1(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react@18.3.1)(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))(swr@1.3.0(react@19.0.4))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(url-join@4.0.1)(zod@3.25.76)'
   : dependencies:
-      '@chakra-ui/react': 2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
-      '@emotion/react': 11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
-      '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
-      '@radix-ui/react-slot': 1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
+      '@chakra-ui/react': 2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-dom@19.0.4(react@19.0.4))(react@19.0.4)
+      '@emotion/react': 11.14.0(@types/react@18.3.23)(react@19.0.4)
+      '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4)
+      '@radix-ui/react-slot': 1.2.3(@types/react@18.3.23)(react@19.0.4)
       '@scure/bip39': 1.6.0
       '@starknet-io/types-js': 0.8.4
       '@zxcvbn-ts/core': 3.0.4
@@ -5384,10 +5381,10 @@ snapshots:
       clsx: 2.1.1
       colord: 2.9.3
       embla-carousel: 8.6.0
-      embla-carousel-react: 8.6.0(react@19.0.0-rc-02c0e824-20241028)
+      embla-carousel-react: 8.6.0(react@19.0.4)
       embla-carousel-wheel-gestures: 8.1.0(embla-carousel@8.6.0)
       emittery: 1.2.0
-      framer-motion: 11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
+      framer-motion: 11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4)
       history: 5.3.0
       i18next: 24.2.3(typescript@5.8.3)
       lightweight-charts: 4.2.3
@@ -5395,14 +5392,14 @@ snapshots:
       object-hash: 3.0.0
       popmotion: 11.0.5
       react: 18.3.1
-      react-copy-to-clipboard: 5.1.0(react@19.0.0-rc-02c0e824-20241028)
+      react-copy-to-clipboard: 5.1.0(react@19.0.4)
       react-dom: 18.3.1(react@18.3.1)
-      react-i18next: 15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)
-      react-router-dom: 7.9.4(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
-      react-spring-bottom-sheet: 3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0)(zdog@1.1.3)
-      react-virtuoso: 4.14.1(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
+      react-i18next: 15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)
+      react-router-dom: 7.9.4(react-dom@19.0.4(react@19.0.4))(react@19.0.4)
+      react-spring-bottom-sheet: 3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.4)(three@0.180.0)(zdog@1.1.3)
+      react-virtuoso: 4.14.1(react-dom@19.0.4(react@19.0.4))(react@19.0.4)
       starknet: 9.2.1(typescript@5.8.3)(zod@3.25.76)
-      swr: 1.3.0(react@19.0.0-rc-02c0e824-20241028)
+      swr: 1.3.0(react@19.0.4)
       tailwind-merge: 3.3.1
       tailwindcss: 3.4.17
       tailwindcss-animate: 1.0.7(tailwindcss@3.4.17)
@@ -5655,64 +5652,64 @@ snapshots:
 
   '@chakra-ui/anatomy@2.3.6': {}
 
-  '@chakra-ui/hooks@2.4.5(react@19.0.0-rc-02c0e824-20241028)':
+  '@chakra-ui/hooks@2.4.5(react@19.0.4)':
     dependencies:
-      '@chakra-ui/utils': 2.2.5(react@19.0.0-rc-02c0e824-20241028)
+      '@chakra-ui/utils': 2.2.5(react@19.0.4)
       '@zag-js/element-size': 0.31.1
       copy-to-clipboard: 3.3.3
       framesync: 6.1.2
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
 
-  '@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)':
+  '@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-dom@19.0.4(react@19.0.4))(react@19.0.4)':
     dependencies:
-      '@chakra-ui/hooks': 2.4.5(react@19.0.0-rc-02c0e824-20241028)
-      '@chakra-ui/styled-system': 2.12.4(react@19.0.0-rc-02c0e824-20241028)
-      '@chakra-ui/theme': 3.4.9(@chakra-ui/styled-system@2.12.4(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
-      '@chakra-ui/utils': 2.2.5(react@19.0.0-rc-02c0e824-20241028)
-      '@emotion/react': 11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
-      '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
+      '@chakra-ui/hooks': 2.4.5(react@19.0.4)
+      '@chakra-ui/styled-system': 2.12.4(react@19.0.4)
+      '@chakra-ui/theme': 3.4.9(@chakra-ui/styled-system@2.12.4(react@19.0.4))(react@19.0.4)
+      '@chakra-ui/utils': 2.2.5(react@19.0.4)
+      '@emotion/react': 11.14.0(@types/react@18.3.23)(react@19.0.4)
+      '@emotion/styled': 11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4)
       '@popperjs/core': 2.11.8
       '@zag-js/focus-visible': 0.31.1
       aria-hidden: 1.2.6
-      framer-motion: 11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
-      react: 19.0.0-rc-02c0e824-20241028
-      react-dom: 19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028)
+      framer-motion: 11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4)
+      react: 19.0.4
+      react-dom: 19.0.4(react@19.0.4)
       react-fast-compare: 3.2.2
-      react-focus-lock: 2.13.6(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
-      react-remove-scroll: 2.7.1(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
+      react-focus-lock: 2.13.6(@types/react@18.3.23)(react@19.0.4)
+      react-remove-scroll: 2.7.1(@types/react@18.3.23)(react@19.0.4)
     transitivePeerDependencies:
       - '@types/react'
 
-  '@chakra-ui/styled-system@2.12.4(react@19.0.0-rc-02c0e824-20241028)':
+  '@chakra-ui/styled-system@2.12.4(react@19.0.4)':
     dependencies:
-      '@chakra-ui/utils': 2.2.5(react@19.0.0-rc-02c0e824-20241028)
+      '@chakra-ui/utils': 2.2.5(react@19.0.4)
       csstype: 3.1.3
     transitivePeerDependencies:
       - react
 
-  '@chakra-ui/theme-tools@2.2.9(@chakra-ui/styled-system@2.12.4(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)':
+  '@chakra-ui/theme-tools@2.2.9(@chakra-ui/styled-system@2.12.4(react@19.0.4))(react@19.0.4)':
     dependencies:
       '@chakra-ui/anatomy': 2.3.6
-      '@chakra-ui/styled-system': 2.12.4(react@19.0.0-rc-02c0e824-20241028)
-      '@chakra-ui/utils': 2.2.5(react@19.0.0-rc-02c0e824-20241028)
+      '@chakra-ui/styled-system': 2.12.4(react@19.0.4)
+      '@chakra-ui/utils': 2.2.5(react@19.0.4)
       color2k: 2.0.3
     transitivePeerDependencies:
       - react
 
-  '@chakra-ui/theme@3.4.9(@chakra-ui/styled-system@2.12.4(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)':
+  '@chakra-ui/theme@3.4.9(@chakra-ui/styled-system@2.12.4(react@19.0.4))(react@19.0.4)':
     dependencies:
       '@chakra-ui/anatomy': 2.3.6
-      '@chakra-ui/styled-system': 2.12.4(react@19.0.0-rc-02c0e824-20241028)
-      '@chakra-ui/theme-tools': 2.2.9(@chakra-ui/styled-system@2.12.4(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
-      '@chakra-ui/utils': 2.2.5(react@19.0.0-rc-02c0e824-20241028)
+      '@chakra-ui/styled-system': 2.12.4(react@19.0.4)
+      '@chakra-ui/theme-tools': 2.2.9(@chakra-ui/styled-system@2.12.4(react@19.0.4))(react@19.0.4)
+      '@chakra-ui/utils': 2.2.5(react@19.0.4)
     transitivePeerDependencies:
       - react
 
-  '@chakra-ui/utils@2.2.5(react@19.0.0-rc-02c0e824-20241028)':
+  '@chakra-ui/utils@2.2.5(react@19.0.4)':
     dependencies:
       '@types/lodash.mergewith': 4.6.9
       lodash.mergewith: 4.6.2
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
 
   '@commitlint/cli@19.8.1(@types/node@20.19.7)(typescript@5.8.3)':
     dependencies:
@@ -5872,17 +5869,17 @@ snapshots:
 
   '@emotion/memoize@0.9.0': {}
 
-  '@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)':
+  '@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4)':
     dependencies:
       '@babel/runtime': 7.28.4
       '@emotion/babel-plugin': 11.13.5
       '@emotion/cache': 11.14.0
       '@emotion/serialize': 1.3.3
-      '@emotion/use-insertion-effect-with-fallbacks': 1.2.0(react@19.0.0-rc-02c0e824-20241028)
+      '@emotion/use-insertion-effect-with-fallbacks': 1.2.0(react@19.0.4)
       '@emotion/utils': 1.4.2
       '@emotion/weak-memoize': 0.4.0
       hoist-non-react-statics: 3.3.2
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
     optionalDependencies:
       '@types/react': 18.3.23
     transitivePeerDependencies:
@@ -5898,16 +5895,16 @@ snapshots:
 
   '@emotion/sheet@1.4.0': {}
 
-  '@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)':
+  '@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4)':
     dependencies:
       '@babel/runtime': 7.28.4
       '@emotion/babel-plugin': 11.13.5
       '@emotion/is-prop-valid': 1.4.0
-      '@emotion/react': 11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
+      '@emotion/react': 11.14.0(@types/react@18.3.23)(react@19.0.4)
       '@emotion/serialize': 1.3.3
-      '@emotion/use-insertion-effect-with-fallbacks': 1.2.0(react@19.0.0-rc-02c0e824-20241028)
+      '@emotion/use-insertion-effect-with-fallbacks': 1.2.0(react@19.0.4)
       '@emotion/utils': 1.4.2
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
     optionalDependencies:
       '@types/react': 18.3.23
     transitivePeerDependencies:
@@ -5915,9 +5912,9 @@ snapshots:
 
   '@emotion/unitless@0.10.0': {}
 
-  '@emotion/use-insertion-effect-with-fallbacks@1.2.0(react@19.0.0-rc-02c0e824-20241028)':
+  '@emotion/use-insertion-effect-with-fallbacks@1.2.0(react@19.0.4)':
     dependencies:
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
 
   '@emotion/utils@1.4.2': {}
 
@@ -6188,34 +6185,34 @@ snapshots:
       '@tybys/wasm-util': 0.10.0
     optional: true
 
-  '@next/env@15.4.10': {}
+  '@next/env@15.5.10': {}
 
   '@next/eslint-plugin-next@15.0.2':
     dependencies:
       fast-glob: 3.3.1
 
-  '@next/swc-darwin-arm64@15.4.8':
+  '@next/swc-darwin-arm64@15.5.7':
     optional: true
 
-  '@next/swc-darwin-x64@15.4.8':
+  '@next/swc-darwin-x64@15.5.7':
     optional: true
 
-  '@next/swc-linux-arm64-gnu@15.4.8':
+  '@next/swc-linux-arm64-gnu@15.5.7':
     optional: true
 
-  '@next/swc-linux-arm64-musl@15.4.8':
+  '@next/swc-linux-arm64-musl@15.5.7':
     optional: true
 
-  '@next/swc-linux-x64-gnu@15.4.8':
+  '@next/swc-linux-x64-gnu@15.5.7':
     optional: true
 
-  '@next/swc-linux-x64-musl@15.4.8':
+  '@next/swc-linux-x64-musl@15.5.7':
     optional: true
 
-  '@next/swc-win32-arm64-msvc@15.4.8':
+  '@next/swc-win32-arm64-msvc@15.5.7':
     optional: true
 
-  '@next/swc-win32-x64-msvc@15.4.8':
+  '@next/swc-win32-x64-msvc@15.5.7':
     optional: true
 
   '@noble/ciphers@0.5.3': {}
@@ -6301,31 +6298,31 @@ snapshots:
 
   '@popperjs/core@2.11.8': {}
 
-  '@radix-ui/react-compose-refs@1.1.2(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)':
+  '@radix-ui/react-compose-refs@1.1.2(@types/react@18.3.23)(react@19.0.4)':
     dependencies:
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
     optionalDependencies:
       '@types/react': 18.3.23
 
-  '@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)':
+  '@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.4)':
     dependencies:
-      '@radix-ui/react-compose-refs': 1.1.2(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
-      react: 19.0.0-rc-02c0e824-20241028
+      '@radix-ui/react-compose-refs': 1.1.2(@types/react@18.3.23)(react@19.0.4)
+      react: 19.0.4
     optionalDependencies:
       '@types/react': 18.3.23
 
-  '@reach/portal@0.13.2(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)':
+  '@reach/portal@0.13.2(react-dom@19.0.4(react@19.0.4))(react@19.0.4)':
     dependencies:
-      '@reach/utils': 0.13.2(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
-      react: 19.0.0-rc-02c0e824-20241028
-      react-dom: 19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028)
+      '@reach/utils': 0.13.2(react-dom@19.0.4(react@19.0.4))(react@19.0.4)
+      react: 19.0.4
+      react-dom: 19.0.4(react@19.0.4)
       tslib: 2.8.1
 
-  '@reach/utils@0.13.2(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)':
+  '@reach/utils@0.13.2(react-dom@19.0.4(react@19.0.4))(react@19.0.4)':
     dependencies:
       '@types/warning': 3.0.3
-      react: 19.0.0-rc-02c0e824-20241028
-      react-dom: 19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028)
+      react: 19.0.4
+      react-dom: 19.0.4(react@19.0.4)
       tslib: 2.8.1
       warning: 4.0.3
 
@@ -6387,106 +6384,106 @@ snapshots:
 
   '@react-native/normalize-colors@0.82.0': {}
 
-  '@react-native/virtualized-lists@0.82.0(@types/react@18.3.23)(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)':
+  '@react-native/virtualized-lists@0.82.0(@types/react@18.3.23)(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)':
     dependencies:
       invariant: 2.2.4
       nullthrows: 1.1.1
-      react: 19.0.0-rc-02c0e824-20241028
-      react-native: 0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10)
+      react: 19.0.4
+      react-native: 0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10)
     optionalDependencies:
       '@types/react': 18.3.23
 
-  '@react-spring/animated@9.7.5(react@19.0.0-rc-02c0e824-20241028)':
+  '@react-spring/animated@9.7.5(react@19.0.4)':
     dependencies:
-      '@react-spring/shared': 9.7.5(react@19.0.0-rc-02c0e824-20241028)
+      '@react-spring/shared': 9.7.5(react@19.0.4)
       '@react-spring/types': 9.7.5
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
 
-  '@react-spring/core@9.7.5(react@19.0.0-rc-02c0e824-20241028)':
+  '@react-spring/core@9.7.5(react@19.0.4)':
     dependencies:
-      '@react-spring/animated': 9.7.5(react@19.0.0-rc-02c0e824-20241028)
-      '@react-spring/shared': 9.7.5(react@19.0.0-rc-02c0e824-20241028)
+      '@react-spring/animated': 9.7.5(react@19.0.4)
+      '@react-spring/shared': 9.7.5(react@19.0.4)
       '@react-spring/types': 9.7.5
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
 
-  '@react-spring/konva@9.7.5(konva@10.0.2)(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)':
+  '@react-spring/konva@9.7.5(konva@10.0.2)(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react@19.0.4)':
     dependencies:
-      '@react-spring/animated': 9.7.5(react@19.0.0-rc-02c0e824-20241028)
-      '@react-spring/core': 9.7.5(react@19.0.0-rc-02c0e824-20241028)
-      '@react-spring/shared': 9.7.5(react@19.0.0-rc-02c0e824-20241028)
+      '@react-spring/animated': 9.7.5(react@19.0.4)
+      '@react-spring/core': 9.7.5(react@19.0.4)
+      '@react-spring/shared': 9.7.5(react@19.0.4)
       '@react-spring/types': 9.7.5
       konva: 10.0.2
-      react: 19.0.0-rc-02c0e824-20241028
-      react-konva: 18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
+      react: 19.0.4
+      react-konva: 18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4)
 
-  '@react-spring/native@9.7.5(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)':
+  '@react-spring/native@9.7.5(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)':
     dependencies:
-      '@react-spring/animated': 9.7.5(react@19.0.0-rc-02c0e824-20241028)
-      '@react-spring/core': 9.7.5(react@19.0.0-rc-02c0e824-20241028)
-      '@react-spring/shared': 9.7.5(react@19.0.0-rc-02c0e824-20241028)
+      '@react-spring/animated': 9.7.5(react@19.0.4)
+      '@react-spring/core': 9.7.5(react@19.0.4)
+      '@react-spring/shared': 9.7.5(react@19.0.4)
       '@react-spring/types': 9.7.5
-      react: 19.0.0-rc-02c0e824-20241028
-      react-native: 0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10)
+      react: 19.0.4
+      react-native: 0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10)
 
   '@react-spring/rafz@9.7.5': {}
 
-  '@react-spring/shared@9.7.5(react@19.0.0-rc-02c0e824-20241028)':
+  '@react-spring/shared@9.7.5(react@19.0.4)':
     dependencies:
       '@react-spring/rafz': 9.7.5
       '@react-spring/types': 9.7.5
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
 
-  '@react-spring/three@9.7.5(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0))(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0)':
+  '@react-spring/three@9.7.5(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0))(react@19.0.4)(three@0.180.0)':
     dependencies:
-      '@react-spring/animated': 9.7.5(react@19.0.0-rc-02c0e824-20241028)
-      '@react-spring/core': 9.7.5(react@19.0.0-rc-02c0e824-20241028)
-      '@react-spring/shared': 9.7.5(react@19.0.0-rc-02c0e824-20241028)
+      '@react-spring/animated': 9.7.5(react@19.0.4)
+      '@react-spring/core': 9.7.5(react@19.0.4)
+      '@react-spring/shared': 9.7.5(react@19.0.4)
       '@react-spring/types': 9.7.5
-      '@react-three/fiber': 9.4.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0)
-      react: 19.0.0-rc-02c0e824-20241028
+      '@react-three/fiber': 9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0)
+      react: 19.0.4
       three: 0.180.0
 
   '@react-spring/types@9.7.5': {}
 
-  '@react-spring/web@9.7.5(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)':
+  '@react-spring/web@9.7.5(react-dom@19.0.4(react@19.0.4))(react@19.0.4)':
     dependencies:
-      '@react-spring/animated': 9.7.5(react@19.0.0-rc-02c0e824-20241028)
-      '@react-spring/core': 9.7.5(react@19.0.0-rc-02c0e824-20241028)
-      '@react-spring/shared': 9.7.5(react@19.0.0-rc-02c0e824-20241028)
+      '@react-spring/animated': 9.7.5(react@19.0.4)
+      '@react-spring/core': 9.7.5(react@19.0.4)
+      '@react-spring/shared': 9.7.5(react@19.0.4)
       '@react-spring/types': 9.7.5
-      react: 19.0.0-rc-02c0e824-20241028
-      react-dom: 19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028)
+      react: 19.0.4
+      react-dom: 19.0.4(react@19.0.4)
 
-  '@react-spring/zdog@9.7.5(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(zdog@1.1.3)':
+  '@react-spring/zdog@9.7.5(react-dom@19.0.4(react@19.0.4))(react-zdog@1.2.2)(react@19.0.4)(zdog@1.1.3)':
     dependencies:
-      '@react-spring/animated': 9.7.5(react@19.0.0-rc-02c0e824-20241028)
-      '@react-spring/core': 9.7.5(react@19.0.0-rc-02c0e824-20241028)
-      '@react-spring/shared': 9.7.5(react@19.0.0-rc-02c0e824-20241028)
+      '@react-spring/animated': 9.7.5(react@19.0.4)
+      '@react-spring/core': 9.7.5(react@19.0.4)
+      '@react-spring/shared': 9.7.5(react@19.0.4)
       '@react-spring/types': 9.7.5
-      react: 19.0.0-rc-02c0e824-20241028
-      react-dom: 19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028)
+      react: 19.0.4
+      react-dom: 19.0.4(react@19.0.4)
       react-zdog: 1.2.2
       zdog: 1.1.3
 
-  '@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0)':
+  '@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0)':
     dependencies:
       '@babel/runtime': 7.28.4
       '@types/react-reconciler': 0.32.1(@types/react@18.3.23)
       '@types/webxr': 0.5.24
       base64-js: 1.5.1
       buffer: 6.0.3
-      its-fine: 2.0.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
-      react: 19.0.0-rc-02c0e824-20241028
-      react-reconciler: 0.31.0(react@19.0.0-rc-02c0e824-20241028)
-      react-use-measure: 2.1.7(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
+      its-fine: 2.0.0(@types/react@18.3.23)(react@19.0.4)
+      react: 19.0.4
+      react-reconciler: 0.31.0(react@19.0.4)
+      react-use-measure: 2.1.7(react-dom@19.0.4(react@19.0.4))(react@19.0.4)
       scheduler: 0.25.0
-      suspend-react: 0.1.3(react@19.0.0-rc-02c0e824-20241028)
+      suspend-react: 0.1.3(react@19.0.4)
       three: 0.180.0
-      use-sync-external-store: 1.6.0(react@19.0.0-rc-02c0e824-20241028)
-      zustand: 5.0.8(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)(use-sync-external-store@1.6.0(react@19.0.0-rc-02c0e824-20241028))
+      use-sync-external-store: 1.6.0(react@19.0.4)
+      zustand: 5.0.8(@types/react@18.3.23)(react@19.0.4)(use-sync-external-store@1.6.0(react@19.0.4))
     optionalDependencies:
-      react-dom: 19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028)
-      react-native: 0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10)
+      react-dom: 19.0.4(react@19.0.4)
+      react-native: 0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10)
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -6839,15 +6836,15 @@ snapshots:
 
   '@starknet-react/chains@5.0.3': {}
 
-  '@starknet-react/core@5.0.3(bufferutil@4.0.9)(get-starknet-core@4.0.0)(react@19.0.0-rc-02c0e824-20241028)(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))(typescript@5.8.3)(utf-8-validate@5.0.10)':
+  '@starknet-react/core@5.0.3(bufferutil@4.0.9)(get-starknet-core@4.0.0)(react@19.0.4)(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))(typescript@5.8.3)(utf-8-validate@5.0.10)':
     dependencies:
       '@starknet-io/types-js': 0.7.10
       '@starknet-react/chains': 5.0.3
-      '@tanstack/react-query': 5.82.0(react@19.0.0-rc-02c0e824-20241028)
+      '@tanstack/react-query': 5.82.0(react@19.0.4)
       abi-wan-kanabi: 2.2.4
       eventemitter3: 5.0.1
       get-starknet-core: 4.0.0
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
       starknet: 9.2.1(typescript@5.8.3)(zod@3.25.76)
       viem: 2.38.1(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.25.76)
       zod: 3.25.76
@@ -6862,10 +6859,10 @@ snapshots:
 
   '@tanstack/query-core@5.82.0': {}
 
-  '@tanstack/react-query@5.82.0(react@19.0.0-rc-02c0e824-20241028)':
+  '@tanstack/react-query@5.82.0(react@19.0.4)':
     dependencies:
       '@tanstack/query-core': 5.82.0
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
 
   '@telegram-apps/bridge@1.9.2':
     dependencies:
@@ -7808,11 +7805,11 @@ snapshots:
       '@walletconnect/window-getters': 1.0.1
       tslib: 1.14.1
 
-  '@xstate/react@1.6.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)(xstate@4.38.3)':
+  '@xstate/react@1.6.3(@types/react@18.3.23)(react@19.0.4)(xstate@4.38.3)':
     dependencies:
-      react: 19.0.0-rc-02c0e824-20241028
-      use-isomorphic-layout-effect: 1.2.1(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
-      use-subscription: 1.12.0(react@19.0.0-rc-02c0e824-20241028)
+      react: 19.0.4
+      use-isomorphic-layout-effect: 1.2.1(@types/react@18.3.23)(react@19.0.4)
+      use-subscription: 1.12.0(react@19.0.4)
     optionalDependencies:
       xstate: 4.38.3
     transitivePeerDependencies:
@@ -8578,11 +8575,11 @@ snapshots:
 
   electron-to-chromium@1.5.182: {}
 
-  embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028):
+  embla-carousel-react@8.6.0(react@19.0.4):
     dependencies:
       embla-carousel: 8.6.0
       embla-carousel-reactive-utils: 8.6.0(embla-carousel@8.6.0)
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
 
   embla-carousel-reactive-utils@8.6.0(embla-carousel@8.6.0):
     dependencies:
@@ -9101,15 +9098,15 @@ snapshots:
 
   fraction.js@4.3.7: {}
 
-  framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028):
+  framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4):
     dependencies:
       motion-dom: 11.18.1
       motion-utils: 11.18.1
       tslib: 2.8.1
     optionalDependencies:
       '@emotion/is-prop-valid': 1.4.0
-      react: 19.0.0-rc-02c0e824-20241028
-      react-dom: 19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028)
+      react: 19.0.4
+      react-dom: 19.0.4(react@19.0.4)
 
   framesync@6.1.2:
     dependencies:
@@ -9611,17 +9608,17 @@ snapshots:
       has-symbols: 1.1.0
       set-function-name: 2.0.2
 
-  its-fine@1.2.5(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028):
+  its-fine@1.2.5(@types/react@18.3.23)(react@19.0.4):
     dependencies:
       '@types/react-reconciler': 0.28.9(@types/react@18.3.23)
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
     transitivePeerDependencies:
       - '@types/react'
 
-  its-fine@2.0.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028):
+  its-fine@2.0.0(@types/react@18.3.23)(react@19.0.4):
     dependencies:
       '@types/react-reconciler': 0.28.9(@types/react@18.3.23)
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
     transitivePeerDependencies:
       - '@types/react'
 
@@ -10186,24 +10183,24 @@ snapshots:
 
   negotiator@0.6.3: {}
 
-  next@15.4.10(@babel/core@7.28.4)(@playwright/test@1.54.1)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028):
+  next@15.5.10(@babel/core@7.28.4)(@playwright/test@1.54.1)(react-dom@19.0.4(react@19.0.4))(react@19.0.4):
     dependencies:
-      '@next/env': 15.4.10
+      '@next/env': 15.5.10
       '@swc/helpers': 0.5.15
       caniuse-lite: 1.0.30001727
       postcss: 8.4.31
-      react: 19.0.0-rc-02c0e824-20241028
-      react-dom: 19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028)
-      styled-jsx: 5.1.6(@babel/core@7.28.4)(react@19.0.0-rc-02c0e824-20241028)
+      react: 19.0.4
+      react-dom: 19.0.4(react@19.0.4)
+      styled-jsx: 5.1.6(@babel/core@7.28.4)(react@19.0.4)
     optionalDependencies:
-      '@next/swc-darwin-arm64': 15.4.8
-      '@next/swc-darwin-x64': 15.4.8
-      '@next/swc-linux-arm64-gnu': 15.4.8
-      '@next/swc-linux-arm64-musl': 15.4.8
-      '@next/swc-linux-x64-gnu': 15.4.8
-      '@next/swc-linux-x64-musl': 15.4.8
-      '@next/swc-win32-arm64-msvc': 15.4.8
-      '@next/swc-win32-x64-msvc': 15.4.8
+      '@next/swc-darwin-arm64': 15.5.7
+      '@next/swc-darwin-x64': 15.5.7
+      '@next/swc-linux-arm64-gnu': 15.5.7
+      '@next/swc-linux-arm64-musl': 15.5.7
+      '@next/swc-linux-x64-gnu': 15.5.7
+      '@next/swc-linux-x64-musl': 15.5.7
+      '@next/swc-win32-arm64-msvc': 15.5.7
+      '@next/swc-win32-x64-msvc': 15.5.7
       '@playwright/test': 1.54.1
       sharp: 0.34.3
     transitivePeerDependencies:
@@ -10671,16 +10668,16 @@ snapshots:
 
   range-parser@1.2.1: {}
 
-  react-clientside-effect@1.2.8(react@19.0.0-rc-02c0e824-20241028):
+  react-clientside-effect@1.2.8(react@19.0.4):
     dependencies:
       '@babel/runtime': 7.28.4
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
 
-  react-copy-to-clipboard@5.1.0(react@19.0.0-rc-02c0e824-20241028):
+  react-copy-to-clipboard@5.1.0(react@19.0.4):
     dependencies:
       copy-to-clipboard: 3.3.3
       prop-types: 15.8.1
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
 
   react-devtools-core@6.1.5(bufferutil@4.0.9)(utf-8-validate@5.0.10):
     dependencies:
@@ -10696,52 +10693,52 @@ snapshots:
       react: 18.3.1
       scheduler: 0.23.2
 
-  react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028):
+  react-dom@19.0.4(react@19.0.4):
     dependencies:
-      react: 19.0.0-rc-02c0e824-20241028
-      scheduler: 0.25.0-rc-02c0e824-20241028
+      react: 19.0.4
+      scheduler: 0.25.0
 
   react-fast-compare@3.2.2: {}
 
-  react-focus-lock@2.13.6(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028):
+  react-focus-lock@2.13.6(@types/react@18.3.23)(react@19.0.4):
     dependencies:
       '@babel/runtime': 7.28.4
       focus-lock: 1.3.6
       prop-types: 15.8.1
-      react: 19.0.0-rc-02c0e824-20241028
-      react-clientside-effect: 1.2.8(react@19.0.0-rc-02c0e824-20241028)
-      use-callback-ref: 1.3.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
-      use-sidecar: 1.1.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
+      react: 19.0.4
+      react-clientside-effect: 1.2.8(react@19.0.4)
+      use-callback-ref: 1.3.3(@types/react@18.3.23)(react@19.0.4)
+      use-sidecar: 1.1.3(@types/react@18.3.23)(react@19.0.4)
     optionalDependencies:
       '@types/react': 18.3.23
 
-  react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028):
+  react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4):
     dependencies:
       '@babel/runtime': 7.28.4
       html-parse-stringify: 3.0.1
       i18next: 24.2.3(typescript@5.8.3)
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
     optionalDependencies:
-      react-dom: 19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028)
-      react-native: 0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10)
+      react-dom: 19.0.4(react@19.0.4)
+      react-native: 0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10)
 
   react-is@16.13.1: {}
 
   react-is@18.3.1: {}
 
-  react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028):
+  react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4):
     dependencies:
       '@types/react-reconciler': 0.28.9(@types/react@18.3.23)
-      its-fine: 1.2.5(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
+      its-fine: 1.2.5(@types/react@18.3.23)(react@19.0.4)
       konva: 10.0.2
-      react: 19.0.0-rc-02c0e824-20241028
-      react-dom: 19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028)
-      react-reconciler: 0.29.2(react@19.0.0-rc-02c0e824-20241028)
+      react: 19.0.4
+      react-dom: 19.0.4(react@19.0.4)
+      react-reconciler: 0.29.2(react@19.0.4)
       scheduler: 0.23.2
     transitivePeerDependencies:
       - '@types/react'
 
-  react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10):
+  react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10):
     dependencies:
       '@jest/create-cache-key-function': 29.7.0
       '@react-native/assets-registry': 0.82.0
@@ -10750,7 +10747,7 @@ snapshots:
       '@react-native/gradle-plugin': 0.82.0
       '@react-native/js-polyfills': 0.82.0
       '@react-native/normalize-colors': 0.82.0
-      '@react-native/virtualized-lists': 0.82.0(@types/react@18.3.23)(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)
+      '@react-native/virtualized-lists': 0.82.0(@types/react@18.3.23)(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)
       abort-controller: 3.0.0
       anser: 1.4.10
       ansi-regex: 5.0.1
@@ -10769,7 +10766,7 @@ snapshots:
       nullthrows: 1.1.1
       pretty-format: 29.7.0
       promise: 8.3.0
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
       react-devtools-core: 6.1.5(bufferutil@4.0.9)(utf-8-validate@5.0.10)
       react-refresh: 0.14.2
       regenerator-runtime: 0.13.11
@@ -10789,62 +10786,62 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  react-reconciler@0.29.2(react@19.0.0-rc-02c0e824-20241028):
+  react-reconciler@0.29.2(react@19.0.4):
     dependencies:
       loose-envify: 1.4.0
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
       scheduler: 0.23.2
 
-  react-reconciler@0.31.0(react@19.0.0-rc-02c0e824-20241028):
+  react-reconciler@0.31.0(react@19.0.4):
     dependencies:
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
       scheduler: 0.25.0
 
   react-refresh@0.14.2: {}
 
-  react-remove-scroll-bar@2.3.8(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028):
+  react-remove-scroll-bar@2.3.8(@types/react@18.3.23)(react@19.0.4):
     dependencies:
-      react: 19.0.0-rc-02c0e824-20241028
-      react-style-singleton: 2.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
+      react: 19.0.4
+      react-style-singleton: 2.2.3(@types/react@18.3.23)(react@19.0.4)
       tslib: 2.8.1
     optionalDependencies:
       '@types/react': 18.3.23
 
-  react-remove-scroll@2.7.1(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028):
+  react-remove-scroll@2.7.1(@types/react@18.3.23)(react@19.0.4):
     dependencies:
-      react: 19.0.0-rc-02c0e824-20241028
-      react-remove-scroll-bar: 2.3.8(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
-      react-style-singleton: 2.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
+      react: 19.0.4
+      react-remove-scroll-bar: 2.3.8(@types/react@18.3.23)(react@19.0.4)
+      react-style-singleton: 2.2.3(@types/react@18.3.23)(react@19.0.4)
       tslib: 2.8.1
-      use-callback-ref: 1.3.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
-      use-sidecar: 1.1.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)
+      use-callback-ref: 1.3.3(@types/react@18.3.23)(react@19.0.4)
+      use-sidecar: 1.1.3(@types/react@18.3.23)(react@19.0.4)
     optionalDependencies:
       '@types/react': 18.3.23
 
-  react-router-dom@7.9.4(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028):
+  react-router-dom@7.9.4(react-dom@19.0.4(react@19.0.4))(react@19.0.4):
     dependencies:
-      react: 19.0.0-rc-02c0e824-20241028
-      react-dom: 19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028)
-      react-router: 7.9.4(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
+      react: 19.0.4
+      react-dom: 19.0.4(react@19.0.4)
+      react-router: 7.9.4(react-dom@19.0.4(react@19.0.4))(react@19.0.4)
 
-  react-router@7.9.4(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028):
+  react-router@7.9.4(react-dom@19.0.4(react@19.0.4))(react@19.0.4):
     dependencies:
       cookie: 1.0.2
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
       set-cookie-parser: 2.7.1
     optionalDependencies:
-      react-dom: 19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028)
+      react-dom: 19.0.4(react@19.0.4)
 
-  react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0)(zdog@1.1.3):
+  react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.4)(three@0.180.0)(zdog@1.1.3):
     dependencies:
       '@juggle/resize-observer': 3.4.0
-      '@reach/portal': 0.13.2(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
-      '@xstate/react': 1.6.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)(xstate@4.38.3)
+      '@reach/portal': 0.13.2(react-dom@19.0.4(react@19.0.4))(react@19.0.4)
+      '@xstate/react': 1.6.3(@types/react@18.3.23)(react@19.0.4)(xstate@4.38.3)
       body-scroll-lock: 3.1.5
       focus-trap: 6.9.4
-      react: 19.0.0-rc-02c0e824-20241028
-      react-spring: 9.7.5(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0))(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0)(zdog@1.1.3)
-      react-use-gesture: 8.0.1(react@19.0.0-rc-02c0e824-20241028)
+      react: 19.0.4
+      react-spring: 9.7.5(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0))(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.4)(three@0.180.0)(zdog@1.1.3)
+      react-use-gesture: 8.0.1(react@19.0.4)
       xstate: 4.38.3
     transitivePeerDependencies:
       - '@react-three/fiber'
@@ -10858,16 +10855,16 @@ snapshots:
       - three
       - zdog
 
-  react-spring@9.7.5(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0))(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0)(zdog@1.1.3):
+  react-spring@9.7.5(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0))(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.4)(three@0.180.0)(zdog@1.1.3):
     dependencies:
-      '@react-spring/core': 9.7.5(react@19.0.0-rc-02c0e824-20241028)
-      '@react-spring/konva': 9.7.5(konva@10.0.2)(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
-      '@react-spring/native': 9.7.5(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)
-      '@react-spring/three': 9.7.5(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0))(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0)
-      '@react-spring/web': 9.7.5(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028)
-      '@react-spring/zdog': 9.7.5(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(zdog@1.1.3)
-      react: 19.0.0-rc-02c0e824-20241028
-      react-dom: 19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028)
+      '@react-spring/core': 9.7.5(react@19.0.4)
+      '@react-spring/konva': 9.7.5(konva@10.0.2)(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react@19.0.4)
+      '@react-spring/native': 9.7.5(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)
+      '@react-spring/three': 9.7.5(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0))(react@19.0.4)(three@0.180.0)
+      '@react-spring/web': 9.7.5(react-dom@19.0.4(react@19.0.4))(react@19.0.4)
+      '@react-spring/zdog': 9.7.5(react-dom@19.0.4(react@19.0.4))(react-zdog@1.2.2)(react@19.0.4)(zdog@1.1.3)
+      react: 19.0.4
+      react-dom: 19.0.4(react@19.0.4)
     transitivePeerDependencies:
       - '@react-three/fiber'
       - konva
@@ -10877,28 +10874,28 @@ snapshots:
       - three
       - zdog
 
-  react-style-singleton@2.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028):
+  react-style-singleton@2.2.3(@types/react@18.3.23)(react@19.0.4):
     dependencies:
       get-nonce: 1.0.1
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
       tslib: 2.8.1
     optionalDependencies:
       '@types/react': 18.3.23
 
-  react-use-gesture@8.0.1(react@19.0.0-rc-02c0e824-20241028):
+  react-use-gesture@8.0.1(react@19.0.4):
     dependencies:
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
 
-  react-use-measure@2.1.7(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028):
+  react-use-measure@2.1.7(react-dom@19.0.4(react@19.0.4))(react@19.0.4):
     dependencies:
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
     optionalDependencies:
-      react-dom: 19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028)
+      react-dom: 19.0.4(react@19.0.4)
 
-  react-virtuoso@4.14.1(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028):
+  react-virtuoso@4.14.1(react-dom@19.0.4(react@19.0.4))(react@19.0.4):
     dependencies:
-      react: 19.0.0-rc-02c0e824-20241028
-      react-dom: 19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028)
+      react: 19.0.4
+      react-dom: 19.0.4(react@19.0.4)
 
   react-zdog@1.2.2:
     dependencies:
@@ -10910,7 +10907,7 @@ snapshots:
     dependencies:
       loose-envify: 1.4.0
 
-  react@19.0.0-rc-02c0e824-20241028: {}
+  react@19.0.4: {}
 
   read-cache@1.0.0:
     dependencies:
@@ -11040,8 +11037,6 @@ snapshots:
       loose-envify: 1.4.0
 
   scheduler@0.25.0: {}
-
-  scheduler@0.25.0-rc-02c0e824-20241028: {}
 
   scheduler@0.26.0: {}
 
@@ -11286,9 +11281,9 @@ snapshots:
       - typescript
       - zod
 
-  ? starknetkit@3.4.2(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@scure/bip39@1.6.0)(@types/react@18.3.23)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(bufferutil@4.0.9)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028))(embla-carousel-wheel-gestures@8.1.0(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.0-rc-02c0e824-20241028))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028))(react-router-dom@7.9.4(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0)(zdog@1.1.3))(react-virtuoso@4.14.1(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))(swr@1.3.0(react@19.0.0-rc-02c0e824-20241028))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(typescript@5.8.3)(url-join@4.0.1)(utf-8-validate@5.0.10)(zod@3.25.76)
+  ? starknetkit@3.4.2(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.4))(@scure/bip39@1.6.0)(@types/react@18.3.23)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(bufferutil@4.0.9)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.4))(embla-carousel-wheel-gestures@8.1.0(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.4))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4))(react-router-dom@7.9.4(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.4)(three@0.180.0)(zdog@1.1.3))(react-virtuoso@4.14.1(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))(swr@1.3.0(react@19.0.4))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(typescript@5.8.3)(url-join@4.0.1)(utf-8-validate@5.0.10)(zod@3.25.76)
   : dependencies:
-      '@argent/x-ui': 1.109.1(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028))(@scure/bip39@1.6.0)(@starknet-io/types-js@0.8.4)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.0-rc-02c0e824-20241028))(embla-carousel-wheel-gestures@8.1.0(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(lodash-es@4.17.21)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.0-rc-02c0e824-20241028))(react-dom@18.3.1(react@18.3.1))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028))(react-router-dom@7.9.4(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.0-rc-02c0e824-20241028)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.0-rc-02c0e824-20241028)(three@0.180.0)(zdog@1.1.3))(react-virtuoso@4.14.1(react-dom@19.0.0-rc-02c0e824-20241028(react@19.0.0-rc-02c0e824-20241028))(react@19.0.0-rc-02c0e824-20241028))(react@18.3.1)(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))(swr@1.3.0(react@19.0.0-rc-02c0e824-20241028))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(url-join@4.0.1)(zod@3.25.76)
+      '@argent/x-ui': 1.109.1(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.4))(@scure/bip39@1.6.0)(@starknet-io/types-js@0.8.4)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.4))(embla-carousel-wheel-gestures@8.1.0(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(lodash-es@4.17.21)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.4))(react-dom@18.3.1(react@18.3.1))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4))(react-router-dom@7.9.4(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.4)(three@0.180.0)(zdog@1.1.3))(react-virtuoso@4.14.1(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react@18.3.1)(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))(swr@1.3.0(react@19.0.4))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(url-join@4.0.1)(zod@3.25.76)
       '@cartridge/controller': 0.10.7(@types/react@18.3.23)(bufferutil@4.0.9)(react@18.3.1)(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.25.76)
       '@starknet-io/get-starknet': 4.0.8
       '@starknet-io/get-starknet-core': 4.0.8
@@ -11470,10 +11465,10 @@ snapshots:
       hey-listen: 1.0.8
       tslib: 2.4.0
 
-  styled-jsx@5.1.6(@babel/core@7.28.4)(react@19.0.0-rc-02c0e824-20241028):
+  styled-jsx@5.1.6(@babel/core@7.28.4)(react@19.0.4):
     dependencies:
       client-only: 0.0.1
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
     optionalDependencies:
       '@babel/core': 7.28.4
 
@@ -11499,9 +11494,9 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  suspend-react@0.1.3(react@19.0.0-rc-02c0e824-20241028):
+  suspend-react@0.1.3(react@19.0.4):
     dependencies:
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
 
   svelte-forms@2.3.1:
     dependencies:
@@ -11511,9 +11506,9 @@ snapshots:
     dependencies:
       react: 18.3.1
 
-  swr@1.3.0(react@19.0.0-rc-02c0e824-20241028):
+  swr@1.3.0(react@19.0.4):
     dependencies:
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
 
   tabbable@5.3.3: {}
 
@@ -11769,35 +11764,35 @@ snapshots:
 
   url-join@4.0.1: {}
 
-  use-callback-ref@1.3.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028):
+  use-callback-ref@1.3.3(@types/react@18.3.23)(react@19.0.4):
     dependencies:
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
       tslib: 2.8.1
     optionalDependencies:
       '@types/react': 18.3.23
 
-  use-isomorphic-layout-effect@1.2.1(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028):
+  use-isomorphic-layout-effect@1.2.1(@types/react@18.3.23)(react@19.0.4):
     dependencies:
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
     optionalDependencies:
       '@types/react': 18.3.23
 
-  use-sidecar@1.1.3(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028):
+  use-sidecar@1.1.3(@types/react@18.3.23)(react@19.0.4):
     dependencies:
       detect-node-es: 1.1.0
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
       tslib: 2.8.1
     optionalDependencies:
       '@types/react': 18.3.23
 
-  use-subscription@1.12.0(react@19.0.0-rc-02c0e824-20241028):
+  use-subscription@1.12.0(react@19.0.4):
     dependencies:
-      react: 19.0.0-rc-02c0e824-20241028
-      use-sync-external-store: 1.6.0(react@19.0.0-rc-02c0e824-20241028)
+      react: 19.0.4
+      use-sync-external-store: 1.6.0(react@19.0.4)
 
-  use-sync-external-store@1.6.0(react@19.0.0-rc-02c0e824-20241028):
+  use-sync-external-store@1.6.0(react@19.0.4):
     dependencies:
-      react: 19.0.0-rc-02c0e824-20241028
+      react: 19.0.4
 
   utf-8-validate@5.0.10:
     dependencies:
@@ -12058,8 +12053,8 @@ snapshots:
 
   zod@3.25.76: {}
 
-  zustand@5.0.8(@types/react@18.3.23)(react@19.0.0-rc-02c0e824-20241028)(use-sync-external-store@1.6.0(react@19.0.0-rc-02c0e824-20241028)):
+  zustand@5.0.8(@types/react@18.3.23)(react@19.0.4)(use-sync-external-store@1.6.0(react@19.0.4)):
     optionalDependencies:
       '@types/react': 18.3.23
-      react: 19.0.0-rc-02c0e824-20241028
-      use-sync-external-store: 1.6.0(react@19.0.0-rc-02c0e824-20241028)
+      react: 19.0.4
+      use-sync-external-store: 1.6.0(react@19.0.4)
