@@ -23,7 +23,7 @@ export const CHAIN_ID =
 const NODE_URL =
   process.env.NEXT_PUBLIC_CHAIN_ID === constants.NetworkName.SN_MAIN
     ? "https://rpc.starknet.lava.build"
-    : "https://rpc.starknet-sepolia.lava.build"
+    : process.env.NEXT_PUBLIC_RPC_PROVIDER_URL
 
 const STARKNET_CHAIN_ID =
   process.env.NEXT_PUBLIC_CHAIN_ID === constants.NetworkName.SN_MAIN

@@ -17,7 +17,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@argent/x-sessions": "9.0.0",
+    "@argent/x-sessions": "file:../x-sessions",
     "@starknet-io/get-starknet-core": "4.0.7",
     "@starknet-react/chains": "^5.0.3",
     "@starknet-react/core": "^5.0.3",
@@ -25,7 +25,7 @@
     "react": "19.0.4",
     "react-dom": "19.0.4",
     "starknet": "9.2.1",
-    "starknetkit": "3.4.2"
+    "starknetkit": "file:../starknetkit"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",

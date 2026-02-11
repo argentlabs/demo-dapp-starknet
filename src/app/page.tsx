@@ -15,21 +15,15 @@ export default function Home() {
   /* const providers = publicProvider() */
 
   const mainnetJsonRpcProvider = jsonRpcProvider({
-    rpc: (chain) => {
-      console.log("mainnet", chain)
-      return {
-        nodeUrl: "https://rpc.starknet.lava.build",
-      }
-    },
+    rpc: () => ({
+      nodeUrl: "https://rpc.starknet.lava.build",
+    }),
   })
 
   const sepoliaJsonRpcProvider = jsonRpcProvider({
-    rpc: (chain) => {
-      console.log("sepolia", chain)
-      return {
-        nodeUrl: "https://rpc.starknet-sepolia.lava.build",
-      }
-    },
+    rpc: () => ({
+      nodeUrl: process.env.NEXT_PUBLIC_RPC_PROVIDER_URL,
+    }),
   })
 
   return (
