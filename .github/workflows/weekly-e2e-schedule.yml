@@ -14,6 +14,7 @@ env:
 
 jobs:
   build:
+    if: false # Weekly workflow is dedicated to e2e coverage.
     runs-on: ubuntu-latest
     container:
       image: mcr.microsoft.com/playwright:v1.54.1-jammy
@@ -71,6 +72,7 @@ jobs:
           key: ${{ github.sha }}
 
   test-argentX:
+    if: false # Temporarily disable automated e2e coverage.
     runs-on: ubuntu-latest
     container:
       image: mcr.microsoft.com/playwright:v1.54.1-jammy
