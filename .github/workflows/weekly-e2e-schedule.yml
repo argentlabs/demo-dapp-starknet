@@ -14,9 +14,10 @@ env:
 
 jobs:
   build:
+    if: false # Weekly workflow is dedicated to e2e coverage.
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.48.2-jammy
+      image: mcr.microsoft.com/playwright:v1.54.1-jammy
     env:
       ARGENT_X_ENVIRONMENT: "hydrogen"
       E2E_REPO: ${{ secrets.E2E_REPO }}
@@ -71,9 +72,10 @@ jobs:
           key: ${{ github.sha }}
 
   test-argentX:
+    if: false # Temporarily disable automated e2e coverage.
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.48.2-jammy
+      image: mcr.microsoft.com/playwright:v1.54.1-jammy
     needs: [build]
     env:
       ARGENT_X_ENVIRONMENT: "hydrogen"

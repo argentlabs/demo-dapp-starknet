@@ -132,7 +132,7 @@ const initBrowserWithExtension = async (
     .locator('[id="extension-id"]')
     .first()
     .textContent()
-    .then((text) => text?.replace("ID: ", ""))
+    .then((text) => text?.replace("ID: ", "").replace(/[\n\s]/g, ""))
 
   const extensionURL = `chrome-extension://${extensionId}/index.html`
   await page.goto(extensionURL)
@@ -143,7 +143,11 @@ const initBrowserWithExtension = async (
 }
 
 function createExtension(label: string, upgrade: boolean = false) {
-  return async ({ }, use: any, testInfo: TestInfo) => {
+  return async (
+    {},
+    use: (ext: ExtensionPage) => Promise<void>,
+    testInfo: TestInfo,
+  ) => {
     const userDataDir = `/tmp/test-user-data-${uuid()}`
     let buildDir = process.env.ARGENTX_DIST_DIR!
     if (upgrade) {
@@ -167,7 +171,7 @@ function createExtension(label: string, upgrade: boolean = false) {
 }
 
 function getContext() {
-  return async ({ }, use: any, _testInfo: TestInfo) => {
+  return async ({}, use: (ext: ChromiumBrowserContext) => Promise<void>) => {
     await use(browserCtx)
   }
 }

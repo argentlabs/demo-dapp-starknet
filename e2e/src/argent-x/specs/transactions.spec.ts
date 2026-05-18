@@ -34,8 +34,6 @@ test.describe(`Transactions`, () => {
     await expect(extension.network.networkSelector).toBeVisible()
     await extension.network.selectDefaultNetwork()
 
-    console.log(extension.account.accountAddress)
-
     await extension.dapps.requestConnectionFromDapp({
       browserContext,
       useStarknetKitModal: true,

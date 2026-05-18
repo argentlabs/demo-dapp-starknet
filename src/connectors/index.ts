@@ -4,11 +4,16 @@ import {
   ArgentMobileConnector,
 } from "starknetkit/argentMobile"
 import {
+  isInKeplrMobileAppBrowser,
+  KeplrMobileConnector,
+} from "starknetkit/keplrMobile"
+import {
   BraavosMobileConnector,
   isInBraavosMobileAppBrowser,
 } from "starknetkit/braavosMobile"
 import { InjectedConnector } from "starknetkit/injected"
 import { WebWalletConnector } from "starknetkit/webwallet"
+import { ControllerConnector } from "starknetkit/controller"
 import { getStarknet } from "@starknet-io/get-starknet-core"
 
 const isMobileDevice = () => {
@@ -43,6 +48,10 @@ export const availableConnectors = () => {
     ]
   }
 
+  if (isInKeplrMobileAppBrowser()) {
+    return [KeplrMobileConnector.init()]
+  }
+
   if (isInBraavosMobileAppBrowser()) {
     return [BraavosMobileConnector.init({})]
   }
@@ -51,6 +60,8 @@ export const availableConnectors = () => {
     new InjectedConnector({ options: { id: "argentX" } }),
     new InjectedConnector({ options: { id: "braavos" } }),
     new InjectedConnector({ options: { id: "metamask" } }),
+    new InjectedConnector({ options: { id: "xverse" } }),
+    new ControllerConnector(),
     ArgentMobileConnector.init({
       options: {
         url: typeof window !== "undefined" ? window.location.href : "",

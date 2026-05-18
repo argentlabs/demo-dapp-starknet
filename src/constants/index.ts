@@ -22,15 +22,19 @@ export const CHAIN_ID =
 
 const NODE_URL =
   process.env.NEXT_PUBLIC_CHAIN_ID === constants.NetworkName.SN_MAIN
-    ? "https://starknet-mainnet.public.blastapi.io/rpc/v0_8"
-    : "https://starknet-sepolia.public.blastapi.io/rpc/v0_8"
+    ? "https://rpc.starknet.lava.build"
+    : "https://rpc.starknet-sepolia.lava.build"
 
 const STARKNET_CHAIN_ID =
   process.env.NEXT_PUBLIC_CHAIN_ID === constants.NetworkName.SN_MAIN
     ? constants.StarknetChainId.SN_MAIN
     : constants.StarknetChainId.SN_SEPOLIA
 
+export const IS_MAINNET =
+  process.env.NEXT_PUBLIC_CHAIN_ID === constants.NetworkName.SN_MAIN
+
 export const provider = new RpcProvider({
+  specVersion: "0.9.0",
   nodeUrl: NODE_URL,
   chainId: STARKNET_CHAIN_ID,
 })
@@ -52,3 +56,6 @@ export const ARGENT_DUMMY_CONTRACT_ADDRESS =
   CHAIN_ID === constants.NetworkName.SN_SEPOLIA
     ? ARGENT_DUMMY_CONTRACT_SEPOLIA_ADDRESS
     : ARGENT_DUMMY_CONTRACT_MAINNET_ADDRESS
+
+export const AVNU_PAYMASTER_API_KEY =
+  process.env.NEXT_PUBLIC_AVNU_API_KEY || undefined
