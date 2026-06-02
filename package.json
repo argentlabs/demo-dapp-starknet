@@ -17,7 +17,7 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@argent/x-sessions": "link:../x-sessions",
+    "@argent/x-sessions": "10.0.0",
     "@starknet-io/get-starknet-core": "4.0.7",
     "@starknet-react/chains": "5.0.3",
     "@starknet-react/core": "5.0.3",
