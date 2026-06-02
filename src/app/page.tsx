@@ -27,7 +27,8 @@ export default function Home() {
     rpc: (chain) => {
       console.log("sepolia", chain)
       return {
-        nodeUrl: "https://rpc.starknet-sepolia.lava.build",
+        nodeUrl: "https://api.hydrogen.argent47.net/v1/starknet/sepolia/rpc/v0.10",
+        specVersion: "0.10.2",
       }
     },
   })

@@ -23,7 +23,12 @@ export const CHAIN_ID =
 const NODE_URL =
   process.env.NEXT_PUBLIC_CHAIN_ID === constants.NetworkName.SN_MAIN
     ? "https://rpc.starknet.lava.build"
-    : "https://rpc.starknet-sepolia.lava.build"
+    : "https://api.hydrogen.argent47.net/v1/starknet/sepolia/rpc/v0.10"
+
+const RPC_SPEC_VERSION =
+  process.env.NEXT_PUBLIC_CHAIN_ID === constants.NetworkName.SN_MAIN
+    ? constants.SupportedRpcVersion.v0_9_0
+    : constants.SupportedRpcVersion.v0_10_2
 
 const STARKNET_CHAIN_ID =
   process.env.NEXT_PUBLIC_CHAIN_ID === constants.NetworkName.SN_MAIN
@@ -34,14 +39,14 @@ export const IS_MAINNET =
   process.env.NEXT_PUBLIC_CHAIN_ID === constants.NetworkName.SN_MAIN
 
 export const provider = new RpcProvider({
-  specVersion: "0.9.0",
+  specVersion: RPC_SPEC_VERSION,
   nodeUrl: NODE_URL,
   chainId: STARKNET_CHAIN_ID,
 })
 
 export const ARGENT_SESSION_SERVICE_BASE_URL =
   process.env.NEXT_PUBLIC_ARGENT_SESSION_SERVICE_BASE_URL ||
-  "https://cloud.argent-api.com/v1"
+  "https://api.hydrogen.argent47.net/v1"
 
 export const ARGENT_WEBWALLET_URL =
   process.env.NEXT_PUBLIC_ARGENT_WEBWALLET_URL ||

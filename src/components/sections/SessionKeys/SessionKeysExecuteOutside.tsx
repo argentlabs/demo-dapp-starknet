@@ -1,4 +1,3 @@
-import { dummyContractAbi } from "@/abi/dummyContractAbi"
 import {
   ARGENT_DUMMY_CONTRACT_ADDRESS,
   ARGENT_SESSION_SERVICE_BASE_URL,
@@ -6,7 +5,6 @@ import {
 } from "@/constants"
 import { sessionKey } from "@/helpers/sessionKeys"
 import { createOutsideExecutionCall } from "@argent/x-sessions"
-import { useContract } from "@starknet-react/core"
 import { FC, useState } from "react"
 import { CallData, constants } from "starknet"
 import { SessionKeysEFOLayout } from "./SessionKeysEFOLayout"
@@ -16,12 +14,6 @@ const SessionKeysExecuteOutside: FC<WithSession> = ({
   session,
   sessionAccount,
 }) => {
-  const { contract } = useContract({
-    abi: dummyContractAbi,
-    address: ARGENT_DUMMY_CONTRACT_ADDRESS,
-    provider: sessionAccount,
-  })
-
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [outsideExecution, setOutsideExecution] = useState<any | undefined>()
 
@@ -30,10 +22,6 @@ const SessionKeysExecuteOutside: FC<WithSession> = ({
       if (!session || !sessionAccount) {
         throw new Error("No open session")
       }
-      if (!contract) {
-        throw new Error("No contract")
-      }
-
       const efoExecutionCall = await createOutsideExecutionCall({
         session,
         sessionKey,
