@@ -1,3 +1,4 @@
+import { isUserRejectedRequest } from "@/helpers/isUserRejectedRequest"
 import { useConnect } from "@starknet-react/core"
 import { StarknetkitConnector, useStarknetkitConnectModal } from "starknetkit"
 import { Button } from "../ui/Button"
@@ -14,12 +15,18 @@ const ConnectStarknetkitModal = () => {
     <Button
       className="w-full justify-center"
       onClick={async () => {
-        const { connector } = await starknetkitConnectModal()
-        if (!connector) {
-          // or throw error
-          return
+        try {
+          const { connector } = await starknetkitConnectModal()
+          if (!connector) {
+            return
+          }
+          await connectAsync({ connector })
+        } catch (error) {
+          if (isUserRejectedRequest(error)) {
+            return
+          }
+          throw error
         }
-        await connectAsync({ connector })
       }}
       hideChevron
     >

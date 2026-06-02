@@ -11,12 +11,11 @@ import {
 } from "@starknet-react/core"
 
 export default function Home() {
-  const chains = [mainnet, sepolia]
+  const chains = IS_MAINNET ? [mainnet] : [sepolia]
   /* const providers = publicProvider() */
 
   const mainnetJsonRpcProvider = jsonRpcProvider({
-    rpc: (chain) => {
-      console.log("mainnet", chain)
+    rpc: () => {
       return {
         nodeUrl: "https://rpc.starknet.lava.build",
       }
@@ -24,10 +23,10 @@ export default function Home() {
   })
 
   const sepoliaJsonRpcProvider = jsonRpcProvider({
-    rpc: (chain) => {
-      console.log("sepolia", chain)
+    rpc: () => {
       return {
-        nodeUrl: "https://api.hydrogen.argent47.net/v1/starknet/sepolia/rpc/v0.10",
+        nodeUrl:
+          "https://api.hydrogen.argent47.net/v1/starknet/sepolia/rpc/v0.10",
         specVersion: "0.10.2",
       }
     },

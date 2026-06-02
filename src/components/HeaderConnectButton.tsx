@@ -1,3 +1,4 @@
+import { isUserRejectedRequest } from "@/helpers/isUserRejectedRequest"
 import { useConnect } from "@starknet-react/core"
 import { StarknetkitConnector, useStarknetkitConnectModal } from "starknetkit"
 
@@ -14,12 +15,18 @@ const HeaderConnectButton = () => {
       <button
         className="px-x md:px-12 bg-gradient-to-r from-nebula-from to-nebula-to text-white rounded-lg"
         onClick={async () => {
-          const { connector } = await starknetkitConnectModal()
-          if (!connector) {
-            // or throw error
-            return
+          try {
+            const { connector } = await starknetkitConnectModal()
+            if (!connector) {
+              return
+            }
+            await connectAsync({ connector })
+          } catch (error) {
+            if (isUserRejectedRequest(error)) {
+              return
+            }
+            throw error
           }
-          await connectAsync({ connector })
         }}
       >
         Connect wallet
