@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@argent/x-sessions':
-        specifier: 9.0.0
-        version: 9.0.0(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))
+        specifier: 10.0.0
+        version: 10.0.0(starknet@10.0.3(typescript@5.8.3)(zod@3.25.76))
       '@starknet-io/get-starknet-core':
         specifier: 4.0.7
         version: 4.0.7
@@ -19,7 +19,7 @@ importers:
         version: 5.0.3
       '@starknet-react/core':
         specifier: 5.0.3
-        version: 5.0.3(bufferutil@4.0.9)(get-starknet-core@4.0.0)(react@19.0.4)(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))(typescript@5.8.3)(utf-8-validate@5.0.10)
+        version: 5.0.3(bufferutil@4.0.9)(get-starknet-core@4.0.0)(react@19.0.4)(starknet@10.0.3(typescript@5.8.3)(zod@3.25.76))(typescript@5.8.3)(utf-8-validate@5.0.10)
       next:
         specifier: 15.5.16
         version: 15.5.16(@babel/core@7.28.4)(@playwright/test@1.54.1)(react-dom@19.0.4(react@19.0.4))(react@19.0.4)
@@ -30,11 +30,11 @@ importers:
         specifier: 19.0.4
         version: 19.0.4(react@19.0.4)
       starknet:
-        specifier: 9.2.1
-        version: 9.2.1(typescript@5.8.3)(zod@3.25.76)
+        specifier: 10.0.3
+        version: 10.0.3(typescript@5.8.3)(zod@3.25.76)
       starknetkit:
-        specifier: 3.4.2
-        version: 3.4.2(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.4))(@scure/bip39@1.6.0)(@types/react@18.3.23)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(bufferutil@4.0.9)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.4))(embla-carousel-wheel-gestures@8.1.0(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.4))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4))(react-router-dom@7.9.4(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.4)(three@0.180.0)(zdog@1.1.3))(react-virtuoso@4.14.1(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))(swr@1.3.0(react@19.0.4))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(typescript@5.8.3)(url-join@4.0.1)(utf-8-validate@5.0.10)(zod@3.25.76)
+        specifier: 3.4.3
+        version: 3.4.3(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.4))(@scure/bip39@1.6.0)(@types/react@18.3.23)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(bufferutil@4.0.9)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.4))(embla-carousel-wheel-gestures@8.1.0(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.4))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4))(react-router-dom@7.9.4(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.4)(three@0.180.0)(zdog@1.1.3))(react-virtuoso@4.14.1(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(starknet@10.0.3(typescript@5.8.3)(zod@3.25.76))(swr@1.3.0(react@19.0.4))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(typescript@5.8.3)(url-join@4.0.1)(utf-8-validate@5.0.10)(zod@3.25.76)
     devDependencies:
       '@commitlint/cli':
         specifier: 19.8.1
@@ -173,10 +173,10 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
 
-  '@argent/x-sessions@9.0.0':
-    resolution: {integrity: sha512-1dXHhGgI3JvJpjPOnq0kdIMaDk9XO6eo43vUgAqPkHc79hQKto9euNXAxXN98LImIea828rQm9vETY876KaTIw==}
+  '@argent/x-sessions@10.0.0':
+    resolution: {integrity: sha512-ou6DC1Y6Rec352rNwmFz82tDXJobswJZvjn3dLBMSwnoWOPOJNmOV7Sj1wdiTSAs4y42UaFbHvui3dVjZdPPRA==}
     peerDependencies:
-      starknet: 8.5.2
+      starknet: 10.0.3
 
   '@argent/x-ui@1.109.1':
     resolution: {integrity: sha512-AGPN1YC87EQK/byUYuRUrYR57/NYB6wQjoibUf/OnRYepWWW83+VgdR0GVRYLHsD0CT73VpY6iSFLqrY61LSDg==}
@@ -923,10 +923,6 @@ packages:
     resolution: {integrity: sha512-k11yZxZg+t+gWvBbIswW0yoJlu8cHOC7dhunwOzoWH/mXGBiYyR4YY6hAEK/3EUs4UpB8la1RfdRpeGsFHkWsA==}
     engines: {node: ^14.21.3 || >=16}
 
-  '@noble/curves@1.9.2':
-    resolution: {integrity: sha512-HxngEd2XUcg9xi20JkwlLCtYwfoFw4JGkuZpT+WlsPD4gB/cxkvTD8fSsoAnphGZhFdZYKeQIPCuFlWPm1uE0g==}
-    engines: {node: ^14.21.3 || >=16}
-
   '@noble/curves@1.9.6':
     resolution: {integrity: sha512-GIKz/j99FRthB8icyJQA51E8Uk5hXmdyThjgQXRKiv9h0zeRlzSCLIzFw6K1LotZ3XuB7yzlf76qk7uBmTdFqA==}
     engines: {node: ^14.21.3 || >=16}
@@ -1236,8 +1232,8 @@ packages:
   '@starknet-io/get-starknet@4.0.8':
     resolution: {integrity: sha512-51qlJqQMQnpW9MwvVUzOsnuSK0YbP88EEuzFbVDmtvMICuOjZd+Dr7CYgF/yK2sVbX8eA/hmY74/9S1vIWhptg==}
 
-  '@starknet-io/types-js@0.10.0':
-    resolution: {integrity: sha512-7ALSydz6pq3YIOpq5a7OkkxqwJciMc9Nlph0OGjhcC3xX0xH30XgizmziLyYVN10oO9+BJk8M9KbJjpzdbtRSw==}
+  '@starknet-io/types-js@0.10.2':
+    resolution: {integrity: sha512-AtUFPYdmo9DqVus++aBSoY9W13/2PZmillPr8/mXZjc+V0iYJ/QTmkTsbw+es2mnLeLhYWSymW9ivQzyyyKdog==}
 
   '@starknet-io/types-js@0.7.10':
     resolution: {integrity: sha512-1VtCqX4AHWJlRRSYGSn+4X1mqolI1Tdq62IwzoU2vUuEE72S1OlEeGhpvd6XsdqXcfHmVzYfj8k1XtKBQqwo9w==}
@@ -1247,6 +1243,9 @@ packages:
 
   '@starknet-io/types-js@0.9.1':
     resolution: {integrity: sha512-ngLjOFuWOI4EFij8V+nl5tgHVACr6jqgLNUQbgD+AgnTcAN33SemBPXDIsovwK1Mz1U04Cz3qjDOnTq7067ZQw==}
+
+  '@starknet-io/types-js@0.9.2':
+    resolution: {integrity: sha512-vWOc0FVSn+RmabozIEWcEny1I73nDGTvOrLYJsR1x7LGA3AZmqt4i/aW69o/3i2NN5CVP8Ok6G1ayRQJKye3Wg==}
 
   '@starknet-react/chains@5.0.3':
     resolution: {integrity: sha512-TxP391OTWgaqujT9Hu1Siljye54IHjEXrgkUuhMfxzf9sCu5q42ZzZgu9hLm0NcJgg9Fx2t75J0WB6eYmQ26fw==}
@@ -4642,6 +4641,10 @@ packages:
     resolution: {integrity: sha512-WjlahMgHmCJpqzU8bIBy4qtsZdU9lRlcZE3Lvyej6t4tuOuv1vk57OW3MBrj6hXBFx/nNoC9MPMTcr5YA7NQbg==}
     engines: {node: '>=6'}
 
+  starknet@10.0.3:
+    resolution: {integrity: sha512-FVSXtLoohjre7IYUd64cISvOTff4gkdjdC64JvVkUeOgeWMggJRYtVuex3h0HK8VqwI9+SxLO/J+koOJZTvROg==}
+    engines: {node: '>=22'}
+
   starknet@6.11.0:
     resolution: {integrity: sha512-u50KrGDi9fbu1Ogu7ynwF/tSeFlp3mzOg1/Y5x50tYFICImo3OfY4lOz9OtYDk404HK4eUujKkhov9tG7GAKlg==}
 
@@ -4649,12 +4652,8 @@ packages:
     resolution: {integrity: sha512-d/GNASyo569y2kNZX+qS8faVxANyVANeEZWhwq0B7jVGcU6gE9W/aPThz3fMT3QN/srm+2XEiGTYbKuX+w5IKg==}
     engines: {node: '>=22'}
 
-  starknet@9.2.1:
-    resolution: {integrity: sha512-bFJY2sMZ9tsLBhPCm719MWjoz+doabXIwPX/xtW56EHwAJMRAS6mICF6H2dCwOQHJmCMKpOSFBwW0SaiHzcioQ==}
-    engines: {node: '>=22'}
-
-  starknetkit@3.4.2:
-    resolution: {integrity: sha512-adt2UcF77JGbbWK8uvWqmIr4oDnInTjuDPNISWTTOK45LcZiMvutVhxXo7izmObKsLHDges+eKHR1p+RFy+Pvw==}
+  starknetkit@3.4.3:
+    resolution: {integrity: sha512-4Xb3QxsgpifVmCR5on9RBILlTUajjIQC0gJ6iyaOw5zG8BxXGlvjqbGguVcbpBxbhybRR5kIMGTNqe3Cyl70uw==}
     peerDependencies:
       starknet: ^8.0.0
 
@@ -5361,12 +5360,12 @@ snapshots:
 
   '@alloc/quick-lru@5.2.0': {}
 
-  '@argent/x-sessions@9.0.0(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))':
+  '@argent/x-sessions@10.0.0(starknet@10.0.3(typescript@5.8.3)(zod@3.25.76))':
     dependencies:
       minimalistic-assert: 1.0.1
-      starknet: 9.2.1(typescript@5.8.3)(zod@3.25.76)
+      starknet: 10.0.3(typescript@5.8.3)(zod@3.25.76)
 
-  ? '@argent/x-ui@1.109.1(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.4))(@scure/bip39@1.6.0)(@starknet-io/types-js@0.8.4)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.4))(embla-carousel-wheel-gestures@8.1.0(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(lodash-es@4.17.21)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.4))(react-dom@18.3.1(react@18.3.1))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4))(react-router-dom@7.9.4(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.4)(three@0.180.0)(zdog@1.1.3))(react-virtuoso@4.14.1(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react@18.3.1)(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))(swr@1.3.0(react@19.0.4))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(url-join@4.0.1)(zod@3.25.76)'
+  ? '@argent/x-ui@1.109.1(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.4))(@scure/bip39@1.6.0)(@starknet-io/types-js@0.8.4)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.4))(embla-carousel-wheel-gestures@8.1.0(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(lodash-es@4.17.21)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.4))(react-dom@18.3.1(react@18.3.1))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4))(react-router-dom@7.9.4(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.4)(three@0.180.0)(zdog@1.1.3))(react-virtuoso@4.14.1(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react@18.3.1)(starknet@10.0.3(typescript@5.8.3)(zod@3.25.76))(swr@1.3.0(react@19.0.4))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(url-join@4.0.1)(zod@3.25.76)'
   : dependencies:
       '@chakra-ui/react': 2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-dom@19.0.4(react@19.0.4))(react@19.0.4)
       '@emotion/react': 11.14.0(@types/react@18.3.23)(react@19.0.4)
@@ -5398,7 +5397,7 @@ snapshots:
       react-router-dom: 7.9.4(react-dom@19.0.4(react@19.0.4))(react@19.0.4)
       react-spring-bottom-sheet: 3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.4)(three@0.180.0)(zdog@1.1.3)
       react-virtuoso: 4.14.1(react-dom@19.0.4(react@19.0.4))(react@19.0.4)
-      starknet: 9.2.1(typescript@5.8.3)(zod@3.25.76)
+      starknet: 10.0.3(typescript@5.8.3)(zod@3.25.76)
       swr: 1.3.0(react@19.0.4)
       tailwind-merge: 3.3.1
       tailwindcss: 3.4.17
@@ -6247,10 +6246,6 @@ snapshots:
     dependencies:
       '@noble/hashes': 1.8.0
 
-  '@noble/curves@1.9.2':
-    dependencies:
-      '@noble/hashes': 1.8.0
-
   '@noble/curves@1.9.6':
     dependencies:
       '@noble/hashes': 1.8.0
@@ -6765,7 +6760,7 @@ snapshots:
 
   '@scure/bip32@1.7.0':
     dependencies:
-      '@noble/curves': 1.9.2
+      '@noble/curves': 1.9.7
       '@noble/hashes': 1.8.0
       '@scure/base': 1.2.6
 
@@ -6826,7 +6821,7 @@ snapshots:
       '@starknet-io/get-starknet-core': 4.0.8
       bowser: 2.12.1
 
-  '@starknet-io/types-js@0.10.0': {}
+  '@starknet-io/types-js@0.10.2': {}
 
   '@starknet-io/types-js@0.7.10': {}
 
@@ -6834,9 +6829,11 @@ snapshots:
 
   '@starknet-io/types-js@0.9.1': {}
 
+  '@starknet-io/types-js@0.9.2': {}
+
   '@starknet-react/chains@5.0.3': {}
 
-  '@starknet-react/core@5.0.3(bufferutil@4.0.9)(get-starknet-core@4.0.0)(react@19.0.4)(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))(typescript@5.8.3)(utf-8-validate@5.0.10)':
+  '@starknet-react/core@5.0.3(bufferutil@4.0.9)(get-starknet-core@4.0.0)(react@19.0.4)(starknet@10.0.3(typescript@5.8.3)(zod@3.25.76))(typescript@5.8.3)(utf-8-validate@5.0.10)':
     dependencies:
       '@starknet-io/types-js': 0.7.10
       '@starknet-react/chains': 5.0.3
@@ -6845,7 +6842,7 @@ snapshots:
       eventemitter3: 5.0.1
       get-starknet-core: 4.0.0
       react: 19.0.4
-      starknet: 9.2.1(typescript@5.8.3)(zod@3.25.76)
+      starknet: 10.0.3(typescript@5.8.3)(zod@3.25.76)
       viem: 2.38.1(bufferutil@4.0.9)(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.25.76)
       zod: 3.25.76
     transitivePeerDependencies:
@@ -11233,6 +11230,21 @@ snapshots:
     dependencies:
       type-fest: 0.7.1
 
+  starknet@10.0.3(typescript@5.8.3)(zod@3.25.76):
+    dependencies:
+      '@noble/curves': 1.7.0
+      '@noble/hashes': 1.6.0
+      '@scure/base': 1.2.6
+      '@scure/starknet': 1.1.0
+      '@starknet-io/get-starknet-wallet-standard': 5.0.0(typescript@5.8.3)(zod@3.25.76)
+      '@starknet-io/starknet-types-0101': '@starknet-io/types-js@0.10.2'
+      '@starknet-io/starknet-types-09': '@starknet-io/types-js@0.9.1'
+      abi-wan-kanabi: 2.2.4
+      lossless-json: 4.3.0
+    transitivePeerDependencies:
+      - typescript
+      - zod
+
   starknet@6.11.0:
     dependencies:
       '@noble/curves': 1.4.2
@@ -11258,32 +11270,15 @@ snapshots:
       '@scure/base': 1.2.1
       '@scure/starknet': 1.1.0
       '@starknet-io/starknet-types-08': '@starknet-io/types-js@0.8.4'
-      '@starknet-io/starknet-types-09': '@starknet-io/types-js@0.9.1'
-      abi-wan-kanabi: 2.2.4
-      lossless-json: 4.1.1
-      pako: 2.1.0
-      ts-mixer: 6.0.4
-
-  starknet@9.2.1(typescript@5.8.3)(zod@3.25.76):
-    dependencies:
-      '@noble/curves': 1.7.0
-      '@noble/hashes': 1.6.0
-      '@scure/base': 1.2.6
-      '@scure/starknet': 1.1.0
-      '@starknet-io/get-starknet-wallet-standard': 5.0.0(typescript@5.8.3)(zod@3.25.76)
-      '@starknet-io/starknet-types-010': '@starknet-io/types-js@0.10.0'
-      '@starknet-io/starknet-types-09': '@starknet-io/types-js@0.9.1'
+      '@starknet-io/starknet-types-09': '@starknet-io/types-js@0.9.2'
       abi-wan-kanabi: 2.2.4
       lossless-json: 4.3.0
       pako: 2.1.0
       ts-mixer: 6.0.4
-    transitivePeerDependencies:
-      - typescript
-      - zod
 
-  ? starknetkit@3.4.2(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.4))(@scure/bip39@1.6.0)(@types/react@18.3.23)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(bufferutil@4.0.9)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.4))(embla-carousel-wheel-gestures@8.1.0(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.4))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4))(react-router-dom@7.9.4(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.4)(three@0.180.0)(zdog@1.1.3))(react-virtuoso@4.14.1(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))(swr@1.3.0(react@19.0.4))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(typescript@5.8.3)(url-join@4.0.1)(utf-8-validate@5.0.10)(zod@3.25.76)
+  ? starknetkit@3.4.3(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.4))(@scure/bip39@1.6.0)(@types/react@18.3.23)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(bufferutil@4.0.9)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.4))(embla-carousel-wheel-gestures@8.1.0(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.4))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4))(react-router-dom@7.9.4(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.4)(three@0.180.0)(zdog@1.1.3))(react-virtuoso@4.14.1(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(starknet@10.0.3(typescript@5.8.3)(zod@3.25.76))(swr@1.3.0(react@19.0.4))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(typescript@5.8.3)(url-join@4.0.1)(utf-8-validate@5.0.10)(zod@3.25.76)
   : dependencies:
-      '@argent/x-ui': 1.109.1(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.4))(@scure/bip39@1.6.0)(@starknet-io/types-js@0.8.4)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.4))(embla-carousel-wheel-gestures@8.1.0(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(lodash-es@4.17.21)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.4))(react-dom@18.3.1(react@18.3.1))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4))(react-router-dom@7.9.4(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.4)(three@0.180.0)(zdog@1.1.3))(react-virtuoso@4.14.1(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react@18.3.1)(starknet@9.2.1(typescript@5.8.3)(zod@3.25.76))(swr@1.3.0(react@19.0.4))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(url-join@4.0.1)(zod@3.25.76)
+      '@argent/x-ui': 1.109.1(@chakra-ui/react@2.10.9(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.23)(react@19.0.4))(@types/react@18.3.23)(react@19.0.4))(@radix-ui/react-slot@1.2.3(@types/react@18.3.23)(react@19.0.4))(@scure/bip39@1.6.0)(@starknet-io/types-js@0.8.4)(@zxcvbn-ts/core@3.0.4)(@zxcvbn-ts/language-common@3.0.4)(@zxcvbn-ts/language-en@3.0.2)(class-variance-authority@0.7.1)(clsx@2.1.1)(colord@2.9.3)(embla-carousel-react@8.6.0(react@19.0.4))(embla-carousel-wheel-gestures@8.1.0(embla-carousel@8.6.0))(embla-carousel@8.6.0)(emittery@1.2.0)(framer-motion@11.18.2(@emotion/is-prop-valid@1.4.0)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(history@5.3.0)(i18next@24.2.3(typescript@5.8.3))(lightweight-charts@4.2.3)(lodash-es@4.17.21)(object-hash@3.0.0)(popmotion@11.0.5)(react-copy-to-clipboard@5.1.0(react@19.0.4))(react-dom@18.3.1(react@18.3.1))(react-i18next@15.4.1(i18next@24.2.3(typescript@5.8.3))(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4))(react-router-dom@7.9.4(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-spring-bottom-sheet@3.5.0-alpha.0(@react-three/fiber@9.4.0(@types/react@18.3.23)(react-dom@19.0.4(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react@19.0.4)(three@0.180.0))(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react-konva@18.2.14(@types/react@18.3.23)(konva@10.0.2)(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react-native@0.82.0(@babel/core@7.28.4)(@types/react@18.3.23)(bufferutil@4.0.9)(react@19.0.4)(utf-8-validate@5.0.10))(react-zdog@1.2.2)(react@19.0.4)(three@0.180.0)(zdog@1.1.3))(react-virtuoso@4.14.1(react-dom@19.0.4(react@19.0.4))(react@19.0.4))(react@18.3.1)(starknet@10.0.3(typescript@5.8.3)(zod@3.25.76))(swr@1.3.0(react@19.0.4))(tailwind-merge@3.3.1)(tailwindcss-animate@1.0.7(tailwindcss@3.4.17))(tailwindcss@3.4.17)(url-join@4.0.1)(zod@3.25.76)
       '@cartridge/controller': 0.10.7(@types/react@18.3.23)(bufferutil@4.0.9)(react@18.3.1)(typescript@5.8.3)(utf-8-validate@5.0.10)(zod@3.25.76)
       '@starknet-io/get-starknet': 4.0.8
       '@starknet-io/get-starknet-core': 4.0.8
@@ -11298,7 +11293,7 @@ snapshots:
       lodash-es: 4.17.21
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
-      starknet: 9.2.1(typescript@5.8.3)(zod@3.25.76)
+      starknet: 10.0.3(typescript@5.8.3)(zod@3.25.76)
       svelte-forms: 2.3.1
       trpc-browser: 1.4.4(@trpc/client@10.45.2(@trpc/server@10.45.2))(@trpc/server@10.45.2)
     transitivePeerDependencies:
