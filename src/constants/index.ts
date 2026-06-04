@@ -15,6 +15,10 @@ export const ARGENT_DUMMY_CONTRACT_MAINNET_ADDRESS =
 export const ARGENT_DUMMY_CONTRACT_SEPOLIA_ADDRESS =
   "0x88d3cc4377a6cdfd27545a11548bd070c4e2e1e3df3d402922dbc4350b416"
 
+export const RPC_HEADERS = {
+  "argent-client": "demo-app",
+} as const
+
 export const STARKNET_NETWORKS = {
   mainnet: {
     chainId: constants.NetworkName.SN_MAIN,
@@ -22,7 +26,7 @@ export const STARKNET_NETWORKS = {
     rpcSpecVersion: constants.SupportedRpcVersion.v0_10_2,
     rpcUrl:
       process.env.NEXT_PUBLIC_MAINNET_RPC_URL ||
-      "https://rpc.starknet.lava.build/",
+      "https://cloud.argent-api.com/v1/starknet/mainnet/rpc/v0.10",
     sessionServiceBaseUrl:
       process.env.NEXT_PUBLIC_ARGENT_SESSION_SERVICE_MAINNET_BASE_URL ||
       "https://cloud.argent-api.com/v1",
@@ -74,6 +78,7 @@ export const getProvider = (chainId?: bigint | number | string | null) => {
   return new RpcProvider({
     specVersion: network.rpcSpecVersion,
     nodeUrl: network.rpcUrl,
+    headers: RPC_HEADERS,
     chainId: network.starknetChainId,
   })
 }

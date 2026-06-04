@@ -2,7 +2,7 @@
 
 import { StarknetDapp } from "@/components/StarknetDapp"
 import { connectors } from "@/connectors"
-import { getNetworkConfig } from "@/constants"
+import { RPC_HEADERS, getNetworkConfig } from "@/constants"
 import { mainnet, sepolia } from "@starknet-react/chains"
 import {
   jsonRpcProvider,
@@ -21,6 +21,7 @@ export default function Home() {
       return {
         nodeUrl: network.rpcUrl,
         specVersion: network.rpcSpecVersion,
+        headers: RPC_HEADERS,
       }
     },
   })
