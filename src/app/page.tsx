@@ -2,7 +2,7 @@
 
 import { StarknetDapp } from "@/components/StarknetDapp"
 import { connectors } from "@/connectors"
-import { IS_MAINNET } from "@/constants"
+import { getNetworkConfig } from "@/constants"
 import { mainnet, sepolia } from "@starknet-react/chains"
 import {
   jsonRpcProvider,
@@ -14,21 +14,13 @@ export default function Home() {
   const chains = [mainnet, sepolia]
   /* const providers = publicProvider() */
 
-  const mainnetJsonRpcProvider = jsonRpcProvider({
+  const provider = jsonRpcProvider({
     rpc: (chain) => {
-      console.log("mainnet", chain)
-      return {
-        nodeUrl: "https://rpc.starknet.lava.build",
-      }
-    },
-  })
+      const network = getNetworkConfig(chain.id)
 
-  const sepoliaJsonRpcProvider = jsonRpcProvider({
-    rpc: (chain) => {
-      console.log("sepolia", chain)
       return {
-        nodeUrl: "https://api.hydrogen.argent47.net/v1/starknet/sepolia/rpc/v0.10",
-        specVersion: "0.10.2",
+        nodeUrl: network.rpcUrl,
+        specVersion: network.rpcSpecVersion,
       }
     },
   })
@@ -37,7 +29,7 @@ export default function Home() {
     <div className="flex flex-col flex-grow">
       <StarknetConfig
         chains={chains}
-        provider={IS_MAINNET ? mainnetJsonRpcProvider : sepoliaJsonRpcProvider}
+        provider={provider}
         connectors={connectors}
       >
         <StarknetDapp />

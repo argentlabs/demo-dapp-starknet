@@ -1,11 +1,6 @@
 import { Button } from "@/components/ui/Button"
 import { Spinner } from "@/components/ui/Spinner"
-import {
-  ARGENT_DUMMY_CONTRACT_ADDRESS,
-  ARGENT_SESSION_SERVICE_BASE_URL,
-  AVNU_PAYMASTER_API_KEY,
-  CHAIN_ID,
-} from "@/constants"
+import { AVNU_PAYMASTER_API_KEY } from "@/constants"
 import { sessionKey } from "@/helpers/sessionKeys"
 import { signOutsideExecution } from "@argent/x-sessions"
 import { useAccount } from "@starknet-react/core"
@@ -18,6 +13,7 @@ import { WithSession } from "./types"
  * AVNU api key is mandatory (set in your .env file)
  */
 const SessionKeysExecutePaymaster: FC<WithSession> = ({
+  network,
   sessionAccount,
   session,
 }) => {
@@ -56,7 +52,7 @@ const SessionKeysExecutePaymaster: FC<WithSession> = ({
             userAddress: address,
             calls: [
               {
-                contractAddress: ARGENT_DUMMY_CONTRACT_ADDRESS,
+                contractAddress: network.dummyContractAddress,
                 entrypoint: "set_number",
                 calldata: ["0x1"],
               },
@@ -72,13 +68,13 @@ const SessionKeysExecutePaymaster: FC<WithSession> = ({
         outsideExecutionTypedData: typedData,
         calls: [
           {
-            contractAddress: ARGENT_DUMMY_CONTRACT_ADDRESS,
+            contractAddress: network.dummyContractAddress,
             entrypoint: "set_number",
             calldata: CallData.compile(["0x1"]),
           },
         ],
-        network: CHAIN_ID === "SN_SEPOLIA" ? "sepolia" : "mainnet",
-        argentSessionServiceUrl: ARGENT_SESSION_SERVICE_BASE_URL,
+        network: network.xSessionsNetwork,
+        argentSessionServiceUrl: network.sessionServiceBaseUrl,
       })
 
       const executeResponse = await fetch(

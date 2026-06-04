@@ -2,15 +2,13 @@ import { SessionKeysIcon } from "@/components/icons/SessionKesIcon"
 import { Button } from "@/components/ui/Button"
 import { ErrorText } from "@/components/ui/Error"
 import {
-  ARGENT_SESSION_SERVICE_BASE_URL,
   AVNU_PAYMASTER_API_KEY,
-  CHAIN_ID,
-  provider,
+  getNetworkConfig,
+  getProvider,
 } from "@/constants"
-import { toHexChainid } from "@/helpers/chainId"
 import {
-  allowedMethods,
   expiry,
+  getAllowedMethods,
   metaData,
   sessionKey,
 } from "@/helpers/sessionKeys"
@@ -23,7 +21,7 @@ import {
 } from "@argent/x-sessions"
 import { useAccount, useSignTypedData } from "@starknet-react/core"
 import { useState } from "react"
-import { Account, AccountInterface, constants } from "starknet"
+import { Account, AccountInterface } from "starknet"
 import { SectionLayout } from "../SectionLayout"
 import { SessionKeysExecute } from "./SessionKeysExecute"
 import { SessionKeysExecuteOutside } from "./SessionKeysExecuteOutside"
@@ -39,6 +37,9 @@ const SessionKeysSign = () => {
 
   const [sessionError, setSessionError] = useState("")
 
+  const network = getNetworkConfig(chainId)
+  const allowedMethods = getAllowedMethods(network)
+
   const sessionParams: CreateSessionParams = {
     allowedMethods,
     expiry,
@@ -46,11 +47,9 @@ const SessionKeysSign = () => {
     sessionKey,
   }
 
-  const hexChainId = toHexChainid(chainId)
-
   const sessionRequest = createSessionRequest({
     sessionParams,
-    chainId: hexChainId as constants.StarknetChainId,
+    chainId: network.starknetChainId,
   })
 
   const { signTypedDataAsync } = useSignTypedData({
@@ -66,7 +65,7 @@ const SessionKeysSign = () => {
       const authorisationSignature = await signTypedDataAsync()
       const sessionObj = await createSession({
         address: address,
-        chainId: hexChainId as constants.StarknetChainId,
+        chainId: network.starknetChainId,
         authorisationSignature,
         sessionRequest,
       })
@@ -74,8 +73,8 @@ const SessionKeysSign = () => {
       const sessionAccount = await buildSessionAccount({
         session: sessionObj,
         sessionKey,
-        provider,
-        argentSessionServiceBaseUrl: ARGENT_SESSION_SERVICE_BASE_URL,
+        provider: getProvider(chainId),
+        argentSessionServiceBaseUrl: network.sessionServiceBaseUrl,
       })
 
       setSession(sessionObj)
@@ -91,17 +90,20 @@ const SessionKeysSign = () => {
       <Button className="w-full" onClick={handleSignSessionKeys} hideChevron>
         Create session
       </Button>
-      <SessionKeysExecute sessionAccount={sessionAccount} />
+      <SessionKeysExecute network={network} sessionAccount={sessionAccount} />
       <SessionKeysExecuteOutside
+        network={network}
         session={session}
         sessionAccount={sessionAccount}
       />
       <SessionKeysTypedDataOutside
+        network={network}
         session={session}
         sessionAccount={sessionAccount}
       />
-      {AVNU_PAYMASTER_API_KEY && CHAIN_ID === "SN_SEPOLIA" && (
+      {AVNU_PAYMASTER_API_KEY && network.xSessionsNetwork === "sepolia" && (
         <SessionKeysExecutePaymaster
+          network={network}
           session={session}
           sessionAccount={sessionAccount}
         />

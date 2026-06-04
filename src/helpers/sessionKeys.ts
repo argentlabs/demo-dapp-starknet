@@ -1,15 +1,11 @@
-import {
-  ARGENT_DUMMY_CONTRACT_ADDRESS,
-  ETHTokenAddress,
-  STRKTokenAddress,
-} from "@/constants"
+import { ETHTokenAddress, NetworkConfig, STRKTokenAddress } from "@/constants"
 import { bytesToHexString, SessionKey } from "@argent/x-sessions"
 import { ec } from "starknet"
 import { parseUnits } from "./token"
 
-const allowedMethods = [
+const getAllowedMethods = (network: NetworkConfig) => [
   {
-    "Contract Address": ARGENT_DUMMY_CONTRACT_ADDRESS,
+    "Contract Address": network.dummyContractAddress,
     selector: "set_number",
   },
 ]
@@ -38,4 +34,4 @@ const sessionKey: SessionKey = {
   publicKey: ec.starkCurve.getStarkKey(privateKey),
 }
 
-export { allowedMethods, expiry, metaData, sessionKey }
+export { expiry, getAllowedMethods, metaData, sessionKey }
