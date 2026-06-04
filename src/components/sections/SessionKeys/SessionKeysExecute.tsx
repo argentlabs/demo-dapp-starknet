@@ -1,12 +1,14 @@
 import { Button } from "@/components/ui/Button"
 import { Spinner } from "@/components/ui/Spinner"
-import { ARGENT_DUMMY_CONTRACT_ADDRESS } from "@/constants"
 import { useAccount } from "@starknet-react/core"
 import { FC, useState } from "react"
 import { CallData } from "starknet"
 import { WithSessionAccount } from "./types"
 
-const SessionKeysExecute: FC<WithSessionAccount> = ({ sessionAccount }) => {
+const SessionKeysExecute: FC<WithSessionAccount> = ({
+  network,
+  sessionAccount,
+}) => {
   const { address } = useAccount()
   const [isSubmitting, setIsSubmitting] = useState(false)
 
@@ -24,26 +26,19 @@ const SessionKeysExecute: FC<WithSessionAccount> = ({ sessionAccount }) => {
 
       // https://www.starknetjs.com/docs/guides/estimate_fees/#estimateinvokefee
       const { resourceBounds } = await sessionAccount.estimateInvokeFee({
-        contractAddress: ARGENT_DUMMY_CONTRACT_ADDRESS,
+        contractAddress: network.dummyContractAddress,
         entrypoint: "set_number",
         calldata: CallData.compile(["1"]),
       })
 
       const { transaction_hash } = await sessionAccount.execute(
         {
-          contractAddress: ARGENT_DUMMY_CONTRACT_ADDRESS,
+          contractAddress: network.dummyContractAddress,
           entrypoint: "set_number",
           calldata: CallData.compile(["1"]),
         },
         {
-          resourceBounds: {
-            ...resourceBounds,
-            // just for demo purposes
-            l2_gas: {
-              max_amount: BigInt("0x200000"), // 2,097,152 gas units
-              max_price_per_unit: BigInt("0x2540be400"), // 10 gwei
-            },
-          },
+          resourceBounds,
         },
       )
 

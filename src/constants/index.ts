@@ -1,4 +1,4 @@
-import { RpcProvider, constants } from "starknet"
+import { RpcProvider, constants, num } from "starknet"
 
 export const ETHTokenAddress =
   "0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7"
@@ -15,39 +15,74 @@ export const ARGENT_DUMMY_CONTRACT_MAINNET_ADDRESS =
 export const ARGENT_DUMMY_CONTRACT_SEPOLIA_ADDRESS =
   "0x88d3cc4377a6cdfd27545a11548bd070c4e2e1e3df3d402922dbc4350b416"
 
-export const CHAIN_ID =
+export const STARKNET_NETWORKS = {
+  mainnet: {
+    chainId: constants.NetworkName.SN_MAIN,
+    dummyContractAddress: ARGENT_DUMMY_CONTRACT_MAINNET_ADDRESS,
+    rpcSpecVersion: constants.SupportedRpcVersion.v0_10_2,
+    rpcUrl:
+      process.env.NEXT_PUBLIC_MAINNET_RPC_URL ||
+      "https://rpc.starknet.lava.build/",
+    sessionServiceBaseUrl:
+      process.env.NEXT_PUBLIC_ARGENT_SESSION_SERVICE_MAINNET_BASE_URL ||
+      "https://cloud.argent-api.com/v1",
+    starknetChainId: constants.StarknetChainId.SN_MAIN,
+    xSessionsNetwork: "mainnet",
+  },
+  sepolia: {
+    chainId: constants.NetworkName.SN_SEPOLIA,
+    dummyContractAddress: ARGENT_DUMMY_CONTRACT_SEPOLIA_ADDRESS,
+    rpcSpecVersion: constants.SupportedRpcVersion.v0_10_2,
+    rpcUrl:
+      process.env.NEXT_PUBLIC_SEPOLIA_RPC_URL ||
+      "https://api.hydrogen.argent47.net/v1/starknet/sepolia/rpc/v0.10",
+    sessionServiceBaseUrl:
+      process.env.NEXT_PUBLIC_ARGENT_SESSION_SERVICE_SEPOLIA_BASE_URL ||
+      process.env.NEXT_PUBLIC_ARGENT_SESSION_SERVICE_BASE_URL ||
+      "https://api.hydrogen.argent47.net/v1",
+    starknetChainId: constants.StarknetChainId.SN_SEPOLIA,
+    xSessionsNetwork: "sepolia",
+  },
+} as const
+
+export type NetworkConfig =
+  (typeof STARKNET_NETWORKS)[keyof typeof STARKNET_NETWORKS]
+
+export const DEFAULT_CHAIN_ID =
+  process.env.NEXT_PUBLIC_DEFAULT_CHAIN_ID === constants.NetworkName.SN_MAIN ||
   process.env.NEXT_PUBLIC_CHAIN_ID === constants.NetworkName.SN_MAIN
     ? constants.NetworkName.SN_MAIN
     : constants.NetworkName.SN_SEPOLIA
 
-const NODE_URL =
-  process.env.NEXT_PUBLIC_CHAIN_ID === constants.NetworkName.SN_MAIN
-    ? "https://rpc.starknet.lava.build"
-    : "https://api.hydrogen.argent47.net/v1/starknet/sepolia/rpc/v0.10"
+export const getNetworkConfig = (
+  chainId?: bigint | number | string | null,
+): NetworkConfig => {
+  const hexChainId =
+    typeof chainId === "bigint" || typeof chainId === "number"
+      ? num.toHex(chainId)
+      : chainId
 
-const RPC_SPEC_VERSION =
-  process.env.NEXT_PUBLIC_CHAIN_ID === constants.NetworkName.SN_MAIN
-    ? constants.SupportedRpcVersion.v0_9_0
-    : constants.SupportedRpcVersion.v0_10_2
+  return hexChainId === constants.StarknetChainId.SN_MAIN ||
+    hexChainId === constants.NetworkName.SN_MAIN
+    ? STARKNET_NETWORKS.mainnet
+    : STARKNET_NETWORKS.sepolia
+}
 
-const STARKNET_CHAIN_ID =
-  process.env.NEXT_PUBLIC_CHAIN_ID === constants.NetworkName.SN_MAIN
-    ? constants.StarknetChainId.SN_MAIN
-    : constants.StarknetChainId.SN_SEPOLIA
+export const getProvider = (chainId?: bigint | number | string | null) => {
+  const network = getNetworkConfig(chainId)
 
-export const IS_MAINNET =
-  process.env.NEXT_PUBLIC_CHAIN_ID === constants.NetworkName.SN_MAIN
+  return new RpcProvider({
+    specVersion: network.rpcSpecVersion,
+    nodeUrl: network.rpcUrl,
+    chainId: network.starknetChainId,
+  })
+}
 
-export const provider = new RpcProvider({
-  specVersion: RPC_SPEC_VERSION,
-  nodeUrl: NODE_URL,
-  chainId: STARKNET_CHAIN_ID,
-})
-
+export const CHAIN_ID = DEFAULT_CHAIN_ID
+export const IS_MAINNET = DEFAULT_CHAIN_ID === constants.NetworkName.SN_MAIN
+export const provider = getProvider(DEFAULT_CHAIN_ID)
 export const ARGENT_SESSION_SERVICE_BASE_URL =
-  process.env.NEXT_PUBLIC_ARGENT_SESSION_SERVICE_BASE_URL ||
-  "https://api.hydrogen.argent47.net/v1"
-
+  getNetworkConfig(DEFAULT_CHAIN_ID).sessionServiceBaseUrl
 export const ARGENT_WEBWALLET_URL =
   process.env.NEXT_PUBLIC_ARGENT_WEBWALLET_URL ||
   "https://sepolia-web.argent.xyz"
@@ -58,9 +93,7 @@ export const USE_SEPOLIA_DUMMY_CONTRACT = process.env
   : false
 
 export const ARGENT_DUMMY_CONTRACT_ADDRESS =
-  CHAIN_ID === constants.NetworkName.SN_SEPOLIA
-    ? ARGENT_DUMMY_CONTRACT_SEPOLIA_ADDRESS
-    : ARGENT_DUMMY_CONTRACT_MAINNET_ADDRESS
+  getNetworkConfig(DEFAULT_CHAIN_ID).dummyContractAddress
 
 export const AVNU_PAYMASTER_API_KEY =
   process.env.NEXT_PUBLIC_AVNU_API_KEY || undefined

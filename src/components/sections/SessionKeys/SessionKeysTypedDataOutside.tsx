@@ -1,16 +1,12 @@
-import {
-  ARGENT_DUMMY_CONTRACT_ADDRESS,
-  ARGENT_SESSION_SERVICE_BASE_URL,
-  CHAIN_ID,
-} from "@/constants"
 import { sessionKey } from "@/helpers/sessionKeys"
 import { createOutsideExecutionTypedData } from "@argent/x-sessions"
 import { FC, useState } from "react"
-import { CallData, constants } from "starknet"
+import { CallData } from "starknet"
 import { SessionKeysEFOLayout } from "./SessionKeysEFOLayout"
 import { WithSession } from "./types"
 
 const SessionKeysTypedDataOutside: FC<WithSession> = ({
+  network,
   session,
   sessionAccount,
 }) => {
@@ -28,14 +24,13 @@ const SessionKeysTypedDataOutside: FC<WithSession> = ({
         sessionKey,
         calls: [
           {
-            contractAddress: ARGENT_DUMMY_CONTRACT_ADDRESS,
+            contractAddress: network.dummyContractAddress,
             entrypoint: "set_number",
             calldata: CallData.compile(["1"]),
           },
         ],
-        argentSessionServiceUrl: ARGENT_SESSION_SERVICE_BASE_URL,
-        network:
-          CHAIN_ID === constants.NetworkName.SN_SEPOLIA ? "sepolia" : "mainnet",
+        argentSessionServiceUrl: network.sessionServiceBaseUrl,
+        network: network.xSessionsNetwork,
       })
 
       console.log(
